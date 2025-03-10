@@ -1,0 +1,301 @@
+:: StoryScript [script]
+// playtime.min.js, for SugarCube 2, by Chapel
+// v2.1.0, 2024-07-22, 336675ff2cabe5f729a5f30d86aa409cc8432726
+;!function(){"use strict";var e=!0,t="playtime",a="pausetimer";function n(){return Date.now()-State.variables[t]}function r(e){if(e&&!(e<0)&&"number"==typeof e){var t=[];return t.push(Math.floor(e/1e3)%60),t.push(Math.floor(e/6e4)%60),t.push(Math.floor(e/36e5)),t}}State.variables[t]=Date.now(),predisplay["start-playtime"]=function(e){delete predisplay[e],State.variables[t]||(State.variables[t]=Date.now())},prehistory["pause-playtime"]=function(e){tags().includes(a)&&(State.variables[t]+=time())};var i=["h","hr","hrs","hour","hours"],s=["m","min","mins","minute","minutes"],u=["s","sec","secs","second","seconds"];function o(e){return function(e,t){if(e&&Array.isArray(e)&&!(e.length<3)){var a=e[2]<10?"0"+e[2]:""+e[2],n=e[1]<10?"0"+e[1]:""+e[1],r=e[0]<10?"0"+e[0]:""+e[0];return t?"<b>"+a+":"+n+"</b>:"+r:a+":"+n+":"+r}}(r(n()),e)}setup.playTime=function(e){return"string"==typeof e?function(e){var t=n(),a=r(t);return i.includes(e)?a[2]:s.includes(e)?a[1]:u.includes(e)?a[0]:t}(e):o(e)},e&&(window.playTime=window.playTime||setup.playTime),Macro.add("playtime",{handler:function(){var e=this.args.map((function(e){return String(e).trim().toLowerCase()})),t=$(document.createElement("span")),a=o(e.includesAny(["format","f","fmt","b","bold","true"]));t.wiki(a).addClass("macro-"+this.name).appendTo(this.output)}})}();
+// end playtime.min.js
+
+// fading-macro-set.min.js, for SugarCube 2, by Chapel
+// v1.1.0, 2024-07-22, 336675ff2cabe5f729a5f30d86aa409cc8432726
+;Macro.add("fadein",{tags:null,handler:function(){var t,a,s=$(document.createElement("span")),e=this.payload[0].contents;if(0===this.args.length)return this.error("no arguments given");t=Util.fromCssTime(this.args[0]),a=this.args.length>1?Util.fromCssTime(this.args[1]):0,s.wiki(e).addClass("macro-"+this.name).appendTo(this.output).hide().delay(a).fadeIn(t)}}),Macro.add("fadeout",{tags:null,handler:function(){var t,a,s=$(document.createElement("span")),e=this.payload[0].contents;if(0===this.args.length)return this.error("no arguments given");t=Util.fromCssTime(this.args[0]),a=this.args.length>1?Util.fromCssTime(this.args[1]):0,s.wiki(e).addClass("macro-"+this.name).appendTo(this.output).delay(a).fadeOut(t)}});
+// end fading-macro-set.min.js
+
+// first-macro.min.js, for SugarCube 2, by Chapel
+// v1.1.1, 2024-07-22, 336675ff2cabe5f729a5f30d86aa409cc8432726
+;Macro.add("first",{skipArgs:!0,tags:["then","finally"],handler:function(){var a,t=$(document.createElement("span")),n=this.payload[this.payload.length-1],s=visited()-1;a=s<this.payload.length?this.payload[s].contents:"finally"===n.name?n.contents:"",t.wiki(a).addClass("macro-"+this.name).appendTo(this.output)}});
+// end first-macro.min.js
+
+/*
+Usage of ChapelR's <<first>> macro shown above:
+
+show something or run code only on first visit to any given passage:
+<<first>>Show only on first visit.<</first>>
+
+show something only on second and all subsequent visits:
+<<first>><<finally>>Show me on every visit except the first.<</first>> 
+
+show different text on first three visits, then nothing:
+<<first>>\
+	First visit text.
+<<then>>\
+	Second visit text.
+<<then>>\
+	Third visit text.
+<</first>>
+
+show different text on first two visits then different text on the third visit and subsequent visits: 
+<<first>>\
+	First visit text.
+<<then>>\
+	Second visit text.
+<<finally>>\
+	Third visit and subsequent visits text.
+<</first>>
+
+*/
+
+/* ChapelR's dialog macro follows */
+
+// dialog API macro set, by chapel; for sugarcube 2
+// version 1.3.0
+// see the documentation: https://github.com/ChapelR/custom-macros-for-sugarcube-2/blob/master/docs/dialog-api-macro-set.md
+
+// <<dialog>> macro
+Macro.add('dialog', {
+       tags : ['onopen', 'onclose'],
+    handler : function () {
+        
+        // handle args (if any)
+        var errors = [];
+        var content = '', onOpen = null, onClose = null;
+        var title = (this.args.length > 0) ? this.args[0] : '';
+        var classes = (this.args.length > 1) ? this.args.slice(1).flat(Infinity) : [];
+
+        this.payload.forEach( function (pl, idx) {
+            if (idx === 0) {
+                content = pl.contents;
+            } else {
+                if (pl.name === 'onopen') {
+                    onOpen = onOpen ? onOpen + pl.contents : pl.contents;
+                } else {
+                    onClose = onClose ? onClose + pl.contents : pl.contents;
+                }
+            }
+        });
+        
+        // add the macro- class
+        classes.push('macro-' + this.name);
+        
+        // dialog box
+        Dialog.setup(title, classes.join(' '));
+        Dialog.wiki(content);
+
+        // should these be shadowWrapper-aware?
+        if (onOpen && typeof onOpen === 'string' && onOpen.trim()) {
+            $(document).one(':dialogopened', function () {
+                $.wiki(onOpen);
+            });
+        }
+
+        if (onClose && typeof onClose === 'string' && onClose.trim()) {
+            $(document).one(':dialogclosed', function () {
+                $.wiki(onClose);
+            });
+        }
+
+        Dialog.open();
+        
+    }
+
+});
+
+// <<popup>> macro
+Macro.add('popup', {
+    handler : function () {
+        
+        // errors
+        if (this.args.length < 1) {
+            return this.error('need at least one argument; the passage to display');
+        }
+        if (!Story.has(this.args[0])) {
+            return this.error('the passage ' + this.args[0] + 'does not exist');
+        }
+        
+        // passage name and title
+        var psg   = this.args[0];
+        var title = (this.args.length > 1) ? this.args[1] : '';
+        var classes = (this.args.length > 2) ? this.args.slice(2).flat(Infinity) : [];
+        
+        // add the macro- class
+        classes.push('macro-' + this.name);
+        
+        // dialog box
+        Dialog.setup(title, classes.join(' '));
+        Dialog.wiki(Story.get(psg).processText());
+        Dialog.open();
+        
+    }
+
+});
+
+// <<dialogclose>> macro
+Macro.add('dialogclose', { 
+    skipArgs : true, 
+    handler : function () {
+        Dialog.close();
+    } 
+});
+
+/* End of ChapelR's dialog macro */
+
+/* hashStr - Start */
+window.hashStr = function(txt) {
+	var hash = 0, i, chr;
+	if (txt.length === 0) return hash;
+	for (i = 0; i < txt.length; i++) {
+		chr   = txt.charCodeAt(i);
+		hash  = ((hash << 5) - hash) + chr;
+		hash |= 0; // Convert to 32bit integer
+	}
+return hash;
+};
+/* hashStr - End */
+
+/* Trigger the following code at the start of navigation to a new passage. */
+$(document).on(":passagestart", function (event) {
+	/* Make sure the current passage doesn't have a "noreturn" tag. */
+	if (!tags().includes("noreturn")) {
+		/* If it doesn't, then set $return to the current passage name. */
+		State.variables.return = passage();
+	}
+});
+
+setup.addVisits = (passageName, number = 1) => {
+  while (number--) {
+    State.expired.push(passageName);
+  }
+};
+
+/* setup.addVisits ("Chapter1Darkroom2", 59) << I was testing this on 3/2/25 */
+
+
+:: PassageReady [special]
+<!-- <<silently>><<set $character.passageVisits += 1>><</silently>> -->
+
+:: StoryAuthor [special]
+<center><span class="green">Bryan Miller</span></center>
+/* I can always disable the following line before release */
+<small><!-- Current passage<br><span class="green"><<-passage()>></span> -->
+<!-- hunger: $character.hunger
+drowsiness: $character.drowsiness --></small>
+
+:: StoryBanner [special]
+<center><!--<img width="40" vspace=1 hspace=1 align="center" src="./assets/images/swordsman64.png">--></center>
+
+:: StoryCaption [special]
+<!-- $character.passageVisits passage visits -->
+
+
+:: StoryMenu [special]
+[[Author Info|AboutTheAuthor]]
+
+
+:: AboutTheAuthor
+<img vspace=1 hspace=8 align="left" src="./assets/images/me_small.png"> I'm an addictions counselor by day, a hobbyist programmer by night. <!--I live in south-central Kentucky with my wife and our three dogs. My <a target="_blank" href="http://bryanmiller.us">website</a> is much-neglected. I took a single programming class in college in the early 1990s &mdash; Pascal. Before that, I'd done some novice programming in QBasic 4.5; later, I paid for a course in Visual Basic 6. Eventually, I picked up C# and fell in love with it. I would really like to become proficient in Javascript, but my time is seriously limited by a managerial role with my current employer. I wrote a mediocre <a target="_blank" href="https://www.amazon.com/Kyrathaba-Rising-Book-Chronicles/dp/1491216840">science-fiction novel</a> in 2013, while I was out of work for a ten-month period.-->
+
+:: StoryStylesheet [stylesheet]
+/* SugarCube 2.x with custom Settings. */
+#menu-item-saves, #menu-item-restart {
+	display: none;
+}
+
+.green {
+  color: #AAFF00;
+}
+.blue {
+  color: #25F5FC;
+}
+.red {
+  color: red;
+}
+.yellow {
+	color: #FFEA00;
+}
+.orange {
+	color: #FFAC1C;
+}
+
+.link-internal {color: #25F5FC;}
+
+/* Bottom Bar styling - Start */
+#bottombar {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #333;
+	border-top: 1px solid #444;
+	box-shadow: 0 0 10px 0 #333;
+	z-index: 40;
+}
+#bbblock {
+	margin-left: 20em;
+	margin-right: 2.5em;
+	-o-transition: margin .2s ease-in;
+    transition: margin .2s ease-in;
+}
+#bbtext {
+	text-align: center;
+    max-width: 54em;
+    margin: 0 auto;
+}
+#ui-bar.stowed~#story #bbblock {
+	margin-left: 4.5em;
+}
+@media screen and (max-width: 1136px) {
+	#bbblock {
+		margin-left: 19em;
+		margin-right: 1.5em;
+	}
+	#ui-bar.stowed~#story #bbblock {
+		margin-left: 3.5em;
+	}
+}
+@media screen and (max-width: 768px) {
+	#bbblock {
+		margin-left: 3.5em;
+	}
+}
+/* Bottom Bar styling - End */
+
+#topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	border-top: 1px solid #444;
+	box-shadow: 0 0 10px 0 #333;
+	z-index: 40;
+}
+
+:: StorySubtitle [special]
+Story Subtitle
+
+:: StoryTitle [special]
+Story Title
+
+:: StoryData
+{
+    "ifid": "45314D2F-D080-46DF-9F11-B2132045927A",
+	"format": "SugarCube",
+  	"format-version": "2.37.3",
+  	"start": "Start"
+}
+
+:: Start [special]
+<<nobr>>/*  show different text on first two visits then different text on the third visit and subsequent visits: */ 
+<<first>>\
+	First visit text.
+<<then>>\
+	Second visit text.
+<<finally>>\
+	Third visit and subsequent visits text.
+<</first>><</nobr>>
+
+[[continue|Start]]
+
+
+
+
+
+

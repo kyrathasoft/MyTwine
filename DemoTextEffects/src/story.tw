@@ -1,0 +1,177 @@
+:: StoryScript [script]
+
+/* hashStr - Start */
+window.hashStr = function(txt) {
+	var hash = 0, i, chr;
+	if (txt.length === 0) return hash;
+	for (i = 0; i < txt.length; i++) {
+		chr   = txt.charCodeAt(i);
+		hash  = ((hash << 5) - hash) + chr;
+		hash |= 0; // Convert to 32bit integer
+	}
+return hash;
+};
+/* hashStr - End */
+
+/* Trigger the following code at the start of navigation to a new passage. */
+$(document).on(":passagestart", function (event) {
+	/* Make sure the current passage doesn't have a "noreturn" tag. */
+	if (!tags().includes("noreturn")) {
+		/* If it doesn't, then set $return to the current passage name. */
+		State.variables.return = passage();
+	}
+});
+
+setup.addVisits = (passageName, number = 1) => {
+  while (number--) {
+    State.expired.push(passageName);
+  }
+};
+
+/* setup.addVisits ("Chapter1Darkroom2", 59) << I was testing this on 3/2/25 */
+
+
+:: PassageReady [special]
+<!-- <<silently>><<set $character.passageVisits += 1>><</silently>> -->
+
+:: StoryAuthor [special]
+<center><span class="green">Bryan Miller</span></center>
+/* I can always disable the following line before release */
+<small><!-- Current passage<br><span class="green"><<-passage()>></span> -->
+<!-- hunger: $character.hunger
+drowsiness: $character.drowsiness --></small>
+
+:: StoryBanner [special]
+<center><!--<img width="40" vspace=1 hspace=1 align="center" src="./assets/images/swordsman64.png">--></center>
+
+:: StoryCaption [special]
+<!-- $character.passageVisits passage visits -->
+
+
+:: StoryMenu [special]
+[[Author Info|AboutTheAuthor]]
+
+
+:: AboutTheAuthor
+<img vspace=1 hspace=8 align="left" src="./assets/images/me_small.png"> I'm an addictions counselor by day, a hobbyist programmer by night. <!--I live in south-central Kentucky with my wife and our three dogs. My <a target="_blank" href="http://bryanmiller.us">website</a> is much-neglected. I took a single programming class in college in the early 1990s &mdash; Pascal. Before that, I'd done some novice programming in QBasic 4.5; later, I paid for a course in Visual Basic 6. Eventually, I picked up C# and fell in love with it. I would really like to become proficient in Javascript, but my time is seriously limited by a managerial role with my current employer. I wrote a mediocre <a target="_blank" href="https://www.amazon.com/Kyrathaba-Rising-Book-Chronicles/dp/1491216840">science-fiction novel</a> in 2013, while I was out of work for a ten-month period.-->
+
+:: StoryStylesheet [stylesheet]
+/* SugarCube 2.x with custom Settings. */
+#menu-item-saves, #menu-item-restart {
+	display: none;
+}
+
+.green {
+  color: #AAFF00;
+}
+.blue {
+  color: #25F5FC;
+}
+.red {
+  color: red;
+}
+.yellow {
+	color: #FFEA00;
+}
+.orange {
+	color: #FFAC1C;
+}
+
+.link-internal {color: #25F5FC;}
+
+/* Bottom Bar styling - Start */
+#bottombar {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #333;
+	border-top: 1px solid #444;
+	box-shadow: 0 0 10px 0 #333;
+	z-index: 40;
+}
+#bbblock {
+	margin-left: 20em;
+	margin-right: 2.5em;
+	-o-transition: margin .2s ease-in;
+    transition: margin .2s ease-in;
+}
+#bbtext {
+	text-align: center;
+    max-width: 54em;
+    margin: 0 auto;
+}
+#ui-bar.stowed~#story #bbblock {
+	margin-left: 4.5em;
+}
+@media screen and (max-width: 1136px) {
+	#bbblock {
+		margin-left: 19em;
+		margin-right: 1.5em;
+	}
+	#ui-bar.stowed~#story #bbblock {
+		margin-left: 3.5em;
+	}
+}
+@media screen and (max-width: 768px) {
+	#bbblock {
+		margin-left: 3.5em;
+	}
+}
+/* Bottom Bar styling - End */
+
+#topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	border-top: 1px solid #444;
+	box-shadow: 0 0 10px 0 #333;
+	z-index: 40;
+}
+
+:: StorySubtitle 
+Story Subtitle
+
+:: StoryTitle 
+Story Title
+
+:: StoryData 
+{
+    "ifid": "38B42788-7184-4ECE-885A-9D35444557F3",
+    "format": "SugarCube",
+    "format-version": "2.37.3",
+    "start": "Start"
+}
+
+:: Start 
+Welcome!
+
+@@.shadow;This text should have a shadow@@
+
+@@.emboss;This text should be embossed@@
+
+@@.blur;This text should be blurred@@
+
+@@.blurrier;This text should be blurrier@@
+
+@@.smear;This text should be smeared@@
+
+@@.mirror;This text should be mirrored@@
+
+@@.upside-down;This text should be upside-down@@
+
+@@.fade-in-out;This text should fade in and out@@
+
+@@.rumble;This text should be rumbling@@
+
+@@.shudder;This text should be shuddering@@
+
+@@.pulse;This text should pulse once@@
+
+
+
+
+
+

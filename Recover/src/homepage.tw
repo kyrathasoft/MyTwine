@@ -1,0 +1,11 @@
+:: Homepage [nobr]
+<<silently>><<if $introCompleted>><<run UIBar.show();>><</if>><</silently>>
+<<timed 1s>><center><img src="./assets/images/bg-light.png"><br>
+<span class=_color><font size="+3">@@.pulse;Interactive Trainer@@</font></span><br>
+@@.pulse;A product of the Ky GRT Clinical Team@@<br><br>
+<font size="+1">
+@@.pulse;<b>Creating</b> linkages and <b>building</b> community &mdash; that's <b>Groups: Recover Together</b>@@
+</font><br><br>
+@@.pulse;//visit the Learning Portal via the Table of Contents//@@
+</center><</timed>>
+

@@ -1,0 +1,9 @@
+sugarcube-2:
+  macros:
+    playtime:
+      name: playtime
+    cont:
+      name: cont-macro-ignore
+    fadein:
+      container: true
+      name: fadein

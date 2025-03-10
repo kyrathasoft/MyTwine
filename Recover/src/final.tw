@@ -1,0 +1,91 @@
+:: StoryScript [script]
+Config.saves.autosave = false;
+// Config.saves.autoload = "prompt";
+
+// playtime.min.js, for SugarCube 2, by Chapel
+// v2.1.0, 2024-07-22, 336675ff2cabe5f729a5f30d86aa409cc8432726
+;!function(){"use strict";var e=!0,t="playtime",a="pausetimer";function n(){return Date.now()-State.variables[t]}function r(e){if(e&&!(e<0)&&"number"==typeof e){var t=[];return t.push(Math.floor(e/1e3)%60),t.push(Math.floor(e/6e4)%60),t.push(Math.floor(e/36e5)),t}}State.variables[t]=Date.now(),predisplay["start-playtime"]=function(e){delete predisplay[e],State.variables[t]||(State.variables[t]=Date.now())},prehistory["pause-playtime"]=function(e){tags().includes(a)&&(State.variables[t]+=time())};var i=["h","hr","hrs","hour","hours"],s=["m","min","mins","minute","minutes"],u=["s","sec","secs","second","seconds"];function o(e){return function(e,t){if(e&&Array.isArray(e)&&!(e.length<3)){var a=e[2]<10?"0"+e[2]:""+e[2],n=e[1]<10?"0"+e[1]:""+e[1],r=e[0]<10?"0"+e[0]:""+e[0];return t?"<b>"+a+":"+n+"</b>:"+r:a+":"+n+":"+r}}(r(n()),e)}setup.playTime=function(e){return"string"==typeof e?function(e){var t=n(),a=r(t);return i.includes(e)?a[2]:s.includes(e)?a[1]:u.includes(e)?a[0]:t}(e):o(e)},e&&(window.playTime=window.playTime||setup.playTime),Macro.add("playtime",{handler:function(){var e=this.args.map((function(e){return String(e).trim().toLowerCase()})),t=$(document.createElement("span")),a=o(e.includesAny(["format","f","fmt","b","bold","true"]));t.wiki(a).addClass("macro-"+this.name).appendTo(this.output)}})}();
+// end playtime.min.js
+
+// fading-macro-set.min.js, for SugarCube 2, by Chapel
+// v1.1.0, 2024-07-22, 336675ff2cabe5f729a5f30d86aa409cc8432726
+;Macro.add("fadein",{tags:null,handler:function(){var t,a,s=$(document.createElement("span")),e=this.payload[0].contents;if(0===this.args.length)return this.error("no arguments given");t=Util.fromCssTime(this.args[0]),a=this.args.length>1?Util.fromCssTime(this.args[1]):0,s.wiki(e).addClass("macro-"+this.name).appendTo(this.output).hide().delay(a).fadeIn(t)}}),Macro.add("fadeout",{tags:null,handler:function(){var t,a,s=$(document.createElement("span")),e=this.payload[0].contents;if(0===this.args.length)return this.error("no arguments given");t=Util.fromCssTime(this.args[0]),a=this.args.length>1?Util.fromCssTime(this.args[1]):0,s.wiki(e).addClass("macro-"+this.name).appendTo(this.output).delay(a).fadeOut(t)}});
+// end fading-macro-set.min.js
+
+// first-macro.min.js, for SugarCube 2, by Chapel
+// v1.1.1, 2024-07-22, 336675ff2cabe5f729a5f30d86aa409cc8432726
+;Macro.add("first",{skipArgs:!0,tags:["then","finally"],handler:function(){var a,t=$(document.createElement("span")),n=this.payload[this.payload.length-1],s=visited()-1;a=s<this.payload.length?this.payload[s].contents:"finally"===n.name?n.contents:"",t.wiki(a).addClass("macro-"+this.name).appendTo(this.output)}});
+// end first-macro.min.js
+
+/* hashStr - Start */
+window.hashStr = function(txt) {
+	var hash = 0, i, chr;
+	if (txt.length === 0) return hash;
+	for (i = 0; i < txt.length; i++) {
+		chr   = txt.charCodeAt(i);
+		hash  = ((hash << 5) - hash) + chr;
+		hash |= 0; // Convert to 32bit integer
+	}
+return hash;
+};
+/* hashStr - End */
+
+/* Trigger the following code at the start of navigation to a new passage. */
+$(document).on(":passagestart", function (event) {
+	/* Make sure the current passage doesn't have a "noreturn" tag. */
+	if (!tags().includes("noreturn")) {
+		/* If it doesn't, then set $return to the current passage name. */
+		State.variables.return = passage();
+	}
+});
+
+setup.addVisits = (passageName, number = 1) => {
+  while (number--) {
+    State.expired.push(passageName);
+  }
+};
+
+/* setup.addVisits ("Chapter1Darkroom2", 59) << I was testing this on 3/2/25 */
+
+
+Config.history.controls = true;
+Config.saves.maxSlotSaves = 1
+Config.history.maxStates = 15
+
+Config.saves.isAllowed = function () {
+    if (passage() === "Start" || tags().includes("nosave")) {
+        return false;
+    }
+    return true;
+};
+
+Config.saves.onSave = function (save, details) {
+	if (settings.autoname) {
+	save.title = [State.getVar("$name"), State.getVar("$chapter")];
+	} else if (details.type == "autosave") {
+	save.title = "Autosave";
+	} else {
+	save.title = prompt("Enter Save Name:", save.title);
+	}
+}
+
+Setting.addToggle("autoname", {
+label : "Autoname Saves",
+default : false,
+});
+
+:: StoryInit
+<<set $introCompleted to false>>
+<<set $homepageLinkback to '<br>[[Homepage]]'>>
+<<set $tocLinkback to '<center>[[TOC|DisplayTOC]]</center>'>>
+<<set $srccodeLinkback to '<center>[[Source Code Index|ShowSourceCode]]</center>'>>
+<<set $nonOpt to "That was a non-optimal response.">>
+
+
+:: StoryData
+{
+    "ifid": "4FB660BE-D8F0-403C-BD83-C0A4FCDB5545",
+    "format": "SugarCube",
+    "format-version": "2.37.3",
+    "start": "Start"
+}

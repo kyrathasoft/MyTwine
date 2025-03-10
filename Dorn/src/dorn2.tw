@@ -1,0 +1,40 @@
+:: AboutTheAuthor
+<img vspace=1 hspace=1 align="left" src="./assets/images/me_small.png"> I'm an addictions counselor by day, a hobbyist programmer by night. I live in south-central Kentucky with my wife and our three dogs. My <a target="_blank" href="http://bryanmiller.us">website</a> is much-neglected. I took a single programming class in college in the early 1990s &mdash; Pascal. Before that, I'd done some novice programming in QBasic 4.5; later, I paid for a course in Visual Basic 6. Eventually, I picked up C# and fell in love with it. I would really like to become proficient in Javascript, but my time is seriously limited by a managerial role with my current employer. I wrote a mediocre <a target="_blank" href="https://www.amazon.com/Kyrathaba-Rising-Book-Chronicles/dp/1491216840">science-fiction novel</a> in 2013, while I was out of work for a ten-month period.
+
+:: Chapter1Passage5
+You sit in your study, enjoying the warmth from the fireplace and the play of light and shadows on the mahoghany-inlaid walls. <<if not $character.darkroomKey>>A key sits upon your desk. <<linkreplace "Take it.">>//You have taken the [[key|Chapter1Passage6]]//.<</linkreplace>><</if>>
+
+:: Chapter1Passage6
+You look at the old skeleton key in the palm of your hand. It fits the [[door|Chapter1Darkroom]] to the large walk-in closet that you have converted into a photo darkroom.
+
+:: Chapter1Darkroom [darkroom]
+You unlock the closet door and enter a makeshift photography darkroom. For appearances sake, you have state-of-the-art LED lighting, but you don't bother with the [[light|Chapter1Darkroom2]] switch.
+
+:: Chapter1Darkroom2 [darkroom tbar]
+You can see perfectly well in pitch darkness. Even Lizzie Bathory couldn't have boasted such a feat &mdash; though, true enough, she'd needed very little illumination. You navigate between a pair of work tables and stop at a series of four photographs strung on a horizontal length of twine at head-height along the far [[wall|Chapter1Darkroom3]].
+
+:: Chapter1Darkroom3 [darkroom]
+<<if visited() lt 2>><span class="green">&ldquo;Ah, Lizzie, how I miss thee at times...&rdquo;</span> After a moment lost in remembrance, you peer at the four photos &mdash; and not for the first or even the fifteenth time.<<else>>You stand before four rare and valuable photographs that are delicately hung from a horizontal length of twine.<</if>>
+
+Photo [[one|Chapter1Photo1]], [[two|Chapter1Photo2]], [[three|Chapter1Photo3]], & [[four|Chapter1Photo4]]
+
+:: Chapter1Photo1 [darkroom]
+The first photo is an old daguerreotype from the late 1870s (you don't recall the exact year). It shows you placing the outlaw John Wesley Hardin into a prison cell in Huntsville, Texas. <<if visited("Chapter1Photo1") lt 2>><span class="green">&ldquo;When I was //John Armstrong//,&rdquo;</span> you say, smiling in recollection.<</if>>
+[[Go back|previous()]]
+
+:: Chapter1Photo2 [darkroom]
+The second photo shows an African American man in profile, in an orange prison jumpsuit. Except //you// know that it isn't really Christopher Scarver. That's //you//, after they'd transferred you to Colorado from Wisconsin, in late 1994. <<if visited("Chapter1Photo2") lt 2>><span class="green">&ldquo;//How in the world did you pull that off, Stelgaard?// Oh, wouldn&rsquo;t you like to know?&rdquo;</span> you retort. Damned the Voice, always asking questions, always trying to tease out your secrets! <span class="green">&ldquo;You owe me //bigly//, Chris &mdash; as Trump might say.&rdquo;</span><</if>>
+[[Go back|previous()]]
+
+:: Chapter1Photo3 [darkroom]
+The third photo is the original portrait of Winston Churchill by Yousuf Karsh. Taken in 1941, it was dubbed The Roaring Lion. It was one of your proudest capers, perpetrated in the pre-dawn hours of a Saturday morning on the first day of 2022. <<if visited("Chapter1Photo3") lt 2>><span class="green">&ldquo;Even the great Dorn found that an unpleasant night, but I could not in good conscious let the Covid-19 inspired low-hotel occupancy go to waste!&rdquo;</span><</if>> You're even more proud of the fact that you passed off a fake copy as the original, which now once more hangs proudly in the Fairmont Château Laurier.
+[[Go back|previous()]]
+
+:: Chapter1Photo4 [darkroom]
+The fourth and final photo is a real rarity, capturing you &mdash; thirty-eight years ago &mdash; at the very moment that your most recent apotheosis reached its fusion point. It's actually a bit careless to keep this photo and risk the possibility (however vanishingly slim that might be) of it falling into the wrong hands. <<if visited("Chapter1Photo4") lt 2>><span class="green">&ldquo;Wouldn&rsquo;t do for the NSA to get their grubby little paws on this...&rdquo;</span><</if>> Then again, you're far from defenseless.
+[[Go back|previous()]]
+
+:: TheMenu [noreturn]
+You're in the menu...
+Total playtime: <<playtime format>>
+<<link "Return" $return>><</link>>

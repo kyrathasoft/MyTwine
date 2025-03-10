@@ -1,0 +1,19 @@
+:: PassageHeader [header]
+<<if tags().includes("tbar")>>\ 
+<div id="topbar"><div id="bbblock"><div id="bbtext">$character.headerMsg</div></div></div><</if>>\
+<<script>>
+$(document).one(":passagedisplay", function (event) {
+	if ($("#topbar").length) {
+		$("#passages").css("margin-top", $("#topbar").outerHeight() + 10);
+	} else {
+		$("#passages").css("margin-top", 0);
+	}
+});
+<</script>>\
+
+:: PassageFooter [footer]
+<<if tags().includes("bbar")>>
+
+<div id="bottombar"><div id="bbblock"><div id="bbtext">$character.footerMsg</div></div></div><</if>>
+
+

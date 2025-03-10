@@ -1,0 +1,35 @@
+:: Chapter1Passage0
+My name is <<= setup.characterName>>. <<= setup.characterName>> <<= setup.characterLastName>>. I am the last [[Nephilim|Chapter1Passage1]].
+
+:: Chapter1Passage1
+I was born near the end of the Last Glacial [[Period|Chapter1Passage2]].
+
+:: Chapter1Passage2
+Whoever you are reading this &mdash; this is my true [[story|Chapter1Passage3]].
+
+:: Chapter1Passage3
+<<include IntroScreen>>
+
+<center>[[continue|Chapter1Passage4]]</center>
+
+:: Chapter1Passage4
+
+<<timed 1.5s>><center><<fadein 1000ms>><span class="prata-regular"><font color="#AAFF00" size="+3">''Dorn Stelgaard''</font></span><</fadein>></center><</timed>>
+
+<<timed 3.0s>><center><<fadein 1000ms>><span class="prata-regular"><font color="#AAFF00" size="+3">Chapter One</font></span><</fadein>></center><</timed>>
+
+<<timed 4.5s>><center><<fadein 1000ms>><span class="prata-regular"><font color="#AAFF00" size="+3">All My Centuries</font></span><</fadein>></center><</timed>>
+
+<<timed 6.75s>><<goto Chapter1Passage5>><</timed>>
+
+:: IntroScreen
+<center><span class="prata-regular"><font color="#AAFF00" size="+3">''Dorn Stelgaard''</font></span>
+<img width="64" vspace=1 hspace=1 align="center" src="./assets/images/swordsman64.png">
+a work of hyperfiction by
+the eponymous
+<span class="green"><<= setup.author>></span> 
+//kyrathasoft@gmail.com// 
+&copy; 2025
+</center>
+
+

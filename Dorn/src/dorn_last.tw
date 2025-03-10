@@ -1,0 +1,213 @@
+:: StoryScript [script]
+// playtime.min.js, for SugarCube 2, by Chapel
+// v2.1.0, 2024-07-22, 336675ff2cabe5f729a5f30d86aa409cc8432726
+;!function(){"use strict";var e=!0,t="playtime",a="pausetimer";function n(){return Date.now()-State.variables[t]}function r(e){if(e&&!(e<0)&&"number"==typeof e){var t=[];return t.push(Math.floor(e/1e3)%60),t.push(Math.floor(e/6e4)%60),t.push(Math.floor(e/36e5)),t}}State.variables[t]=Date.now(),predisplay["start-playtime"]=function(e){delete predisplay[e],State.variables[t]||(State.variables[t]=Date.now())},prehistory["pause-playtime"]=function(e){tags().includes(a)&&(State.variables[t]+=time())};var i=["h","hr","hrs","hour","hours"],s=["m","min","mins","minute","minutes"],u=["s","sec","secs","second","seconds"];function o(e){return function(e,t){if(e&&Array.isArray(e)&&!(e.length<3)){var a=e[2]<10?"0"+e[2]:""+e[2],n=e[1]<10?"0"+e[1]:""+e[1],r=e[0]<10?"0"+e[0]:""+e[0];return t?"<b>"+a+":"+n+"</b>:"+r:a+":"+n+":"+r}}(r(n()),e)}setup.playTime=function(e){return"string"==typeof e?function(e){var t=n(),a=r(t);return i.includes(e)?a[2]:s.includes(e)?a[1]:u.includes(e)?a[0]:t}(e):o(e)},e&&(window.playTime=window.playTime||setup.playTime),Macro.add("playtime",{handler:function(){var e=this.args.map((function(e){return String(e).trim().toLowerCase()})),t=$(document.createElement("span")),a=o(e.includesAny(["format","f","fmt","b","bold","true"]));t.wiki(a).addClass("macro-"+this.name).appendTo(this.output)}})}();
+// end playtime.min.js
+
+// fading-macro-set.min.js, for SugarCube 2, by Chapel
+// v1.1.0, 2024-07-22, 336675ff2cabe5f729a5f30d86aa409cc8432726
+;Macro.add("fadein",{tags:null,handler:function(){var t,a,s=$(document.createElement("span")),e=this.payload[0].contents;if(0===this.args.length)return this.error("no arguments given");t=Util.fromCssTime(this.args[0]),a=this.args.length>1?Util.fromCssTime(this.args[1]):0,s.wiki(e).addClass("macro-"+this.name).appendTo(this.output).hide().delay(a).fadeIn(t)}}),Macro.add("fadeout",{tags:null,handler:function(){var t,a,s=$(document.createElement("span")),e=this.payload[0].contents;if(0===this.args.length)return this.error("no arguments given");t=Util.fromCssTime(this.args[0]),a=this.args.length>1?Util.fromCssTime(this.args[1]):0,s.wiki(e).addClass("macro-"+this.name).appendTo(this.output).delay(a).fadeOut(t)}});
+// end fading-macro-set.min.js
+
+Config.saves.maxSlotSaves = 3
+Config.history.maxStates = 50
+
+/* No saving on the passage "Start", or in passages tagged with "nosave" 
+If we also wanted to exclude saving on Fridays, we could inclue the following
+in the if condition: || (new Date()).getDay() === 5 */
+Config.saves.isAllowed = function () {
+	if (passage() === "Start" || tags().contains("nosave")) {
+		return false;
+	}
+	return true;
+};
+
+/* hashStr - Start */
+window.hashStr = function(txt) {
+	var hash = 0, i, chr;
+	if (txt.length === 0) return hash;
+	for (i = 0; i < txt.length; i++) {
+		chr   = txt.charCodeAt(i);
+		hash  = ((hash << 5) - hash) + chr;
+		hash |= 0; // Convert to 32bit integer
+	}
+	return hash;
+};
+/* hashStr - End */
+
+/* Trigger the following code at the start of navigation to a new passage. */
+$(document).on(":passagestart", function (event) {
+	/* Make sure the current passage doesn't have a "noreturn" tag. */
+	if (!tags().includes("noreturn")) {
+		/* If it doesn't, then set $return to the current passage name. */
+		State.variables.return = passage();
+	}
+});
+
+setup.addVisits = (passageName, number = 1) => {
+  while (number--) {
+    State.expired.push(passageName);
+  }
+};
+
+/* setup.addVisits ("Chapter1Darkroom2", 59) << I was testing this on 3/2/25 */
+
+
+
+:: PassageReady [special]
+<<silently>><<set $character.passageVisits += 1>><</silently>>
+
+:: Start [special]
+<span class="red"><font size="+1">Alert! This story contains depictions of sex, violence, magic, and drug use &mdash; sometimes all four simultaneously.</font></span><br><br>You have been [[warned|Chapter1Passage0]].<<silently>><<if $character.passageVisits gt 0>><<set $character.passageVisits to 0>><</if>><</silently>>
+
+:: StoryAuthor [special]
+<center>by the pseudonymous<br><span class="green"><<= setup.author>></span></center>
+/* I can always disable the following line before release */
+<small>Current passage<br><span class="green"><<-passage()>></span>
+hunger: $character.hunger
+drowsiness: $character.drowsiness</small>
+
+:: StoryBanner [special]
+<center><img width="40" vspace=1 hspace=1 align="center" src="./assets/images/swordsman64.png"></center>
+
+:: StoryCaption [special]
+$character.passageVisits passage visits
+
+:: StoryData [special]
+{
+  "ifid": "413308B9-E6BE-4410-AA42-0B4C2388077A",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Start",
+  "zoom": 1
+}
+
+:: StoryDisplayTitle [special]
+<<=setup.title>>
+
+:: StoryInit [special]
+
+<<set $return to "Start">>
+<<set setup.age to 15018>>
+<<set setup.author to "Glen Forkovian">>
+<<set setup.bullet to "<span class='blue'>*</span>">>
+<<set setup.ch1hallway to "Chapter1Passage10">>
+<<set setup.characterLastName to "Stelgaard">>
+<<set setup.characterName to "Dorn">>
+<<set setup.characterType to "Nephilim">>
+<<set setup.subtitle to "The Last Nephilim">>
+<<set setup.title to "Dorn Stelgaard">>
+<<set setup.ubers to "Shadim">>
+<<set setup.wife18 to "Isolde">>
+
+<<set $character to 
+{darkroomKey: false,
+experiencedDreamSequence: false,
+footerMsg: "default footer msg",
+headerMsg: "default header msg",
+healthCurrent: 100,
+healthMax: 100,
+passageVisits: 0,
+}>><nobr><!--
+'ubers' are aberrants impinging onto this prime material plane 
+'type' refers to Dorn being a child of angels and human women--></nobr>
+
+/* remove the following before building the release version of the game */
+<!--<<set $character.darkroomKey to true>><<goto Chapter1Darkroom2>>-->
+/* remove the preceding before building the release version of the game */
+
+:: StoryMenu [special]
+[[Author Info|AboutTheAuthor]]
+[[Dev Notes|DevNotes]]
+[[Menu|TheMenu]]
+
+:: StoryStylesheet [stylesheet]
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.green {
+  color: #AAFF00;
+}
+.blue {
+  color: #25F5FC;
+}
+.red {
+  color: red;
+}
+.yellow {
+	color: #FFEA00;
+}
+.orange {
+	color: #FFAC1C;
+}
+
+.link-internal {color: #25F5FC;}
+
+/* Bottom Bar styling - Start */
+#bottombar {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #333;
+	border-top: 1px solid #444;
+	box-shadow: 0 0 10px 0 #333;
+	z-index: 40;
+}
+#bbblock {
+	margin-left: 20em;
+	margin-right: 2.5em;
+	-o-transition: margin .2s ease-in;
+    transition: margin .2s ease-in;
+}
+#bbtext {
+	text-align: center;
+    max-width: 54em;
+    margin: 0 auto;
+}
+#ui-bar.stowed~#story #bbblock {
+	margin-left: 4.5em;
+}
+@media screen and (max-width: 1136px) {
+	#bbblock {
+		margin-left: 19em;
+		margin-right: 1.5em;
+	}
+	#ui-bar.stowed~#story #bbblock {
+		margin-left: 3.5em;
+	}
+}
+@media screen and (max-width: 768px) {
+	#bbblock {
+		margin-left: 3.5em;
+	}
+}
+/* Bottom Bar styling - End */
+
+#topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	border-top: 1px solid #444;
+	box-shadow: 0 0 10px 0 #333;
+	z-index: 40;
+}
+
+:: StorySubtitle [special]
+<<= setup.subtitle>>
+
+:: StoryTitle [special]
+<<= setup.title>>
+
+
+
+
+
+
+

@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ScappleDocument Version="1.2" ID="E54C3988-608F-475B-A0B5-D588A78EA313">
+   <Notes>
+      <Note FontSize="12" Width="42.1387" Position="65.6,31.7" ID="0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,5</FormatRange>
+         </Formatting>
+         <String>Start</String>
+      </Note>
+      <Note FontSize="12" Width="156.25" Position="23.4,64.5" ID="2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>Start passage gives a warning message</String>
+      </Note>
+      <Note FontSize="12" Width="120.618" Position="157.8,23.4" ID="3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Chapter1Passage0</String>
+         <ConnectedNoteIDs>1, 5</ConnectedNoteIDs>
+         <PointsToNoteIDs>5</PointsToNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="114.319" Position="155.5,46.1" ID="4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>The Last Nephilim
+</String>
+         <ConnectedNoteIDs>5</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="120.618" Position="157.0,112.5" ID="5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Chapter1Passage1</String>
+         <ConnectedNoteIDs>3-4, 7</ConnectedNoteIDs>
+         <PointsToNoteIDs>7</PointsToNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="148.352" Position="144.5,151.6" ID="6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>Born Last Glacial Period</String>
+      </Note>
+      <Note FontSize="12" Width="120.618" Position="157.8,207.8" ID="7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Chapter1Passage2</String>
+         <ConnectedNoteIDs>5, 9</ConnectedNoteIDs>
+         <PointsToNoteIDs>9</PointsToNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="91.4307" Position="172.7,230.5" ID="8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>My True Story
+</String>
+      </Note>
+      <Note FontSize="12" Width="120.618" Position="157.8,299.2" ID="9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Chapter1Passage3</String>
+         <ConnectedNoteIDs>7, 11</ConnectedNoteIDs>
+         <PointsToNoteIDs>11</PointsToNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="78.2471" Position="176.6,321.1" ID="10">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>IntroScreen
+Author/Title</String>
+      </Note>
+      <Note FontSize="12" Width="120.618" Position="157.8,390.6" ID="11">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Chapter1Passage4</String>
+         <ConnectedNoteIDs>9, 13</ConnectedNoteIDs>
+         <PointsToNoteIDs>13</PointsToNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="115.027" Position="158.6,414.1" ID="12">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>Chapter 1 Fade-In</String>
+      </Note>
+      <Note FontSize="12" Width="120.618" Position="158.6,464.1" ID="13">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Chapter1Passage5</String>
+         <ConnectedNoteIDs>11, 15</ConnectedNoteIDs>
+         <PointsToNoteIDs>15</PointsToNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="82.4219" Position="177.3,486.0" ID="14">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>Your Study
+Key on desk</String>
+      </Note>
+      <Note FontSize="12" Width="120.618" Position="338.3,25.8" ID="15">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Chapter1Passage6</String>
+         <ConnectedNoteIDs>13, 17</ConnectedNoteIDs>
+         <PointsToNoteIDs>17</PointsToNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="124.756" Position="343.0,62.5" ID="16">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>Have key
+to access Darkroom</String>
+      </Note>
+      <Note FontSize="12" Width="119.897" Position="337.5,120.3" ID="17">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Chapter1Darkroom</String>
+         <ConnectedNoteIDs>15, 19</ConnectedNoteIDs>
+         <PointsToNoteIDs>19</PointsToNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="89.3555" Position="354.7,146.9" ID="18">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>don’t need no
+stinkin’ light!</String>
+      </Note>
+      <Note FontSize="12" Width="126.843" Position="332.8,206.3" ID="19">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Chapter1Darkroom2</String>
+         <ConnectedNoteIDs>17, 21</ConnectedNoteIDs>
+         <PointsToNoteIDs>21</PointsToNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="140.027" Position="328.1,230.5" ID="20">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>Remembering Lizzie…
+four photographs</String>
+      </Note>
+      <Note FontSize="12" Width="126.843" Position="332.8,290.6" ID="21">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Chapter1Darkroom3</String>
+         <ConnectedNoteIDs>19, 23-25</ConnectedNoteIDs>
+         <PointsToNoteIDs>23-25</PointsToNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="112.964" Position="345.3,314.1" ID="22">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="0"/>
+         </Appearance>
+         <String>Examining photos</String>
+      </Note>
+      <Note FontSize="12" Width="101.172" Position="508.6,237.5" ID="23">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>John Armstrong</String>
+         <ConnectedNoteIDs>21</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="124.927" Position="502.3,284.4" ID="24">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>Christopher Scarver</String>
+         <ConnectedNoteIDs>21</ConnectedNoteIDs>
+      </Note>
+      <Note FontSize="12" Width="109.473" Position="506.3,332.8" ID="25">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <String>The Roaring Lion</String>
+         <ConnectedNoteIDs>21</ConnectedNoteIDs>
+      </Note>
+   </Notes>
+   <BackgroundShapes>
+      <Shape Shadow="No" Sticky="No" Width="65.625" Position="53.1,23.4" Faded="No" ID="1" Height="37.8906">
+         <Appearance>
+            <Border Style="Rounded" Weight="1"/>
+         </Appearance>
+         <ConnectedNoteIDs>3</ConnectedNoteIDs>
+      </Shape>
+   </BackgroundShapes>
+   <AutoFit>0, 3-25</AutoFit>
+   <NoteStyles>
+      <Style AffectSize="No" AffectNoteBody="Yes" AffectFontStyle="No" AffectFade="No" Name="Bubble (Red)" AffectSticky="No" AffectTextColor="No" AffectAlignment="No" ID="3B5C7B52-54AC-4C38-B0A0-C0A45EEE6AAE">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.894545 0.707759 0.715892</BorderColor>
+         <FillColor>0.993942 0.786389 0.795438</FillColor>
+      </Style>
+      <Style AffectSize="No" AffectNoteBody="No" AffectFontStyle="Yes" AffectFade="No" Name="Title Text" AffectSticky="No" AffectTextColor="No" AffectAlignment="Yes" ID="2B6994AB-21EB-421F-827B-17D7D848BDE5">
+         <IsBold>Yes</IsBold>
+         <FontSize>28.0</FontSize>
+      </Style>
+      <Style AffectSize="No" AffectNoteBody="Yes" AffectFontStyle="No" AffectFade="No" Name="Bubble (Yellow)" AffectSticky="No" AffectTextColor="No" AffectAlignment="No" ID="98C094B7-669D-4790-B347-DFB31B3B7CC8">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.877745 0.828275 0.562127</BorderColor>
+         <FillColor>0.97528 0.920302 0.624582</FillColor>
+      </Style>
+      <Style AffectSize="No" AffectNoteBody="No" AffectFontStyle="No" AffectFade="No" Name="Red Text" AffectSticky="No" AffectTextColor="Yes" AffectAlignment="No" ID="B248A5CF-34D5-486A-8F30-AF405144D546">
+         <TextColor>0.985946 0.0 0.026947</TextColor>
+      </Style>
+      <Style AffectSize="No" AffectNoteBody="Yes" AffectFontStyle="No" AffectFade="No" Name="Bubble (Green)" AffectSticky="No" AffectTextColor="No" AffectAlignment="No" ID="9250211E-6621-48A9-AA1F-4769EFF47ADF">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.669413 0.885237 0.56701</BorderColor>
+         <FillColor>0.743786 0.983612 0.629999</FillColor>
+      </Style>
+      <Style AffectSize="No" AffectNoteBody="Yes" AffectFontStyle="No" AffectFade="No" Name="Bubble (Pink)" AffectSticky="No" AffectTextColor="No" AffectAlignment="No" ID="A2B2FD54-CC41-40D6-B654-19228355DE0C">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.894545 0.707759 0.715892</BorderColor>
+         <FillColor>0.98912 0.814084 1.0</FillColor>
+      </Style>
+      <Style AffectSize="No" AffectNoteBody="Yes" AffectFontStyle="No" AffectFade="No" Name="Bubble (Blue)" AffectSticky="No" AffectTextColor="No" AffectAlignment="No" ID="ABE7FAE8-F021-4F56-944F-3B675E554498">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.668971 0.810269 0.895079</BorderColor>
+         <FillColor>0.743297 0.900298 0.994537</FillColor>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988373 0.949905</BackgroundColor>
+      <DefaultFont>Arial</DefaultFont>
+      <DefaultTextColor/>
+      <NoteXPadding>8.00</NoteXPadding>
+   </UISettings>
+   <PrintSettings VerticalPagination="Auto" HorizontallyCentered="Yes" LeftMargin="12.000000" PaperType="na-letter" RightMargin="12.000000" Collates="Yes" BottomMargin="12.000000" PagesAcross="1" HorizontalPagination="Clip" PagesDown="1" Orientation="Portrait" TopMargin="12.000000" PaperSize="-1.000000,-1.000000" VerticallyCentered="Yes" ScaleFactor="1.000000"/>
+</ScappleDocument>

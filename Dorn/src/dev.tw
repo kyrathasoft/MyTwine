@@ -1,0 +1,53 @@
+:: DevNotes [noreturn]
+To access the developer's notes, you must enter the correct password...
+
+<<set $answer to ''>>\
+<<textbox '$answer' '' autofocus>>\
+<nobr><span id='textbox-submit'>\
+    <<button 'Submit Password'>>
+        <<set $answer to $answer.trim().toLowerCase()>>
+        <<if hashStr($answer) == 3540680>>
+            <<replace '#textbox-submit'>>\<</replace>>
+            <<replace '#textbox-reply'>>\
+				Congrats! You've been granted access to the [[development notes|MyDevNotes]]
+			<</replace>>
+            <<run $('#textbox-answer').attr('readonly', 'true');>>
+        <<else>>
+            <<replace '#textbox-reply'>>\
+                @@.alert;Incorrect.@@  Please try again.\
+            <</replace>>
+        <</if>>
+    <</button>>\
+</span></nobr>
+<<script>>
+$(document).one(":passagerender", function (ev) {
+	$(ev.content).find("#textbox-answer").on("keyup", function (e) {
+		if (e.keyCode === 13) {
+			$("#textbox-submit button").trigger("click");
+		}
+	});
+});
+<</script>>
+<span id='textbox-reply'></span>
+
+:: MyDevNotes
+Crucially, we want at least <span class="red">some</span> of the little details learned in Chapter 1 to be <span class="red">useful</span>, perhaps even <span class="red">critical</span>, later in the story.
+
+<span class="red">dev.tw</span> (passworded access to Developer Notes)
+<span class="red">dorn_head_foot.tw</span> (contains header and footer passage for use with hbar and bbar tags)
+<span class="red">dorn_intro.tw</span> (contains passages comprising the Intro to the game/story)
+<span class="red">dorn_2.tw</span> (contains ? passages that form the beginning of this hyperfic)
+<span class="red">dorn_last.tw</span> (contains scripts and special passages)
+&emsp;contains code for the <span class="orange">playtime</span> macro
+&emsp;contains code for the <span class="orange">fade-in</span> macro
+&emsp;contains code for <span class="orange">hashing</span> to enable passwording
+&emsp;contains code to implement <span class="orange">[nosave]</span> tag for passages
+&emsp;contains <span class="orange">Config</span> data:
+&emsp;&emsp;<span class="orange">maxSlotSaves = 3</span>
+&emsp;&emsp;<span class="orange">maxStates = 50</span>
+&emsp;&emsp;<span class="orange">saves.isAllowed</span> conditions
+&emsp;contains code to check for <span class="orange">[noreturn]</span> tag, for menuing
+&emsp;contains code to add visits to passage(s) programmatically during initialization (for testing)
+&emsp;contains code in PassageReady to track total number of passage visits
+
+
