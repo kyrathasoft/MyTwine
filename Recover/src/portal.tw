@@ -3,4 +3,4 @@ You are in the Learning Portal.
 
 //This is where the magic happens. By tracking visited passages and other state info, we can customize the learning segments/units that ''Interactive Trainer'' presents to the end-user.// There is currently not a corpus of learning content. Hence, no magic ... yet.
 
-[[back|previous()]]
+<<set _prev to previous()>><a data-passage=_prev><img width="48" src="./assets/images/back-button.png" alt="back" /></a>

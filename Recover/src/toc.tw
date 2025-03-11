@@ -1,9 +1,11 @@
 :: DisplayTOC [nobr]
 <<script>>UIBar.show();<</script>><b>Table of Contents</b><br>
 <ul>
+<li><a data-passage="SupervisorsOnly" class="link-internal">Supervisors Only!</a></li>
 <<if $introCompleted>><li><a data-passage="IntroTutorial" class="link-internal">Intro Tutorial</a></li><</if>>
 <li><a data-passage="Homepage" class="link-internal">Homepage</a></li>
 <li><a data-passage="Portal" class="link-internal">Learning Portal</a></li>
+<<if visited('LinkageDefinition')>><li><a data-passage="LinkageDefinition" class="link-internal">Definition</a></li><</if>>
 
 </ul>
 
