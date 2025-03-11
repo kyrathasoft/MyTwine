@@ -1,11 +1,11 @@
 :: Start [nobr]
 <center><img src="./assets/images/bg-light.png"></center><br>
 
-Visit the introductory tutorial?
+<<if not $introCompleted>>Visit the introductory tutorial?
 <ul>
 <li>[[Yes, please|IntroTutorial]]</li>
 <li><<link "No thanks" "DisplayTOC">><<set $introCompleted to true>><</link>></li>
-</ul>
+</ul><<else>><<goto DisplayTOC>><</if>>
 
 
 

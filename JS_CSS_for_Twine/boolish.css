@@ -1,0 +1,37 @@
+/************************************************************
+* BOOKISH                                                  *
+************************************************************/
+.passage {
+position: relative;
+font: 16px/1.1em Georgia, "Bookman Old Style", serif;
+padding: 5em;
+border-left: 5px solid #7f7664;
+box-shadow: 5px 5px 0 0 rgba(127, 118, 100, 0.2);
+color: #000;
+background-color: #f5f4f2;
+text-align: justify;
+}
+.passage h3 {
+line-height: 2.5em;
+margin-bottom: 2em;
+border-style: solid none;
+border-width: 2px;
+text-align: center;
+}
+.passage p {
+display: block;
+margin: 0.25em 0;
+text-indent: 4.325em; /* aligns with the indent of leading paragraphs */
+}
+.passage p.leading {
+text-indent: 0;
+}
+.passage p.leading::first-letter {
+float: left;
+font-size: 4em;
+padding: 0.240em;
+margin-right: 0.15em;
+border-radius: 5px;
+color: #fff;
+background-color: #000;
+}
