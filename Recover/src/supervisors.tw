@@ -1,5 +1,6 @@
 :: SupervisorsOnly
-<<set $answer to ''>>\
+<<set $answer to ''>><span class="red">''Warning!'' </span>\
+If you //aren't// a CS, I have already alerted Big Brother to your presence here. Be afraid. Be //very// afraid...<br>
 <<textbox '$answer' '' autofocus>>\
 <span id='textbox-submit'>\
     <<button 'Submit CS password'>>
@@ -9,7 +10,7 @@
 				/* Removes the button */
             <</replace>>
             <<replace '#textbox-reply'>>\
-                Correct! <<goto SupervisorsTOC>>
+                <<goto SupervisorsTOC>>
 			<</replace>>
             <<run $('#textbox-answer').attr('readonly', 'true');>>
         <<else>>

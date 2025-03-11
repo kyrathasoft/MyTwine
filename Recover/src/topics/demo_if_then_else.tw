@@ -2,7 +2,7 @@
 The purpose of this demo is to show the interactive possibilities for online HTML-based learning. The following brief interaction can be navigated by clicking the hyperlinked [[words|DemoIfThenElse2]].
 
 :: DemoIfThenElse2
-"You're in a group with eight members. Bryan seems particularly agitated today, and has talked over other members, interrupting them."<nobr>
+You're in a group with eight members. Bryan seems particularly agitated today, and has talked over other members, interrupting them.<nobr>
 <ul>
  <li> I will [[say|Scene1KnockItOff]], "Bryan, please knock it off; you aren't the only member who matters."</li>
 <li> I will [[say|Scene1LearnMore]], "Bryan, I'd like to learn more. Could we meet one-on-one at the end of group?"</li>
@@ -16,11 +16,11 @@ The purpose of this demo is to show the interactive possibilities for online HTM
 <<= $tocLinkback>>
 
 :: Scene1KnockItOff
-<<= $nonOpt>> There are occasions where the counselor must be assertive, but what you said to the member comes off as punitive. Let's take another look at what you said: //"Bryan, please <b>knock it off</b>; you aren't the <b>only</b> member who matters."//
+<<= $nonOpt>> There //are// occasions where the counselor must be assertive, but what you said to the member comes off as punitive. Let's take another look at what you said: //"Bryan, please <b>knock it off</b>; you aren't the <b>only</b> member who matters."//
 
 Teachable Moment: (1) <<linkreplace "knock it off">><b>knock it off</b> is peremptory; //you// wouldn't want to be spoken to in this way; neither will your members.
 	
-Okay, teach me <<linkreplace "more...">>(2) While it may be true that Bryan was talking over others and being inconsiderate, when you say to him <b>'you're not the only member who matters'</b>, what he will hear is <b>'Let's move on to other members who have more important things to say...'</b><</linkreplace>><</linkreplace>> 
+<<linkreplace "Teach me more, Great One...">>(2) While it may be true that Bryan was talking over others and being inconsiderate, when you say to him <b>'you're not the only member who matters'</b>, what he will hear is <b>'Let's move on to other members who have more important things to say...'</b><</linkreplace>><</linkreplace>> 
 
 <<= $tocLinkback>>
 

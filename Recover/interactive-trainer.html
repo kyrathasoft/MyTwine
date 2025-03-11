@@ -937,7 +937,10 @@ Visit the introductory tutorial?
 &lt;li&gt;[[Yes, please|IntroTutorial]]&lt;/li&gt;
 &lt;li&gt;&lt;&lt;link &quot;No thanks&quot; &quot;DisplayTOC&quot;&gt;&gt;&lt;&lt;set $introCompleted to true&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;</tw-passagedata><tw-passagedata pid="33" name="SupervisorsTOC" tags="nobr" position="350,475" size="100,100">&lt;center&gt;&lt;font size=&quot;+2&quot;&gt;@@.fade-in-out;Supervisors&#39; Index@@&lt;/font&gt;&lt;/center&gt;&lt;br&gt;
-This is the password-gated TOC for CS/CD...</tw-passagedata><tw-passagedata pid="34" name="SupervisorsOnly" tags="" position="475,475" size="100,100">&lt;&lt;set $answer to &#39;&#39;&gt;&gt;\
+&lt;p&gt;This is the password-gated TOC for CS/CD...&lt;/p&gt;
+
+[[View demo of if-then-else|DemoIfThenElse]]</tw-passagedata><tw-passagedata pid="34" name="SupervisorsOnly" tags="" position="475,475" size="100,100">&lt;&lt;set $answer to &#39;&#39;&gt;&gt;&lt;span class=&quot;red&quot;&gt;&#39;&#39;Warning!&#39;&#39; &lt;/span&gt;\
+If you //aren&#39;t// a CS, I have already alerted Big Brother to your presence here. Be afraid. Be //very// afraid...&lt;br&gt;
 &lt;&lt;textbox &#39;$answer&#39; &#39;&#39; autofocus&gt;&gt;\
 &lt;span id=&#39;textbox-submit&#39;&gt;\
     &lt;&lt;button &#39;Submit CS password&#39;&gt;&gt;
@@ -947,7 +950,7 @@ This is the password-gated TOC for CS/CD...</tw-passagedata><tw-passagedata pid=
 				/* Removes the button */
             &lt;&lt;/replace&gt;&gt;
             &lt;&lt;replace &#39;#textbox-reply&#39;&gt;&gt;\
-                Correct! &lt;&lt;goto SupervisorsTOC&gt;&gt;
+                &lt;&lt;goto SupervisorsTOC&gt;&gt;
 			&lt;&lt;/replace&gt;&gt;
             &lt;&lt;run $(&#39;#textbox-answer&#39;).attr(&#39;readonly&#39;, &#39;true&#39;);&gt;&gt;
         &lt;&lt;else&gt;&gt;
@@ -994,7 +997,7 @@ $(document).one(&quot;:passagerender&quot;, function (ev) {
 
 A sense of belonging and connection among group members, fostered by shared experiences and mutual support. 
 
-&lt;&lt;= $tocLinkback&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="DemoIfThenElse" tags="" position="850,475" size="100,100">The purpose of this demo is to show the interactive possibilities for online HTML-based learning. The following brief interaction can be navigated by clicking the hyperlinked [[words|DemoIfThenElse2]].</tw-passagedata><tw-passagedata pid="38" name="DemoIfThenElse2" tags="" position="975,475" size="100,100">&quot;You&#39;re in a group with eight members. Bryan seems particularly agitated today, and has talked over other members, interrupting them.&quot;&lt;nobr&gt;
+&lt;&lt;= $tocLinkback&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="DemoIfThenElse" tags="" position="850,475" size="100,100">The purpose of this demo is to show the interactive possibilities for online HTML-based learning. The following brief interaction can be navigated by clicking the hyperlinked [[words|DemoIfThenElse2]].</tw-passagedata><tw-passagedata pid="38" name="DemoIfThenElse2" tags="" position="975,475" size="100,100">You&#39;re in a group with eight members. Bryan seems particularly agitated today, and has talked over other members, interrupting them.&lt;nobr&gt;
 &lt;ul&gt;
  &lt;li&gt; I will [[say|Scene1KnockItOff]], &quot;Bryan, please knock it off; you aren&#39;t the only member who matters.&quot;&lt;/li&gt;
 &lt;li&gt; I will [[say|Scene1LearnMore]], &quot;Bryan, I&#39;d like to learn more. Could we meet one-on-one at the end of group?&quot;&lt;/li&gt;
@@ -1002,11 +1005,11 @@ A sense of belonging and connection among group members, fostered by shared expe
 &lt;/ul&gt;
 &lt;/nobr&gt;</tw-passagedata><tw-passagedata pid="39" name="Scene1BetterTomorrow" tags="" position="1100,475" size="100,100">&lt;&lt;= $nonOpt&gt;&gt; Actually, the suggestion to make meeting tomorrow an option &amp;mdash; for the sake of follow-up &amp;mdash; is //good//, but should probably be made one-on-one with the member after group. To abruptly make this suggestion during group, in order to move on to the next member, is likely to feel dismissive.
 
-&lt;&lt;= $tocLinkback&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="Scene1KnockItOff" tags="" position="1225,475" size="100,100">&lt;&lt;= $nonOpt&gt;&gt; There are occasions where the counselor must be assertive, but what you said to the member comes off as punitive. Let&#39;s take another look at what you said: //&quot;Bryan, please &lt;b&gt;knock it off&lt;/b&gt;; you aren&#39;t the &lt;b&gt;only&lt;/b&gt; member who matters.&quot;//
+&lt;&lt;= $tocLinkback&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="Scene1KnockItOff" tags="" position="1225,475" size="100,100">&lt;&lt;= $nonOpt&gt;&gt; There //are// occasions where the counselor must be assertive, but what you said to the member comes off as punitive. Let&#39;s take another look at what you said: //&quot;Bryan, please &lt;b&gt;knock it off&lt;/b&gt;; you aren&#39;t the &lt;b&gt;only&lt;/b&gt; member who matters.&quot;//
 
 Teachable Moment: (1) &lt;&lt;linkreplace &quot;knock it off&quot;&gt;&gt;&lt;b&gt;knock it off&lt;/b&gt; is peremptory; //you// wouldn&#39;t want to be spoken to in this way; neither will your members.
 	
-Okay, teach me &lt;&lt;linkreplace &quot;more...&quot;&gt;&gt;(2) While it may be true that Bryan was talking over others and being inconsiderate, when you say to him &lt;b&gt;&#39;you&#39;re not the only member who matters&#39;&lt;/b&gt;, what he will hear is &lt;b&gt;&#39;Let&#39;s move on to other members who have more important things to say...&#39;&lt;/b&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt; 
+&lt;&lt;linkreplace &quot;Teach me more, Great One...&quot;&gt;&gt;(2) While it may be true that Bryan was talking over others and being inconsiderate, when you say to him &lt;b&gt;&#39;you&#39;re not the only member who matters&#39;&lt;/b&gt;, what he will hear is &lt;b&gt;&#39;Let&#39;s move on to other members who have more important things to say...&#39;&lt;/b&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt; 
 
 &lt;&lt;= $tocLinkback&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Scene1LearnMore" tags="" position="100,600" size="100,100">Well done! You validated Bryan&#39;s feelings and helped segue into another member sharing with the group...
 
