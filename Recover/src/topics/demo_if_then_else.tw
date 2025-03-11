@@ -20,7 +20,14 @@ You're in a group with eight members. Bryan seems particularly agitated today, a
 
 Teachable Moment: (1) <<linkreplace "knock it off">><b>knock it off</b> is peremptory; //you// wouldn't want to be spoken to in this way; neither will your members.
 	
-<<linkreplace "Teach me more, Great One...">>(2) While it may be true that Bryan was talking over others and being inconsiderate, when you say to him <b>'you're not the only member who matters'</b>, what he will hear is <b>'Let's move on to other members who have more important things to say...'</b><</linkreplace>><</linkreplace>> 
+<<linkreplace "Teach me more, Great One...">>(2) While it may be true that Bryan was talking over others and being inconsiderate, when you say to him <b>'you're not the only member who matters'</b>, what he will hear is <b>'Let's move on to other members who have more important things to [[say|Scene1KnockItOff2]]...'</b><</linkreplace>><</linkreplace>> 
+
+:: Scene1KnockItOff2
+Okay, so what is the takeaway, <<linkappend>> "here?">
+
+Well, admittedly, it can be difficult to manage a group of people who are suffering addiction. Often, our members lack strong social skills, and have poor emotional regulation. So, understand that managing situations in group is as much an art as it is a science.
+
+<</linkappend>>
 
 <<= $tocLinkback>>
 
