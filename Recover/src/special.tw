@@ -25,7 +25,8 @@
 Interactive Trainer
 
 :: PassageHeader [header]
-<<if tags().includes('trainer-icon')>><img width=75 hspace=15 vspace=5 align="left" src="./assets/images/interactive-trainer.png"><</if>>
+<<if tags().includes('trainer-icon')>><img width=75 hspace=15 vspace=5 align="center" src="./assets/images/interactive-trainer.png"><</if>>
+<<if tags().includes('portal')>><img width=75 hspace=15 vspace=5 align="center" src="./assets/images/portal.png"><</if>>
 
 :: PassageFooter [footer nobr]
 <<if tags().includes('trainer-icon')>>

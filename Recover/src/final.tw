@@ -1,6 +1,4 @@
 :: StoryScript [script]
-Config.saves.autosave = false;
-// Config.saves.autoload = "prompt";
 
 // playtime.min.js, for SugarCube 2, by Chapel
 // v2.1.0, 2024-07-22, 336675ff2cabe5f729a5f30d86aa409cc8432726
@@ -52,13 +50,16 @@ Config.history.controls = true;
 Config.saves.maxSlotSaves = 1
 Config.history.maxStates = 15
 
+/*
 Config.saves.isAllowed = function () {
     if (passage() === "Start" || tags().includes("nosave")) {
         return false;
     }
     return true;
 };
+*/
 
+/*
 Config.saves.onSave = function (save, details) {
 	if (settings.autoname) {
 	save.title = [State.getVar("$name"), State.getVar("$chapter")];
@@ -68,6 +69,7 @@ Config.saves.onSave = function (save, details) {
 	save.title = prompt("Enter Save Name:", save.title);
 	}
 }
+*/
 
 Setting.addToggle("autoname", {
 label : "Autoname Saves",

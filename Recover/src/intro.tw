@@ -1,0 +1,39 @@
+:: IntroTutorial [trainer-icon nobr]
+<<run UIBar.hide();>>
+I'm the ''Interactive Trainer''. The way you navigate me is identical to most web pages. You simply click on hyperlinks. Let's test that now: click [[here|Start2]].
+
+:: Start2 [trainer-icon nobr]
+
+<<run UIBar.hide();>>
+
+There, see? You clicked a link and now you're here. Simple, <<linkappend "huh?">> I have a sidebar<<if visited('Start2') eq 1>>, but it's hidden right now.<<else>>.<</if>> When you click the next link, I'll show it to you and explain its [[use|ShowSidebarBriefly]].<</linkappend>>
+
+:: ShowSidebarBriefly [trainer-icon]
+<<run UIBar.show();>> I'm showing you the sidebar. Don't click on it just yet, okay? Let me explain some things, [[first|Start3]].
+
+:: Start3 [trainer-icon]
+In the interest of keeping things simple, I only have one color-scheme &mdash; the one you can see on your screen right now. There are five menu items in the left <<linkreplace sidebar.>>sidebar: ''Author Info'', ''Fullscreen'', ''Saves'', ''Settings'', and ''Restart''. [[Continue...|Start4]]<</linkreplace>>
+
+:: Start4 [trainer-icon]
+''Author Info'' shows the awesome people who helped create <<linkreplace me.>>me. ''Fullscreen'' simply allows you to toggle between full-screen and windowed <<linkappend mode.>> ''Saves'' permits you to save your progress &mdash; I will prompt you to do this, [[occasionally|Start5]].<</linkappend>><</linkreplace>> 
+
+:: Start5 [trainer-icon]
+You also have the option to export a save-file to disk, whenever you wish &mdash; and that's not a bad idea, since cache cleaning and various other things could erase the saves that I make to your browser's [[storage|HtmlFile]].
+
+:: HtmlFile
+But, ordinarily, you can just come back to the <span class="red">interactive-trainer.html</span> file, launch it, and resume wherever you left [[off|Start6]].
+
+:: Start6 [trainer-icon]
+And finally, ''Restart'' is the nuclear option. If you restart, I'll forget all the progress you've made as my pupil. What!? At least I //told// you this //ahead// of time. You think it's easy being an ''Interactive Trainer''? <<timed 1s>>[[Continue|Start7]]...<</timed>>
+
+:: Start7 [trainer-icon]
+When you complete this tutorial in a few moments, you'll have access to the ''Homepage'' and ''Table of Contents'' to the <<linkappend sidebar.>> Unlike a book's Table of Contents, mine starts off rather empty, and I'll add to it as you finish various learning [[segments|Start8]].<</linkappend>> 
+
+:: Start8 [trainer-icon]
+In that way, the ''Table of Contents'' will show you where you've been and, optionally, even allow you to revisit covered content. Okay, enough [[orientation|Start9]]. 
+
+:: Start9 [trainer-icon]
+t'll then be up to you to proceed on your own, making your own choices in the Learning [[Portal|Start10]].
+
+:: Start10 [trainer-icon]
+ When you click the link at the end of this paragraph, you may want to save your progress using the ''Saves'' menu. I'll take you to the <<link "Table of Contents." "DisplayTOC">><<set $introCompleted to true>><!--<<script>>UI.saves();<</script>>--><</link>>

@@ -1,13 +1,15 @@
 :: DisplayTOC [nobr]
-<b>Table of Contents</b><br>
+<<script>>UIBar.show();<</script>><b>Table of Contents</b><br>
 <ul>
+<<if $introCompleted>><li><a data-passage="IntroTutorial" class="link-internal">Intro Tutorial</a></li><</if>>
+<li><a data-passage="Homepage" class="link-internal">Homepage</a></li>
 <li><a data-passage="Portal" class="link-internal">Learning Portal</a></li>
-<<if $introCompleted>><li><a data-passage="Start" class="link-internal">Intro Tutorial</a></li><</if>>
+
 </ul>
 
 <!-- 
 <nobr><ul>
-<li><a data-passage="Homepage" class="link-internal">Homepage</a></li>
+
 <li>Linkage</li>
 	<ul><li><a data-passage="LinkageDefinition" class="link-internal">Definition</a></li></ul>
 	<ul><li><a data-passage="CohesionPassage" class="link-internal">Cohesion</a></li></ul>
