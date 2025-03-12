@@ -4,10 +4,10 @@
 <<first>>Brave knight, it looks like this is the very first time you've visited the Table of Contents.  You'll visit this page frequently, either to access the Adventure Portal, or to revisit one of your past crusades.<</first>>
 <ul>
 <li><a data-passage="SupervisorsOnly" data-setter="$linksClicked +=1" class="link-internal">Supervisors Only!</a></li>
-<<if $introCompleted>><li><a data-passage="IntroTutorial" class="link-internal">Intro Tutorial</a></li><</if>>
-<li><a data-passage="Homepage" class="link-internal">Homepage</a></li>
-<li><a data-passage="Portal" class="link-internal">$portalDescriptor</a></li>
-<<if visited('LinkageDefinition')>><li><a data-passage="LinkageDefinition" class="link-internal">Definition</a></li><</if>>
+<<if $introCompleted>><li><a data-passage="IntroTutorial" data-setter="$linksClicked +=1" class="link-internal">Intro Tutorial</a></li><</if>>
+<li><a data-passage="Homepage" data-setter="$linksClicked +=1" class="link-internal">Homepage</a></li>
+<li><a data-passage="Portal" data-setter="$linksClicked +=1" class="link-internal">$portalDescriptor</a></li>
+<<if visited('LinkageDefinition')>><li><a data-passage="LinkageDefinition" data-setter="$linksClicked +=1" class="link-internal">Definition</a></li><</if>>
 
 </ul>
 

@@ -13,11 +13,11 @@
 Links clicked: <<= $linksClicked>>
 
 :: StoryMenu [special]
-<<if $introCompleted>><<link "Table of Contents">><<goto DisplayTOC>><</link>><</if>>
-[[Author Info|AboutTheAuthor]]
+<<if $introCompleted>><<link "Table of Contents">><<set $linksClicked to $linksClicked + 1>><<goto DisplayTOC>><</link>><</if>>
+[[Author Info|AboutTheAuthor][$linksClicked += 1]]
 <!--<<link "Clear Autosave">><<run Save.browser.auto.clear();>><</link>>-->
 <<link "Fullscreen">><<run Fullscreen.toggle();>><</link>> or <<button "FS">><<run Fullscreen.toggle();>> <</button>>
-<<if $introCompleted>><<link "Homepage">><<goto Homepage>><</link>><</if>>
+<<if $introCompleted>><<link "Homepage">><<set $linksClicked to $linksClicked + 1>><<goto Homepage>><</link>><</if>>
 
 :: StorySubtitle [special]
 <br>Creating linkage and<br> community in<br>home-group interactions

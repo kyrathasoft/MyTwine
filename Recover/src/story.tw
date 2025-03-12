@@ -3,7 +3,7 @@
 
 <<if not $introCompleted>>Visit the introductory tutorial?
 <ul>
-<li>[[Yes, please|IntroTutorial][<<set $linksClicked += 1>>]]</li>
+<li>[[Yes, please|IntroTutorial][$linksClicked += 1]]</li>
 <li><<link "No thanks" "DisplayTOC">><<set $introCompleted to true>><<set $linksClicked to $linksClicked + 1>><</link>></li>
 </ul><<else>><<goto DisplayTOC>><</if>>
 
