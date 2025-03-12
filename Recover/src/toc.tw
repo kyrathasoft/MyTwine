@@ -3,13 +3,37 @@
 <<script>>UIBar.show();<</script>><b>Table of Contents</b><br>
 <<first>>Brave knight, it looks like this is the very first time you've visited the Table of Contents.  You'll visit this page frequently, either to access the Adventure Portal, or to revisit one of your past crusades.<</first>>
 <ul>
-<li><a data-passage="SupervisorsOnly" data-setter="$linksClicked +=1" class="link-internal">Supervisors Only!</a></li>
-<<if $introCompleted>><li><a data-passage="IntroTutorial" data-setter="$linksClicked +=1" class="link-internal">Intro Tutorial</a></li><</if>>
-<li><a data-passage="Homepage" data-setter="$linksClicked +=1" class="link-internal">Homepage</a></li>
-<li><a data-passage="Portal" data-setter="$linksClicked +=1" class="link-internal">$portalDescriptor</a></li>
-<<if visited('LinkageDefinition')>><li><a data-passage="LinkageDefinition" data-setter="$linksClicked +=1" class="link-internal">Definition</a></li><</if>>
+<<include DisplayTOC_SupervisorsOnly>>
+<<include DisplayTOC_IntroTutorial>>
+<<include DisplayHomepage>>
+<<include DisplayLinkageTopic>>
+<<include DisplayLinkageDefinitionSubtopic>>
+<<include DisplayCohesionSubtopic>>
 
+
+
+	
+<li><a data-passage="Portal" data-setter="$linksClicked +=1" class="link-internal">$portalDescriptor</a></li>
 </ul>
+
+:: DisplayCohesionSubtopic
+<<if visited('CohesionPassage')>><ul><li><a data-passage="CohesionPassage" class="link-internal">Cohesion</a></li></ul><</if>>
+
+:: DisplayHomepage
+<li><a data-passage="Homepage" data-setter="$linksClicked +=1" class="link-internal">Homepage</a></li>
+
+:: DisplayLinkageTopic
+<<if visited('LinkageDefinition') || visited('CohesionPassage')>>
+	<li>Linkage</li><</if>>
+
+:: DisplayLinkageDefinitionSubtopic
+<<if visited('LinkageDefinition')>><ul><li><a data-passage="LinkageDefinition" data-setter="$linksClicked +=1" class="link-internal">Definition</a></li></ul><</if>>
+
+:: DisplayTOC_SupervisorsOnly
+<li><a data-passage="SupervisorsOnly" data-setter="$linksClicked +=1" class="link-internal">Supervisors Only!</a></li>
+
+:: DisplayTOC_IntroTutorial
+<<if $introCompleted>><li><a data-passage="IntroTutorial" data-setter="$linksClicked +=1" class="link-internal">Intro Tutorial</a></li><</if>>
 
 <!-- 
 <nobr><ul>
