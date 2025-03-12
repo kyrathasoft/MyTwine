@@ -1,42 +1,46 @@
-:: IntroTutorial [trainer-icon nobr]
-<<run UIBar.hide();>>
+:: IntroTutorial [nobr]
+<<run UIBar.hide();>><img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">
 I'm your ''Interactive Trainer''. The way you navigate me is identical to most web pages. You simply click on hyperlinks. Let's test that now: click [[here|Start2]].
 
-:: Start2 [trainer-icon nobr]
-<<run UIBar.hide();>>
+:: Start2 [nobr]
+<<run UIBar.hide();>><img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">
 There, see? You clicked a link and now you're here. Simple, [["huh?"|Start2.5]]
 
-:: Start2.5 [valiant-knight]
-As a staff member at ''Groups: Recover Together'', you are a valiant knight fighting on the front line of the war against Opiate Use <<linkappend "Disorder.">>" I am your trainer. I'm here to help you level-up your skills so that you can punch Overdose and Stigma in the throat! Those //[[bullies!|Start2.75]]//<</linkappend>>
-:: Start2.75 [trainer-icon]
-I have a sidebar<<if visited('Start2') eq 1>>, but it's hidden right now.<<else>>.<</if>> When you click the next link, I'll show it to you and explain its [[use|ShowSidebarBriefly]].
+:: Start2.5 
+<img align="left" hspace=8 src="./assets/images/valiant-knight.png">As a staff member at ''Groups: Recover Together'', you are a valiant knight fighting on the front line of the war against Opiate Use <<linkappend "Disorder.">> I am your trainer. I'm here to help you level-up your skills so that you can punch Overdose and Stigma in the throat! Those //[[bullies!|Start2.75]]//<</linkappend>>
 
-:: ShowSidebarBriefly [trainer-icon]
-<<run UIBar.show();>> I'm showing you the sidebar. Don't click on it just yet, okay? Let me explain some things, [[first|Start3]].
+:: Start2.75 [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">I have a sidebar<<if visited('Start2') eq 1>>, but it's hidden right now.<<else>>.<</if>> When you click the next link, I'll show it to you and explain its [[use|ShowSidebarBriefly]].
 
-:: Start3 [trainer-icon]
-In the interest of keeping things simple, I only have one color-scheme &mdash; the one you can see on your screen right now. There are five menu items in the left <<linkreplace sidebar.>>sidebar: ''Author Info'', ''Fullscreen'', ''Saves'', ''Settings'', and ''Restart''. [[Continue...|Start4]]<</linkreplace>>
+:: ShowSidebarBriefly [nobr]
+<<run UIBar.show();>><img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">I'm showing you the sidebar. Don't click on it just yet, okay? Let me explain some things, [[first|Start3]].
 
-:: Start4 [trainer-icon]
-''Author Info'' shows the awesome people who helped create <<linkreplace me.>>me. ''Fullscreen'' simply allows you to toggle between full-screen and windowed <<linkappend mode.>> ''Saves'' permits you to save your progress &mdash; I will prompt you to do this, [[occasionally|Start5]].<</linkappend>><</linkreplace>> 
+:: Start3 [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">In the interest of keeping things simple, I only have one color-scheme &mdash; the one you can see on your screen right now. There are five menu items in the left <<linkreplace sidebar.>>sidebar: ''Author Info'', ''Fullscreen'', ''Saves'', ''Settings'', and ''Restart''. [[Continue...|Start4]]<</linkreplace>>
 
-:: Start5 [trainer-icon]
-You also have the option to export a save-file to disk, whenever you wish &mdash; and that's never a bad idea, because you can use that save file to restore your progress in a later [[session|HtmlFile]].
+:: Start4 [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">''Author Info'' shows the awesome people who helped create <<linkreplace me.>>me. ''Fullscreen'' simply allows you to toggle between full-screen and windowed <<linkappend mode.>> ''Saves'' permits you to save your progress &mdash; I will prompt you to do this, [[occasionally|Start5]].<</linkappend>><</linkreplace>> 
 
-:: HtmlFile
-Ordinarily, you can just come back to the <span class="red">interactive-trainer.html</span> file, launch it, and resume wherever you left [[off|Start6][Save.slots.save(0);]].
+:: Start5 [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">You have the option to export a save-file to disk, whenever you wish &mdash; and that's never a bad idea, because you can use that save file to restore your progress in a later <<linkreplace session>><s>session</s> er, I mean quest, brave [[knight|HtmlFile]]!<</linkreplace>>.
 
-:: Start6 [trainer-icon]
-And finally, ''Restart'' is the nuclear option. If you restart, I'll forget all the progress you've made as my pupil. What!? At least I //told// you this //ahead// of time. You think it's easy being an ''Interactive Trainer''? <<timed 1s>>[[Continue|Start7]]...<</timed>>
+:: HtmlFile [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">Unlike Relias, I don't store your information to a database. Nobody has to //log-in// to use me. Because of that, you cannot just come back days from now and expect me to resume wherever you left [[off|ForeshadowSaving]].
 
-:: Start7 [trainer-icon]
-When you complete this tutorial in a few moments, you'll have access to the ''Homepage'' and ''Table of Contents'' to the <<linkappend sidebar.>> Unlike a book's Table of Contents, mine starts off rather empty, and I'll add to it as you finish various learning [[segments|Start8]].<</linkappend>> 
+:: ForeshadowSaving [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">You have to save your progress, like you do when you're playing video <<linkappend games...>> you //do// play video games, right? <<timed 1.5s>>If not, we're not gonna get along too [[well|Start6]]...<</timed>><</linkappend>>
 
-:: Start8 [trainer-icon]
-In that way, the ''Table of Contents'' will show you where you've been and, optionally, even allow you to revisit covered content. Okay, enough [[orientation|Start9]]. 
+:: Start6 [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">''Restart'' is the nuclear option. If you restart, I'll forget all the progress you've made as my pupil. What!? At least I //told// you this //ahead// of time. You think it's easy being an ''Interactive Trainer''? I have many other knights to train, not just [[you|Start7]]!
 
-:: Start9 [trainer-icon]
-t'll then be up to you to proceed on your own, making your own choices in the Learning [[Portal|Start10]].
+:: Start7 [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">When you complete this tutorial in a few moments, you'll have access to the ''Homepage'' and ''Table of Contents'' in the <<linkappend sidebar.>> Unlike a book's Table of Contents, mine starts off rather sparse, but I'll add to it as you finish various [[quests|Start8]].<</linkappend>> 
 
-:: Start10 [trainer-icon]
- When you click the link at the end of this paragraph, you may want to save your progress using the ''Saves'' menu. I'll take you to the <<link "Table of Contents." "DisplayTOC">><<set $introCompleted to true>><!--<<script>>UI.saves();<</script>>--><</link>>
+:: Start8 [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">In that way, the ''Table of Contents'' will show you where you've been and will allow you to revisit covered content. Okay, enough [[orientation|Start9]]. 
+
+:: Start9 [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">Brave knight, don't be afraid to proceed on your own, making your own choices in the Adventure [[Portal|Start10]].
+
+:: Start10 [nobr]
+ <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">When you click the link at the end of this paragraph, you may want to save your progress using the ''Saves'' menu. I'll take you to the <<link "Table of Contents." "DisplayTOC">><<set $introCompleted to true>><!--<<script>>UI.saves();<</script>>--><</link>>

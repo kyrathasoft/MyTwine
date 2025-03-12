@@ -1,5 +1,5 @@
 :: SupervisorsTOC [nobr]
-<center><font size="+2">@@.fade-in-out;Supervisors' Index@@</font></center><br>
+<center><img src="./assets/images/supervision.gif"><br><font size="+2">@@.shadow;Supervisors' Index@@</font></center><br>
 <p>This is the password-gated TOC for CS/CD...</p>
 
 [[View demo of if-then-else|DemoIfThenElse]]
