@@ -80,9 +80,11 @@ default : false,
 
 <<set $introCompleted to false>>
 <<set $homepageLinkback to '<br>[[Homepage]]'>>
+<<set $linksClicked to 0>>
 <<set $tocLinkback to '<center>[[TOC|DisplayTOC]]</center>'>>
 <<set $srccodeLinkback to '<center>[[Source Code Index|ShowSourceCode]]</center>'>>
 <<set $nonOpt to "That was a non-optimal response.">>
+<<set $portalDescriptor to "Adventure Portal">>
 
 
 :: StoryData

@@ -254,7 +254,22 @@ html[data-debug-view] .debug.hidden .debug {
 	background-color: var(--mainbg);
 } 
 
-.red {
+.green {
+	color: #AAFF00;
+  }
+  .blue {
+	color: #25F5FC;
+  }
+  .dark-blue {
+	color: #00008B;
+  }
+  .red {
 	color: red;
-}
-
+  }
+  .yellow {
+	  color: #FFEA00;
+  }
+  .orange {
+	  color: #FFAC1C;
+  }
+  

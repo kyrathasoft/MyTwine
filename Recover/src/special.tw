@@ -10,6 +10,7 @@
 <center><!--<img width="40" vspace=1 hspace=1 align="center" src="./assets/images/swordsman64.png">--></center>
 
 :: StoryCaption [special]
+Links clicked: <<= $linksClicked>>
 
 :: StoryMenu [special]
 <<if $introCompleted>><<link "Table of Contents">><<goto DisplayTOC>><</link>><</if>>

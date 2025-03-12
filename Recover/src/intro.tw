@@ -1,16 +1,15 @@
 :: IntroTutorial [nobr]
 <<run UIBar.hide();>><img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">
-I'm your ''Interactive Trainer''. The way you navigate me is identical to most web pages. You simply click on hyperlinks. Let's test that now: click [[here|Start2]].
+I'm your ''Interactive Trainer'' &mdash; ''<span class="dark-blue">Inty</span>'' to my students. I train knights for <<linkappend "battle...">> 
+Now, I can hear you <<linkreplace "thinking...">>thinking &mdash; (yes, that's one of my <<linkappend "superpowers)">> &ldquo;//I'm no knight. I'm a [[counselor|IntroTutorial2]]!&rdquo;//<</linkappend>><</linkreplace>><</linkappend>>
 
-:: Start2 [nobr]
-<<run UIBar.hide();>><img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">
-There, see? You clicked a link and now you're here. Simple, [["huh?"|Start2.5]]
-
+:: IntroTutorial2 [nobr]
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">The truth is that as a ''Groups: Recover Together'' team member, you //are// a <<linkreplace "knight.">>knight in a <<linkreplace "fight.">>fight against a <<linkappend blight.>><p><img align="bottom" src="./assets/images/pointing-upward.png">Do you see what I did, [[there|Start2.5]]?</p><</linkappend>><</linkreplace>><</linkreplace>>
 :: Start2.5 
 <img align="left" hspace=8 src="./assets/images/valiant-knight.png">As a staff member at ''Groups: Recover Together'', you are a valiant knight fighting on the front line of the war against Opiate Use <<linkappend "Disorder.">> I am your trainer. I'm here to help you level-up your skills so that you can punch Overdose and Stigma in the throat! Those //[[bullies!|Start2.75]]//<</linkappend>>
 
 :: Start2.75 [nobr]
-<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">I have a sidebar<<if visited('Start2') eq 1>>, but it's hidden right now.<<else>>.<</if>> When you click the next link, I'll show it to you and explain its [[use|ShowSidebarBriefly]].
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">But I digress. I need to orient you. So, let's see &mdash; I have a sidebar<<if visited('Start2') eq 1>>, but it's hidden right now.<<else>>.<</if>> When you click the next link, I'll show it to you and explain its [[use|ShowSidebarBriefly]].
 
 :: ShowSidebarBriefly [nobr]
 <<run UIBar.show();>><img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">I'm showing you the sidebar. Don't click on it just yet, okay? Let me explain some things, [[first|Start3]].
@@ -40,7 +39,7 @@ There, see? You clicked a link and now you're here. Simple, [["huh?"|Start2.5]]
 <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">In that way, the ''Table of Contents'' will show you where you've been and will allow you to revisit covered content. Okay, enough [[orientation|Start9]]. 
 
 :: Start9 [nobr]
-<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">Brave knight, don't be afraid to proceed on your own, making your own choices in the Adventure [[Portal|Start10]].
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">Brave knight, don't be afraid to proceed on your own, making your own choices in the [[$portalDescriptor|Start10]].
 
 :: Start10 [nobr]
  <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">When you click the link at the end of this paragraph, you may want to save your progress using the ''Saves'' menu. I'll take you to the <<link "Table of Contents." "DisplayTOC">><<set $introCompleted to true>><!--<<script>>UI.saves();<</script>>--><</link>>
