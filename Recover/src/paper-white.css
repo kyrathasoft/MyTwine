@@ -254,6 +254,10 @@ html[data-debug-view] .debug.hidden .debug {
 	background-color: var(--mainbg);
 } 
 
+#textbox-answer {
+	background-color: lightgray;
+}
+
   .green {
 	color: #AAFF00;
   }

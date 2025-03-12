@@ -39,7 +39,7 @@ Now, I can hear you <<linkreplace "thinking...">>thinking &mdash; (yes, that's o
 <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">''Author Info'' shows the awesome people who helped create <<linkreplace me.>>me. ''Fullscreen'' simply allows you to toggle between full-screen and windowed <<linkappend mode.>> ''Saves'' permits you to save your progress &mdash; I will prompt you to do this, [[occasionally|Start5][$linksClicked += 1]].<</linkappend>><</linkreplace>> 
 
 :: Start5 [nobr tutorial]
-<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">You have the option to export a save-file to disk, whenever you wish &mdash; and that's never a bad idea, because you can use that save file to restore your progress in a later <<linkreplace session>><s>session</s> er, I mean quest, brave [[knight|HtmlFile][$linksClicked += 1]]!<</linkreplace>>
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">You have the option to export a save-file to disk, whenever you wish &mdash; and that's never a bad idea, because you can use that save file to restore your progress in a later <<linkreplace session.>><s>session</s> er, I mean quest, brave [[knight|HtmlFile][$linksClicked += 1]]!<</linkreplace>>
 
 :: HtmlFile [nobr tutorial]
 <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">Unlike Relias, I don't store your information to a database. Nobody has to //log-in// to use me. Because of that, you cannot just come back days from now and expect me to resume wherever you left [[off|ForeshadowSaving][$linksClicked += 1]].
