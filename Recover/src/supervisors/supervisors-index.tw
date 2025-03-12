@@ -1,5 +1,12 @@
 :: SupervisorsTOC [nobr]
 <center><img src="./assets/images/supervision.gif"><br><font size="+2">@@.shadow;Supervisors' Index@@</font></center><br>
-<p>This is the password-gated TOC for CS/CD...</p>
+<p>This is the password-gated index for CS/CD...</p>
 
-[[View demo of if-then-else|DemoIfThenElse]]
+<ul>
+<li>Group Facilitation Enhancement Meeting 11 Mar. 2025</li>
+    <ul>
+            <li>Bryan's Meeting Notes</li>
+            <li><a target="_blank" href="https://drive.google.com/file/d/15vwCf7AWUTRW77xTCVrGUBtVoDQ5y8PO/view?usp=sharing">View Recording of Meeting</a></li>
+    </ul>
+<li>[[View demo of if-then-else|DemoIfThenElse]]</li>
+</ul>

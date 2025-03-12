@@ -7,6 +7,7 @@ You are in the $portalDescriptor.<br><br>
 <<set _prev to previous()>><a data-passage=_prev><img width="48" src="./assets/images/back-button.png" alt="back" /></a>
 
 
+/* The following passages allow for cleaner code at the top of portal.tw */
 
 :: CheckForLinkageDefinitionInPortal [nobr]
 <<if not visited('LinkageDefinition')>>
