@@ -76,6 +76,7 @@ label : "Autoname Saves",
 default : false,
 });
 
+setup.headerGlyph = '<img alt text="alt" width="25" align="bottom" src="./assets/images/bullet-point.png">'
 setup.homepageLinkback = "<br>[[Homepage]]";
 setup.tocLinkback = "<center>[[TOC|DisplayTOC]]</center>";
 
