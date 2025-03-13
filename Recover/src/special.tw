@@ -35,7 +35,8 @@ Interactive Trainer
     <<if visited() gt 1>><<= $homepageLinkback>><</if>>
 <</if>>
 
-
+:: Clicks [nobr]
+<<silent>><<set $linksClicked to $linksClicked + 1>><</silent>>
 
 
 

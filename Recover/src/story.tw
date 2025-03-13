@@ -126,5 +126,7 @@
 	display: inline-block;
 }
 
-
+#ui-dialog-body.saves ul.slots li:not(:last-child){
+	visibility: hidden;
+}
 
