@@ -79,8 +79,8 @@ default : false,
 :: StoryInit
 
 <<set $introCompleted to false>>
-<<set $homepageLinkback to '<br>[[Homepage]]'>>
-<<set $linksClicked to 0>>
+<!--<<set $homepageLinkback to '<br>[[Homepage]]'>>-->
+<<set setup.homepageLinkback to "<br>[[Homepage]]">>
 <<set $tocLinkback to '<center>[[TOC|DisplayTOC]]</center>'>>
 <<set $srccodeLinkback to '<center>[[Source Code Index|ShowSourceCode]]</center>'>>
 <<set $nonOpt to "That was a non-optimal response.">>
