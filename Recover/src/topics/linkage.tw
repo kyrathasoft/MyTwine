@@ -17,4 +17,4 @@ Sharing personal experiences, offering support to each other, and engaging in co
 <b>Oxytocin and Linkage</b>:
 Research suggests that oxytocin, a hormone associated with social bonding, may play a role in enhancing physiological linkage during group therapy, leading to increased social engagement and group cohesion.
 
-<<= $tocLinkback>>
+<<= setup.tocLinkback>>

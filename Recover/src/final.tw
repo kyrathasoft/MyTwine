@@ -76,12 +76,13 @@ label : "Autoname Saves",
 default : false,
 });
 
+setup.homepageLinkback = "<br>[[Homepage]]";
+setup.tocLinkback = "<center>[[TOC|DisplayTOC]]</center>";
+
 :: StoryInit
 
 <<set $introCompleted to false>>
-<!--<<set $homepageLinkback to '<br>[[Homepage]]'>>-->
-<<set setup.homepageLinkback to "<br>[[Homepage]]">>
-<<set $tocLinkback to '<center>[[TOC|DisplayTOC]]</center>'>>
+<!--<<set $tocLinkback to '<center>[[TOC|DisplayTOC]]</center>'>>-->
 <<set $srccodeLinkback to '<center>[[Source Code Index|ShowSourceCode]]</center>'>>
 <<set $nonOpt to "That was a non-optimal response.">>
 <<set $portalDescriptor to "Adventure Portal">>

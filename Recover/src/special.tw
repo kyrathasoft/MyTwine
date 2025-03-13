@@ -10,10 +10,10 @@
 <center><!--<img width="40" vspace=1 hspace=1 align="center" src="./assets/images/swordsman64.png">--></center>
 
 :: StoryCaption [special]
-Links clicked: <<= State.turns>><!--<<= $linksClicked>>-->
+Navigations: <<= State.turns>>
 
 :: StoryMenu [special]
-<<if $introCompleted>><<link "Table of Contents">><<set $linksClicked to $linksClicked + 1>><<goto DisplayTOC>><</link>><</if>>
+<<if $introCompleted>><<link "Table of Contents">><<goto DisplayTOC>><</link>><</if>>
 [[Author Info|AboutTheAuthor][$linksClicked += 1]]
 <!--<<link "Clear Autosave">><<run Save.browser.auto.clear();>><</link>>-->
 <<link "Fullscreen">><<run Fullscreen.toggle();>><</link>> or <<button "FS">><<run Fullscreen.toggle();>> <</button>>
@@ -32,7 +32,7 @@ Interactive Trainer
 
 :: PassageFooter [footer nobr]
 <<if tags().includes('tutorial')>>
-    <<if visited() gt 1>><<= $homepageLinkback>><</if>>
+    <<if visited() gt 1>><<= setup.homepageLinkback>><</if>>
 <</if>>
 
 

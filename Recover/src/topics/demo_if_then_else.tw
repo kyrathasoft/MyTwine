@@ -13,7 +13,7 @@ You're in a group with eight members. Bryan seems particularly agitated today, a
 :: Scene1BetterTomorrow
 <<= $nonOpt>> Actually, the suggestion to make meeting tomorrow an option &mdash; for the sake of follow-up &mdash; is //good//, but should probably be made one-on-one with the member after group. To abruptly make this suggestion during group, in order to move on to the next member, is likely to feel dismissive.
 
-<<= $tocLinkback>>
+<<= setup.tocLinkback>>
 
 :: Scene1KnockItOff
 <<= $nonOpt>> There //are// occasions where the counselor must be assertive, but what you said to the member comes off as punitive. Let's take another look at what you said: //"Bryan, please <b>knock it off</b>; you aren't the <b>only</b> member who matters."//
@@ -29,9 +29,9 @@ Well, admittedly, it can be difficult to manage a group of people who are suffer
 
 
 
-<<= $tocLinkback>>
+<<= setup.tocLinkback>>
 
 :: Scene1LearnMore
 Well done! You validated Bryan's feelings and helped segue into another member sharing with the group...
 
-<<= $tocLinkback>>
+<<= setup.tocLinkback>>
