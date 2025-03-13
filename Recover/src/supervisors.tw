@@ -1,4 +1,5 @@
 :: SupervisorsOnly
+<<if $correctPasswordGiven>><<goto SupervisorsTOC>><</if>>
 <<set $answer to ''>><span class="red">''Warning!'' </span>\
 If you //aren't// a CS, I have already alerted Big Brother to your presence here. Be afraid. Be //very// afraid...<br>
 <<textbox '$answer' '' autofocus>>\
@@ -10,7 +11,7 @@ If you //aren't// a CS, I have already alerted Big Brother to your presence here
 				/* Removes the button */
             <</replace>>
             <<replace '#textbox-reply'>>\
-                <<goto SupervisorsTOC>>
+                <<set $correctPasswordGiven to true>><<goto SupervisorsTOC>>
 			<</replace>>
             <<run $('#textbox-answer').attr('readonly', 'true');>>
         <<else>>

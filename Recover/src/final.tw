@@ -86,6 +86,7 @@ setup.tocLinkback = "<center>[[TOC|DisplayTOC]]</center>";
 <<set $srccodeLinkback to '<center>[[Source Code Index|ShowSourceCode]]</center>'>>
 <<set $nonOpt to "That was a non-optimal response.">>
 <<set $portalDescriptor to "Adventure Portal">>
+<<set $correctPasswordGiven to false>>
 
 
 :: StoryData

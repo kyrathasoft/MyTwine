@@ -130,3 +130,9 @@
 	visibility: hidden;
 }
 
+.tab {
+    display: inline-block;
+    margin-left: 4em;
+}
+
+
