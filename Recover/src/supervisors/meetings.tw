@@ -1,5 +1,4 @@
 :: MeetingsPassage
-
 <b>Meetings</b>:
 
 A place for meeting notes. 
@@ -7,6 +6,6 @@ A place for meeting notes.
 ''GFEP'' - Group Facilitation Enhancement Project
 <span class="tab">[[Notes from GFEP meeting 11 Mar. 2025|GFEPMeetingNotes11March2025]]</span>
 
-<<= setup.tocLinkback>>
+<center><<= setup.tocLinkback>></center>
 
 
