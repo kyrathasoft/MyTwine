@@ -1,4 +1,5 @@
 :: Start [nobr]
+<<if visited('AfterIntroCompleted')>><<set $introCompleted to true>><</if>>
 <!--The following to be commented-out after testing-->
 <<goto Start10>>
 <!--The above to be commented-out after testing-->
@@ -13,7 +14,6 @@
 
 
 :: StoryStylesheet [stylesheet]
-
 
 .shadow {
 	text-shadow: 0.08em 0.08em 0.08em #FFF;
