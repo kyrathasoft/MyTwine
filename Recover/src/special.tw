@@ -43,9 +43,13 @@ Interactive Trainer
 :: CurrentDateAndTime [nobr]
 <silent>
 <<set $date to new Date()>>
-The current month is <<print setup.months[$date.getMonth()] >>.
+<<set _month to setup.months[$date.getMonth()]>>
+<<set _day to setup.weekdays[$date.getDay()]>>
+<<set _day_of_the_month to $date.getDate()>>
+<<set _yr to $date.getYear() + 1900>>
 </silent>
 
+<<= _day>>, <<= _month>> <<= _day_of_the_month>>, <<= _yr>>
 <!--
 <<print "The current time (in milliseconds since January 1, 1970 00:00:00 UTC) is " + Date.now()>>
 <<set $originalDate to new Date("October 20, 2018")>>
