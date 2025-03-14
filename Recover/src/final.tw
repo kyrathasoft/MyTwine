@@ -93,12 +93,10 @@ setup.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 :: StoryInit
 
 <<set $correctPasswordGiven to false>>
-<<set $gamification to false>>
 <<set $introCompleted to false>>
 <<set $nonOpt to "That was a non-optimal response.">>
 <<set $pastAdvancements to 0>>
 <<set $portalDescriptor to "Adventure Portal">>
-<<set $srccodeLinkback to '<center>[[Source Code Index|ShowSourceCode]]</center>'>>
 
 <<set
 	window.GameDays to [

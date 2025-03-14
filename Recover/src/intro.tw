@@ -33,7 +33,7 @@ Now, I can hear you <<linkreplace "thinking...">>thinking &mdash; (yes, that's o
 <<run UIBar.show();>><img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">I'm showing you the sidebar. Don't click on it just yet, okay? Let me explain some things, [[first|Start3]].
 
 :: Start3 [nobr tutorial]
-<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">In the interest of keeping things simple, I only have one color-scheme &mdash; the one you can see on your screen right now. There are five menu items in the left <<linkreplace sidebar.>>sidebar: ''Author Info'', ''Fullscreen'', ''Saves'', ''Settings'', and ''Restart''. [[Continue...|Start4]]<</linkreplace>>
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">In the interest of keeping things simple, I only have one color-scheme &mdash; the one you can see on your screen right now. There are six menu items in the left <<linkreplace sidebar.>>sidebar: ''Author Info'', ''Fullscreen'', ''Menu'', ''Saves'', ''Settings'', and ''Restart''. [[Continue...|Start4]]<</linkreplace>>
 
 :: Start4 [nobr tutorial]
 <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">''Author Info'' shows the awesome people who helped create <<linkreplace me.>>me. ''Fullscreen'' simply allows you to toggle between full-screen and windowed <<linkappend mode.>> ''Saves'' permits you to save your progress &mdash; I will prompt you to do this, [[occasionally|Start5]].<</linkappend>><</linkreplace>> 
@@ -60,6 +60,6 @@ Now, I can hear you <<linkreplace "thinking...">>thinking &mdash; (yes, that's o
 <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">Brave knight, don't be afraid to proceed on your own, making your own choices in the [[$portalDescriptor|Start10]].
 
 :: Start10 [nobr tutorial]
- <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">When you click the link at the end of this paragraph, you may want to save your progress using the ''Saves'' menu. I'll now take you to the <<link "Table of Contents." "DisplayTOC">><<set $introCompleted to true>><!--<<script>>UI.saves();<</script>>--><</link>>
+ <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">When you click the link at the end of this paragraph, you may want to save your progress using the ''Saves'' <<link "menu." "AfterIntroCompleted">><<set $introCompleted to true>><!--<<script>>UI.saves();<</script>>--><</link>>
 
  

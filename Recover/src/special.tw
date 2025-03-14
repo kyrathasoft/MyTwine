@@ -9,14 +9,21 @@
 
 :: StoryCaption [special]
 Navigations: <<= State.turns>>
-Intro Completed: <<= $introCompleted>>
 <<date>>
  
 :: StoryMenu [special]
-<<if $introCompleted>><<link "Table of Contents">><<goto DisplayTOC>><</link>><</if>>
 [[Author Info|AboutTheAuthor]]
 <<link "Fullscreen">><<run Fullscreen.toggle();>><</link>> or <<button "FS">><<run Fullscreen.toggle();>> <</button>>
 <<if $introCompleted>><<link "Homepage">><<goto Homepage>><</link>><</if>>
+[[Menu]]
+<<if $introCompleted>><<link "Table of Contents">><<goto DisplayTOC>><</link>><</if>>
+
+:: Menu [noreturn nobr]
+<center><span class="dark-blue">''Menu''</span>
+
+<br><br>
+<a data-passage=$return><img width="48" src="./assets/images/back-button.png" alt="back" /></a>
+</center>
 
 :: StorySubtitle [special]
 <br>Creating linkage and<br> community in<br>home-group interactions

@@ -155,3 +155,9 @@ body.levelup{
 .passage-out {
 	opacity: 0;
 }
+
+.borderimg {
+  border: 20px solid black;
+  padding: 15px;
+  border-image: url(./assets/images/logo-alone.png) 30 round;
+}
