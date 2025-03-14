@@ -76,6 +76,11 @@ label : "Autoname Saves",
 default : false,
 });
 
+Setting.addToggle("gamify", {
+	label: "Gamification",
+	default: true,
+})
+
 setup.advancementMsg = "Congrats! You've advanced in your training!"
 setup.appTitle = "The Interactive Trainer"
 setup.headerGlyph = '<img alt text="alt" width="25" align="bottom" src="./assets/images/bullet-point.png">'
@@ -88,6 +93,7 @@ setup.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 :: StoryInit
 
 <<set $correctPasswordGiven to false>>
+<<set $gamification to false>>
 <<set $introCompleted to false>>
 <<set $nonOpt to "That was a non-optimal response.">>
 <<set $pastAdvancements to 0>>

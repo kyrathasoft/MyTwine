@@ -1,8 +1,6 @@
 /* This is where special passages -- other than StoryData and StoryInit -- will live */
 
 :: PassageReady
-
-
 :: StoryAuthor [special]
 <center><img width="64" src="./assets/images/logo-alone.png"></center>
 
@@ -13,7 +11,7 @@
 Navigations: <<= State.turns>>
 Intro Completed: <<= $introCompleted>>
 <<include CurrentDateAndTime>>
-
+ 
 :: StoryMenu [special]
 <<if $introCompleted>><<link "Table of Contents">><<goto DisplayTOC>><</link>><</if>>
 [[Author Info|AboutTheAuthor]]

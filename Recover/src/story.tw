@@ -1,7 +1,7 @@
 :: Start [nobr]
 <<if visited('AfterIntroCompleted')>><<set $introCompleted to true>><</if>>
-<!--The following to be commented-out after testing-->
-<!--<<goto Start10>>-->
+<!-- The following to be commented-out after testing-->
+<<goto Start10>>
 <!--The above to be commented-out after testing-->
 
 <<run UIBar.hide();>><center><img src="./assets/images/bg-light.png"></center><br>
@@ -141,4 +141,17 @@
 
 body.levelup{
 	background-color: ivory;
+}
+
+#passages {
+	position: relative;
+}
+.passage {
+	left: 0;
+	position: absolute;
+	top: 0;
+	transition: opacity 1s ease;
+}
+.passage-out {
+	opacity: 0;
 }
