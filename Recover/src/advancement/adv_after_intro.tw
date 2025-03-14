@@ -1,3 +1,7 @@
-:: AfterIntroCompleted [levelup]
+:: AfterIntroCompleted [levelup nobr]
 
-Reward info goes here...
+<<first>>\
+	Congratulations on completing the introductory tutorial!<br><br>
+<<then>>\
+	Oh, you //really// shouldn't be here. This is the rewards passage for completion of the introductory tutorial. Please copy this message and send it to bryan.miller@joingroups.com.<br><br>
+<</first>>
