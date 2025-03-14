@@ -1,6 +1,8 @@
 :: AfterIntroCompleted [levelup nobr]
 <<first>>\
 	Congratulations on completing the introductory tutorial!<br><br>
+	<<notify 3s>><span style="color: red">''Achievement Earned!''</span><</notify>>
+	<<timed 6s>>Subsequent text...<</timed>>
 <<then>>\
 	Oh, you //really// shouldn't be here. This is the rewards passage for completion of the introductory tutorial. Please copy this message and send it to bryan.miller@joingroups.com.<br><br>
 <</first>>
