@@ -1,0 +1,1 @@
+window.getLSMData = function () { return {"name":"Bob","text":"other text","pie":"apple"} };
