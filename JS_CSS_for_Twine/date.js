@@ -639,3 +639,24 @@
   });
   
 })();
+teargs = DATESYSTEM.dateargs(this.args);
+      const payload  = this.payload[0].contents;
+      
+      if (this.args[0] && payload) {
+        const timestamp = dateargs.datesystem.setToTime(this.args[0]);
+        const id        = 'at-'+timestamp;
+        
+        $(document).on(`:dateupdated.${id}`, this.createShadowWrapper(
+          function (e) {
+            if (e.to >= timestamp) {
+              const resFrag = document.createDocumentFragment();
+              new Wikifier(resFrag,payload);
+              $(document).off(`:dateupdated.${id}`);
+            }
+          }
+        ));
+      }
+    }
+  });
+  
+})();

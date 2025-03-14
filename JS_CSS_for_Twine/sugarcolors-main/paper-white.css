@@ -253,3 +253,13 @@ html[data-debug-view] .debug.hidden,
 html[data-debug-view] .debug.hidden .debug {
 	background-color: var(--mainbg);
 } 
+und-color: var(--mainbg);
+	border-color:  var(--border);
+}
+html[data-debug-view] .debug {
+	background-color: var(--mainbg);
+}
+html[data-debug-view] .debug.hidden,
+html[data-debug-view] .debug.hidden .debug {
+	background-color: var(--mainbg);
+} 
