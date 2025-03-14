@@ -76,6 +76,7 @@ label : "Autoname Saves",
 default : false,
 });
 
+setup.advancementMsg = "Congrats! You've advanced in your training!"
 setup.headerGlyph = '<img alt text="alt" width="25" align="bottom" src="./assets/images/bullet-point.png">'
 setup.homepageLinkback = "<br>[[Homepage]]";
 setup.tocLinkback = "<center>[[TOC|DisplayTOC]]</center>";
@@ -83,7 +84,6 @@ setup.tocLinkback = "<center>[[TOC|DisplayTOC]]</center>";
 :: StoryInit
 
 <<set $introCompleted to false>>
-<!--<<set $tocLinkback to '<center>[[TOC|DisplayTOC]]</center>'>>-->
 <<set $srccodeLinkback to '<center>[[Source Code Index|ShowSourceCode]]</center>'>>
 <<set $nonOpt to "That was a non-optimal response.">>
 <<set $portalDescriptor to "Adventure Portal">>

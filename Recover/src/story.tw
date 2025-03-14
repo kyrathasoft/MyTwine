@@ -140,8 +140,5 @@
 }
 
 body.levelup{
-	background-color: yellow;
+	background-color: #F7E4B7;
 }
-
-
-
