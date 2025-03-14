@@ -100,7 +100,31 @@ setup.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 <<set $portalDescriptor to "Adventure Portal">>
 <<set $srccodeLinkback to '<center>[[Source Code Index|ShowSourceCode]]</center>'>>
 
+<<set
+	window.GameDays to [
+		"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
+	];
+	window.GameMonths to [
+		"Jan", "Feb", "Mar", "Apr", "May", "Jun",
+		"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+	];
 
+	/*
+		Below we have to use the multi-parameter version of the Date
+		constructor, rather than the date string version, because the
+		date string version treats a missing timezone offset as UTC.
+		While there are ways to determine players' timezone offsets,
+		so they could be added to a date string, it's more convenient
+		simply to use the multi-parameter constructor.
+
+		The point of this is so that you can simply initialize the game
+		world clock to whatever date and time you wish without having to
+		worry about the players' timezone offsets, while still ensuring
+		that they all see the same game world dates and times.
+	*/
+	/* params: year , month(0-based) , day , hour(24H) , minute [, second ] */
+	$gameDate to new Date(Date.now()); /* e.g. Mar 17, 2015 03:24 */
+>>
 
 :: StoryData
 {
