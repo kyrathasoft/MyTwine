@@ -12,6 +12,7 @@
 :: StoryCaption [special]
 Navigations: <<= State.turns>>
 Intro Completed: <<= $introCompleted>>
+<<include CurrentDateAndTime>>
 
 :: StoryMenu [special]
 <<if $introCompleted>><<link "Table of Contents">><<goto DisplayTOC>><</link>><</if>>
@@ -39,6 +40,18 @@ Interactive Trainer
     <<if visited() gt 1>><<= setup.homepageLinkback>><</if>>
 <</if>>
 
+:: CurrentDateAndTime [nobr]
+<silent>
+<<set $date to new Date()>>
+The current month is <<print setup.months[$date.getMonth()] >>.
+</silent>
+
+<!--
+<<print "The current time (in milliseconds since January 1, 1970 00:00:00 UTC) is " + Date.now()>>
+<<set $originalDate to new Date("October 20, 2018")>>
+<<set $timeDifference to Date.now() - $originalDate>>
+It has been $timeDifference milliseconds since October 20, 2018.
+ -->
 
 
 

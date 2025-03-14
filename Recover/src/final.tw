@@ -77,9 +77,13 @@ default : false,
 });
 
 setup.advancementMsg = "Congrats! You've advanced in your training!"
+setup.appTitle = "The Interactive Trainer"
 setup.headerGlyph = '<img alt text="alt" width="25" align="bottom" src="./assets/images/bullet-point.png">'
 setup.homepageLinkback = "<br>[[Homepage]]";
 setup.tocLinkback = "<center>[[TOC|DisplayTOC]]</center>";
+setup.weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+setup.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
 
 :: StoryInit
 
