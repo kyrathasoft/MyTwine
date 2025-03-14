@@ -1,4 +1,8 @@
 :: Start [nobr]
+<!--The following to be commented-out after testing-->
+<<goto Start10>>
+<!--The above to be commented-out after testing-->
+
 <<run UIBar.hide();>><center><img src="./assets/images/bg-light.png"></center><br>
 
 <<if not $introCompleted>>Visit the introductory tutorial?
@@ -134,5 +138,10 @@
     display: inline-block;
     margin-left: 4em;
 }
+
+body.levelup{
+	background-color: yellow;
+}
+
 
 

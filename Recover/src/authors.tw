@@ -3,22 +3,22 @@
 <center>
 <table>
 <tr><td>
-<img vspace=1 hspace=8 align="left" src="./assets/images/me_small.png">Bryan Miller 
+<img vspace=1 hspace=8 align="left" src="./assets/images/bryan-pencil.png">Bryan Miller 
 (<span class=_color>bryan.miller@joingroups.com)</span><br> LPCC-S</td></tr>
 <tr><td>
-<img vspace=1 hspace=8 align="left" src="./assets/images/deonna.png">Deonna Pinson 
+<img vspace=1 hspace=8 align="left" src="./assets/images/deonna-pencil.png">Deonna Pinson 
 (<span class=_color>deonna.pinson@joingroups.com)</span><br> LPCC-S</td></tr>
 <tr><td>
-<img vspace=1 hspace=8 align="left" src="./assets/images/beca.png">Beca Kovar 
+<img vspace=1 hspace=8 align="left" src="./assets/images/beca-pencil.png">Beca Kovar 
 (<span class=_color>rebeca.kovar@joingroups.com</span>)<br> MHS, CRC, LMHC</td></tr>
 <tr><td>
-<img vspace=1 hspace=8 align="left" src="./assets/images/ash.png">Ashley Metzger 
+<img vspace=1 hspace=8 align="left" src="./assets/images/ash-pencil.png">Ashley Metzger 
 (<span class=_color>ashley.metzger@joingroups.com</span>)<br>LPCC-S, LICDC</td></tr>
 <tr><td>
-<img vspace=1 hspace=8 align="left" src="./assets/images/amanda.png">Amanda Speakes
+<img vspace=1 hspace=8 align="left" src="./assets/images/amanda-pencil.png">Amanda Speakes
 (<span class=_color>amanda.speakes@joingroups.com</span>)<br>LPCC-S</td></tr>
 <tr><td>
-<img vspace=1 hspace=8 align="left" width="58" src="./assets/images/cat.png">Catherine Sayre
+<img vspace=1 hspace=8 align="left" src="./assets/images/cat-pencil.png">Catherine Sayre
 (<span class=_color>catherine.sayre@joingroups.com</span>)<br></td></tr></table>
 
 <<set _prev to previous()>><a data-passage=_prev><img width="48" src="./assets/images/back-button.png" alt="back" /></a>
