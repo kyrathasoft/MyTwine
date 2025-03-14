@@ -1,7 +1,7 @@
 :: DisplayTOC [nobr]
 
 <<script>>UIBar.show();<</script>><b>Table of Contents</b><br>
-<<first>>Brave knight, it looks like this is the very first time you've visited the Table of Contents.  You'll visit this page frequently, either to access the Adventure Portal, or to revisit one of your past crusades.
+<<first>><br>Brave knight, it looks like this is the very first time you've visited the Table of Contents.  You'll visit this page frequently, either to access the Adventure Portal, or to revisit one of your past crusades.
 	<<if $introCompleted>>
 		<p>Congratulations, you've gained loot and experience from completing the introductory [[tutorial|AfterIntroCompleted]].</p>
 	<</if>>

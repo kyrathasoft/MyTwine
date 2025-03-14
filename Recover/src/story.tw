@@ -140,5 +140,5 @@
 }
 
 body.levelup{
-	background-color: #F7E4B7;
+	background-color: ivory;
 }

@@ -27,8 +27,8 @@ Interactive Trainer
 
 :: PassageHeader [header]
 <<if tags().includes('levelup')>>
-<center>''<<= setup.advancementMsg>>''</center><br>
-<img width=295 hspace=15 vspace=5 align="center" src="./assets/images/castle-montage.png">
+<center>''<<= setup.advancementMsg>>''<br>
+<img width=295 vspace=5 src="./assets/images/castle-montage.png"></center>
 <</if>>
 <<if tags().includes('portal')>><img width=225 hspace=15 vspace=5 align="center" src="./assets/images/portal.png"><</if>>
 <<if tags().includes('trainer-icon')>><img width=75 hspace=15 vspace=5 align="center" src="./assets/images/interactive-trainer.png"><</if>>
