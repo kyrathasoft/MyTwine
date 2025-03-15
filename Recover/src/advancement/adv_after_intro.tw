@@ -2,4 +2,12 @@
 	Congratulations on completing the introductory tutorial! Let's see how you have [[advanced|AfterIntro2]].
 
 :: AfterIntro2
-<img align="left" vspace=10 hspace=10 width="64" src="./assets/images/knight-advance.png">You have completed the (very) brief introductory tutorial. Great work! 
+<table width="60%"><tr><td><img align="left" vspace=10 hspace=10 width="64" src="./assets/images/knight-advance.png">You have completed the (very) brief introductory tutorial. Great work! Whenever you complete a quest or some other important task, you will see a page like this. You can click on the link below to see what advancements you've made. Generally, these will consist of some combination of loot and stat boosts.
+
+[[View advancement|AfterIntro3]].
+
+</td></tr></table>
+
+:: AfterIntro3
+<div class="borderimg"><img src="./assets/images/knight-banner.png"></div>
+show advances here...
