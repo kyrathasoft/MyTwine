@@ -19,10 +19,12 @@ Navigations: <<= State.turns>>
 <<if $introCompleted>><<link "Table of Contents">><<goto DisplayTOC>><</link>><</if>>
 
 :: Menu [noreturn nobr]
-<center><span class="dark-blue">''Menu''</span>
+<center><span class="dark-blue">''Menu''</span><br>
+[[DevNotes]]
 
 <br><br>
-<a data-passage=$return><img width="48" src="./assets/images/back-button.png" alt="back" /></a>
+
+<a data-passage=$return><img width="32" src="./assets/images/back-button.png" alt="back" /></a>
 </center>
 
 :: StorySubtitle [special]

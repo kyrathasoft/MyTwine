@@ -1,4 +1,0 @@
-Remove class borderimg at bottom of story.tw unless we get it working as desired in homepage.tw.
-Continue researching how to properly pass styling info as string parameter to <<notify>> macro
-Decide on a stats system for our 'protagonist knight' (i.e., the user); prob can't simulate real combat
-Removed toggle for gamification: users have to play along: tough noogies!
