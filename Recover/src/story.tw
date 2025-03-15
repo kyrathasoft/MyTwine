@@ -163,3 +163,10 @@ body.levelup{
   border-image: 30 round;
 }
 
+#ui-bar-body {
+	height: calc(100% - 2.5em);
+	line-height: 1.2;
+	margin: 2.5em 0;
+	overflow: auto;
+	padding: 0 1.25em;
+}

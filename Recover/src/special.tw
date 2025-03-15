@@ -8,6 +8,7 @@
 <center><!--<img width="40" vspace=1 hspace=1 align="center" src="./assets/images/swordsman64.png">--></center>
 
 :: StoryCaption [special]
+<img align="center" src="./assets/images/animated/lq-48.gif">
 Navigations: <<= State.turns>>
 <<date>>
  
