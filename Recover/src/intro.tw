@@ -21,7 +21,7 @@ Now, I can hear you <<linkreplace "thinking...">>thinking &mdash; (yes, that's o
 \<<linkreplace $choices[$choicesCount]>><<include "CyclingRoles">><</linkreplace>>
 
 :: IntroTutorial2 [nobr tutorial]
-<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">The truth is that as a ''Groups: Recover Together'' team member, you //are// a <<linkreplace "knight.">>knight in a <<linkreplace "fight.">>fight against a <<linkappend blight.>><p><img align="bottom" width="50" src="./assets/images/pointing-upward.png">Do you see what I did, [[there|Start2.5]]?</p><</linkappend>><</linkreplace>><</linkreplace>>
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">The truth is that as a ''Groups: Recover Together'' team member, you //are// a <<linkreplace "knight.">>knight in a <<linkreplace "fight.">>fight against a <<linkappend blight.>><<timed 2s>><p>Do you see what I did, [[there|Start2.5]]?</p><</timed>><</linkappend>><</linkreplace>><</linkreplace>>
 
 :: Start2.5 [tutorial]
 <img align="left" hspace=8 src="./assets/images/valiant-knight.png">As a staff member at ''Groups: Recover Together'', you are a valiant knight fighting on the front line of the war against Opiate Use and its deadly <<linkappend "consequences.">> I am your trainer. I'm here to help you level-up your skills so that you can punch Overdose, Relapse, and Stigma in the throat! Those //[[bullies!|Start2.75]]//<</linkappend>>
@@ -39,7 +39,7 @@ Now, I can hear you <<linkreplace "thinking...">>thinking &mdash; (yes, that's o
 <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">''Author Info'' shows the awesome people who helped create <<linkreplace me.>>me. ''Fullscreen'' simply allows you to toggle between full-screen and windowed <<linkappend mode.>> ''Saves'' permits you to save your progress &mdash; I will prompt you to do this, [[occasionally|Start5]].<</linkappend>><</linkreplace>> 
 
 :: Start5 [nobr tutorial]
-<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">You have the option to export a save-file to disk, whenever you wish &mdash; and that's never a bad idea, because you can use that save file to restore your progress in a later <<linkreplace session.>><s>session</s> er, I mean quest, brave [[knight|HtmlFile]]!<</linkreplace>>
+<img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">You have the option to export a save-file to disk, whenever you wish &mdash; and that's never a bad idea, because you can use that save file to restore your progress in a later <<linkreplace session.>><s>session</s> er, I mean in a later //quest//, brave [[knight|HtmlFile]]!<</linkreplace>>
 
 :: HtmlFile [nobr tutorial]
 <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">Unlike Relias, I don't store your information to a database. Nobody has to //log-in// to use me. Because of that, you cannot just come back days from now and expect me to resume wherever you left [[off|ForeshadowSaving]].

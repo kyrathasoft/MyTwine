@@ -46,7 +46,7 @@ setup.addVisits = (passageName, number = 1) => {
 /* setup.addVisits ("Chapter1Darkroom2", 59) << I was testing this on 3/2/25 */
 
 
-Config.history.controls = true;
+Config.history.controls = false;
 Config.saves.maxSlotSaves = 1
 Config.history.maxStates = 15
 
@@ -76,12 +76,13 @@ label : "Autoname Saves",
 default : false,
 });
 
-:: BackButtonPsg
-
+Setting.addToggle("gamify", {
+	label: "Gamification",
+	default: true,
+})
 
 setup.advancementMsg = "Congrats! You've advanced in your training!"
 setup.appTitle = "The Interactive Trainer"
-setup.backBtnWidth = "32"
 setup.headerGlyph = '<img alt text="alt" width="25" align="bottom" src="./assets/images/bullet-point.png">'
 setup.homepageLinkback = "<br>[[Homepage]]";
 setup.tocLinkback = "<center>[[TOC|DisplayTOC]]</center>";
