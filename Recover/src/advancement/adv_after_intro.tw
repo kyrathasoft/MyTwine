@@ -1,6 +1,5 @@
-:: AfterIntroCompleted [levelup nobr]
-<<first>>\
-	Congratulations on completing the introductory tutorial!<br><br>
-<<then>>\
-	Oh, you //really// shouldn't be here. This is the rewards passage for completion of the introductory tutorial. Please copy this message and send it to bryan.miller@joingroups.com.<br><br>
-<</first>>
+:: AfterIntroCompleted [levelup]
+	Congratulations on completing the introductory tutorial! Let's see how you have [[advanced|AfterIntro2]].
+
+:: AfterIntro2
+<img align="left" vspace=10 hspace=10 width="64" src="./assets/images/knight-advance.png">You have completed the (very) brief introductory tutorial. Great work! 

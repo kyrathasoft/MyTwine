@@ -1,7 +1,7 @@
 :: Start [nobr]
 <<if visited('AfterIntroCompleted')>><<set $introCompleted to true>><</if>>
 <!-- The following to be commented-out after testing-->
-
+<<goto Start10>>
 <!--The above to be commented-out after testing-->
 
 <<run UIBar.hide();>><center><img src="./assets/images/bg-light.png"></center><br>
@@ -157,7 +157,9 @@ body.levelup{
 }
 
 .borderimg {
-  border: 20px solid black;
+  border: 4px double #b8908b;
   padding: 15px;
-  border-image: url(./assets/images/logo-alone.png) 30 round;
+  border-radius: 10px;
+  border-image: 30 round;
 }
+

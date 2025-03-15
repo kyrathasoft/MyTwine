@@ -21,4 +21,4 @@ Countdown: <span id="countdown">$seconds seconds remaining</span>!\
 	<</repeat>>
 <</silent>>
 
-<<timed 11s>><center><a data-passage=$return><img width="32" src="./assets/images/back-button.png" alt="back" /></a></center><</timed>>
+<<timed 6s>><center><a data-passage="DevNotes"><img width="32" src="./assets/images/back-button.png" alt="back" /></a></center><</timed>>

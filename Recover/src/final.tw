@@ -92,6 +92,7 @@ setup.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 :: StoryInit
 
+<<set $correctDevPassword to false>>
 <<set $correctPasswordGiven to false>>
 <<set $introCompleted to false>>
 <<set $nonOpt to "That was a non-optimal response.">>
