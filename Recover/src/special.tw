@@ -20,6 +20,7 @@ Navigations: <<= State.turns>>
 
 :: Menu [noreturn nobr]
 <center><span class="dark-blue">''Menu''</span><br><br><small>
+[[Advancement Sub-menu|AdvancementSubmenu]]<br>
 [[Developer's Notes|DevOnly]]
 </small><br><br>
 <a data-passage="DisplayTOC"><img width="32" src="./assets/images/back-button.png" alt="go to Table of Contents" /></a>
@@ -34,7 +35,8 @@ Interactive Trainer
 :: PassageHeader [header]
 <<if tags().includes('levelup')>>
 <center>''<<= setup.advancementMsg>>''<br>
-<img width=295 vspace=5 src="./assets/images/castle-montage.png"></center>
+<!--commented out next line because i don't like the image (image removved)
+<img width=295 vspace=5 src="./assets/images/castle-montage.png"></center>-->
 <</if>>
 <<if tags().includes('portal')>><img width=295 hspace=15 vspace=15 align="center" src="./assets/images/portal.png"><</if>>
 <<if tags().includes('trainer-icon')>><img width=75 hspace=15 vspace=5 align="center" src="./assets/images/interactive-trainer.png"><</if>>

@@ -15,6 +15,7 @@
 ;Macro.add("first",{skipArgs:!0,tags:["then","finally"],handler:function(){var a,t=$(document.createElement("span")),n=this.payload[this.payload.length-1],s=visited()-1;a=s<this.payload.length?this.payload[s].contents:"finally"===n.name?n.contents:"",t.wiki(a).addClass("macro-"+this.name).appendTo(this.output)}});
 // end first-macro.min.js
 
+
 /* hashStr - Start */
 window.hashStr = function(txt) {
 	var hash = 0, i, chr;
@@ -95,6 +96,13 @@ setup.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 <<set $correctDevPassword to false>>
 <<set $correctPasswordGiven to false>>
 <<set $introCompleted to false>>
+<<set $knight to {
+	"bravery": 1,
+	"improvementPoints": "3",
+	"loot": 0,
+	"prowess": 1,
+	"strength": 1
+}>>
 <<set $nonOpt to "That was a non-optimal response.">>
 <<set $pastAdvancements to 0>>
 <<set $portalDescriptor to "Adventure Portal">>
