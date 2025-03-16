@@ -1,10 +1,13 @@
 :: KnightWidgets [widget nobr]
 <<widget "knight-stats">>
-Your knight has:<br><font size="-1">
+<div class="tight-lines">Your knight has:<br>
 <span class="tab">''Bravery'' $knight.bravery</span><br> 
+<span class="tab">''Brawn'' $knight.brawn</span><br>
 <span class="tab">''Improvement Points'' $knight.improvementPoints</span><br>
+<span class="tab">''Intuition'' $knight.intuition</span><br>
 <span class="tab">''Loot'' $knight.loot</span><br>
+<span class="tab">''Past Advancements'' $knight.pastAdvancements</span><br>
 <span class="tab">''Prowess'' $knight.prowess</span><br>
-<span class="tab">''Strength'' $knight.strength</span>
-</font>
+<span class="tab">''Spent Improvement Points'' $knight.spentPoints</span><br>
+</div>
 <</widget>>

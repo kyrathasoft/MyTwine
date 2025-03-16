@@ -1,7 +1,7 @@
 :: Start [nobr]
 <<if visited('AfterIntro')>><<set $introCompleted to true>><</if>>
 <!-- The following to be commented-out after testing-->
-<<goto Start10>>
+<<set $introCompleted to true>><<goto AfterIntro>>
 <!--The above to be commented-out after testing-->
 
 <<run UIBar.hide();>><center><img src="./assets/images/bg-light.png"></center><br>
@@ -169,4 +169,8 @@ body.levelup{
 	margin: 2.5em 0;
 	overflow: auto;
 	padding: 0 1.25em;
+}
+
+.tight-lines {
+  line-height: 1.1; /* Adjust this value to control line spacing */
 }

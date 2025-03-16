@@ -9,7 +9,7 @@ You can now go to the Adventure Portal or the Table of Contents. When you want t
 
 :: AdvancementSubmenu [nobr noreturn]
 <div class="borderimg"><img src="./assets/images/knight-banner.png"></div><br>
-<small>Knight improvement code goes here...<br></small>
+<small><span class="dark-blue">Knight improvement code goes here...</span><br></small>
 
 <<knight-stats>>
 

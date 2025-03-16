@@ -98,13 +98,15 @@ setup.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 <<set $introCompleted to false>>
 <<set $knight to {
 	"bravery": 1,
+	"brawn": 1,
 	"improvementPoints": "3",
+	"intuition": 1,
 	"loot": 0,
+	"pastAdvancements": 0,
 	"prowess": 1,
-	"strength": 1
+	"spentPoints": 0,
 }>>
 <<set $nonOpt to "That was a non-optimal response.">>
-<<set $pastAdvancements to 0>>
 <<set $portalDescriptor to "Adventure Portal">>
 
 <<set
