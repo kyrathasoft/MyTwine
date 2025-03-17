@@ -21,8 +21,11 @@ Navigations: <<= State.turns>>
 
 :: Menu [noreturn nobr]
 <center><span class="dark-blue">''Menu''</span><br><br><small>
-[[Advancement Sub-menu|AdvancementSubmenu]]<br>
+<<if Setting.getValue("gamify")>>[[Advancement Sub-menu|AdvancementSubmenu]]<br><</if>>
 [[Developer's Notes|DevOnly]]
+<<if not Setting.getValue("gamify")>>
+	<br><br>//You have //gamify //turned off in Settings. Turn it on in order to access the Knight Advancement sub-menu.//
+<</if>>
 </small><br><br>
 <a data-passage="DisplayTOC"><img width="32" src="./assets/images/back-button.png" alt="go to Table of Contents" /></a>
 </center>
@@ -115,8 +118,8 @@ It has been $timeDifference milliseconds since October 20, 2018.
 <<if $gameDate.getMinutes() lt 10>>0<</if>><<print $gameDate.getMinutes()>>\
 <</widget>>
 
-/* Prints the current date and time (12H). */
-<<widget "datetime">><<date>> <<time12hr>> (<<time24hr>>)<</widget>>
+/* Prints the current date and time (12H). Commented-out due to irritating 'problems' indicated by VSCode */
+<!--<<widget "datetime">><<date>> <<time12hr>> (<<time24hr>>)<</widget>>-->
 
 
 

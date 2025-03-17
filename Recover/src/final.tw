@@ -49,7 +49,7 @@ setup.addVisits = (passageName, number = 1) => {
 
 Config.history.controls = false;
 Config.saves.maxSlotSaves = 1
-Config.history.maxStates = 15
+Config.history.maxStates = 1
 
 /*
 Config.saves.isAllowed = function () {

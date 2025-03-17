@@ -1,7 +1,7 @@
 :: Start [nobr]
 <<if visited('AfterIntro')>><<set $introCompleted to true>><</if>>
 <!-- The following to be commented-out after testing-->
-<<set $introCompleted to true>><<goto AfterIntro>>
+<<goto AfterIntro>>
 <!--The above to be commented-out after testing-->
 
 <<run UIBar.hide();>><center><img src="./assets/images/bg-light.png"></center><br>
