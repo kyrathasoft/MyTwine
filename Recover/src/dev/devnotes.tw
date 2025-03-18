@@ -1,21 +1,4 @@
 :: DevNotes [noreturn]
-<nobr><<set _lnk to "https://www.reddit.com/r/twinegames/comments/1jbfeyk/need_help_with_border_image/">></nobr>
-__Notes from 3/14/2025__
-# HelloHelloHelpHello [[helped|_lnk]] me (14 Mar '25) get borderimg working as desired in homepage.tw.
-# Continue researching how to properly pass styling info as string parameter to {{{<<notify>>}}} macro
-# Decide on a stats system for our 'protagonist knight' (i.e., the user); prob can't simulate real combat
-# Removed toggle for gamification: users have to play along: tough noogies!
-# practicing [[countdown|CountdownDemo]] via the {{{repeat}}} and {{{stop}}} macros
-<br><a data-passage="Menu"><img width="32" src="./assets/images/back-button.png" alt="go to Menu" /></a>
-
-__Notes from 3/16/2025__
-<nobr><<set _lnk to "https://marketplace.visualstudio.com/items?itemName=StephenGranade.twine-twee-language">></nobr>
-# Now the knight advancement submenu is hidden if //gamification// is off in Settings
-# There is a helpful main menu msg on how to regain access to the knight advancement submenu
-# Made a [[test|TestPassageFiltering]] of the setup.getPassageNames() function
-# Consider installing Stephen Granade's Twee3 [[extension|_lnk]]
-<br><a data-passage="Menu"><img width="32" src="./assets/images/back-button.png" alt="go to Menu" /></a>
-
 __Notes from 3/17/2025__
 <nobr><<set _lnk to "https://www.reddit.com/r/twinegames/comments/1jd2i3t/comment/mi7z24n">></nobr>
 # Was able to simplify my {{{getTotalPassagesCount()}}} function with [[GreyElf's help|_lnk]]
@@ -25,6 +8,26 @@ __Notes from 3/17/2025__
 # [[test GoRandom widget|TestGoRandomWidget]]<nobr>
 for a GitHub gist of the code needed for the above test,<br>plug the following script into a webpage:<br>
 {{{<script src="https://gist.github.com/kyrathasoft/825e29d93fb333cddabebf5f3603c10a.js"></script>}}}</nobr>
+
+__Notes from 3/16/2025__
+<nobr><<set _lnk to "https://marketplace.visualstudio.com/items?itemName=StephenGranade.twine-twee-language">></nobr>
+# Now the knight advancement submenu is hidden if //gamification// is off in Settings
+# There is a helpful main menu msg on how to regain access to the knight advancement submenu
+# Made a [[test|TestPassageFiltering]] of the setup.getPassageNames() function
+# Consider installing Stephen Granade's Twee3 [[extension|_lnk]]
+<br><a data-passage="Menu"><img width="32" src="./assets/images/back-button.png" alt="go to Menu" /></a>
+
+<nobr><<set _lnk to "https://www.reddit.com/r/twinegames/comments/1jbfeyk/need_help_with_border_image/">></nobr>
+__Notes from 3/14/2025__
+# HelloHelloHelpHello [[helped|_lnk]] me (14 Mar '25) get borderimg working as desired in homepage.tw.
+# Continue researching how to properly pass styling info as string parameter to {{{<<notify>>}}} macro
+# Decide on a stats system for our 'protagonist knight' (i.e., the user); prob can't simulate real combat
+# Removed toggle for gamification: users have to play along: tough noogies!
+# practicing [[countdown|CountdownDemo]] via the {{{repeat}}} and {{{stop}}} macros
+<br><a data-passage="Menu"><img width="32" src="./assets/images/back-button.png" alt="go to Menu" /></a>
+
+
+
 
 
 
