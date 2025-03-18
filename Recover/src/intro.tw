@@ -24,7 +24,7 @@ Now, I can hear you <<linkreplace "thinking...">>thinking &mdash; (yes, that's o
 <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">The truth is that as a ''Groups: Recover Together'' team member, you //are// a <<linkreplace "knight.">>knight in a <<linkreplace "fight.">>fight against a <<linkappend blight.>><<timed 2s>><p>Do you see what I did, [[there|Start2.5]]?</p><</timed>><</linkappend>><</linkreplace>><</linkreplace>>
 
 :: Start2.5 [tutorial]
-<img align="left" hspace=8 src="./assets/images/valiant-knight.png">As a staff member at ''Groups: Recover Together'', you are a valiant knight fighting on the front line of the war against Opiate Use and its deadly <<linkappend "consequences.">> I am your trainer. I'm here to help you level-up your skills so that you can punch Overdose, Relapse, and Stigma in the throat! Those //[[bullies!|Start2.75]]//<</linkappend>>
+<img align="left" hspace=8 src="./assets/images/valiant-knight.png">As a staff member at ''Groups: Recover Together'', you are a valiant knight fighting on the front line of the war against Opiate Use and its deadly <<linkappend "consequences.">> I am your trainer. I'm here to help you level-up your skills so that you can put Overdose, Relapse, and Stigma in their place! Those //[[bullies!|Start2.75]]//<</linkappend>>
 
 :: Start2.75 [nobr tutorial]
 <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">But I digress. I need to orient you. So, let's see &mdash; I have a sidebar<<if visited('Start2') eq 1>>, but it's hidden right now.<<else>>.<</if>> When you click the next link, I'll show it to you and explain its use. This part goes better on a tablet or computer than on a [[phone|ShowSidebarBriefly]].
