@@ -4,7 +4,8 @@
 <!--<<goto Start10>>-->
 <!--The above to be commented-out after testing-->
 
-<<run UIBar.hide();>><center><img src="./assets/images/bg-light.png"></center><br>
+<<run UIBar.hide();>><center><img src="./assets/images/bg-light.png"><br><br>
+<span class="tab"><img width="32" src="./assets/images/grayscale-trainer.png"> <font size="+1">Welcome to the Interactive Trainer</font></span></center><br>
 
 <<if not hasVisited("AfterIntro")>>Visit the introductory tutorial?
 <ul>
