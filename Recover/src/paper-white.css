@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Abril+Fatface&display=swap');
 
- body { font-family: 'Roboto Slab', sans-serif; font-size: 100%}
-
-h1, h2, h3 {font-family: 'Abril Fatface'}
-
+ body { font-family: 'Abril Fatface', sans-serif; font-size: 100%; font-weight: 700; line-height: 26.4px;}
 
 :root {
   --mainbg: white; /* light color */

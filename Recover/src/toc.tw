@@ -34,7 +34,7 @@
 <li><a data-passage="SupervisorsOnly" data-setter="$linksClicked +=1" class="link-internal">Supervisors Only!</a></li>
 
 :: DisplayTOC_IntroTutorial
-<<if $introCompleted>><li><a data-passage="IntroTutorial" data-setter="$linksClicked +=1" class="link-internal">Intro Tutorial</a></li><</if>>
+<<if hasVisited("AfterIntro")>><li><a data-passage="IntroTutorial" data-setter="$linksClicked +=1" class="link-internal">Intro Tutorial</a></li><</if>>
 
 <!-- 
 <nobr><ul>

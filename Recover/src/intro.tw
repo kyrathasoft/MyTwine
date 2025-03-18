@@ -60,6 +60,6 @@ Now, I can hear you <<linkreplace "thinking...">>thinking &mdash; (yes, that's o
 <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">Brave knight, don't be afraid to proceed on your own, making your own choices in the [[$portalDescriptor|Start10]].
 
 :: Start10 [nobr tutorial]
- <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">When you click the link at the end of this paragraph, you may want to save your progress using the ''Saves'' <<link "menu." "AfterIntro">><<set $introCompleted to true>><!--<<script>>UI.saves();<</script>>--><</link>>
+ <img align="left" hspace=10 vspace=10 width=75 src="./assets/images/interactive-trainer.png">When you click the link at the end of this sentence, you may want to save your progress using the ''Saves'' <<link "menu." "AfterIntro">><</link>>
 
  

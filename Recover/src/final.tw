@@ -106,7 +106,7 @@ setup.getPassageNames = function() {
 				'StoryTitle'
 				]; 
 				
-            const excludedTags = ['nonono', 'noreturn', 'widget'];
+            const excludedTags = ['nonono', 'noreturn', 'test-only', 'widget'];
             const passageNames = [];
 			let tot_psg = 0;
             
@@ -135,22 +135,17 @@ setup.getPassageNames = function() {
         };
 
 setup.getTotalPassagesCount = function() {
-			
-			let tot_psg = 0;
-            
-            $('tw-passagedata').each(function() {
-				tot_psg += 1;
-            });
-			
-            return tot_psg; 
+	return $('tw-passagedata').length;
 };
 
 
 :: StoryInit
 
+<<set setup.achievements to recall('achievements', { })>>
+
 <<set $correctDevPassword to false>>
 <<set $correctPasswordGiven to false>>
-<<set $introCompleted to false>>
+
 <<set $knight to {
 	"bravery": 1,
 	"brawn": 1,

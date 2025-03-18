@@ -1,5 +1,5 @@
 :: Homepage [nobr]
-<<silently>><<if $introCompleted>><<run UIBar.show();>><</if>><</silently>>
+<<silently>><<if hasVisited("AfterIntro")>><<run UIBar.show();>><</if>><</silently>>
 <div class="borderimg">
 <center><img src="./assets/images/bg-light.png"><br>
 <span class=_color><font size="+3">Interactive Trainer</font></span><br>

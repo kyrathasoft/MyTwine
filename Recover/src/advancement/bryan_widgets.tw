@@ -11,3 +11,31 @@
 <span class="tab">''Spent Improvement Points'' $knight.spentPoints</span><br>
 </div>
 <</widget>>
+
+<<widget "gorandom">>
+    <<set _possiblePlaces = Story.lookup("tags", "random")>>
+    
+    <<if _possiblePlaces.length < 1>>
+        <<run alert('No random-tagged passages were found.')>>
+    <<else>>
+        <<set _possiblePlaces.shuffle()>>
+        <<set _selected to either(_possiblePlaces).title>>
+
+        <!-- if we wanted to select a passage that hadn't been visited
+        in 5 turns, we could use the following for loop-->
+
+        <!--
+        <<for _i to 0; _i lt _possiblePlaces.length; _i++>>
+            <<set _randomPassage = _possiblePlaces[_i]>>
+            <<if lastVisited(_randomPassage.title) gte 5>>
+                <<set _selected to _randomPassage.title>>
+                <<break>>
+            <</if>>
+        <</for>>
+        -->
+        
+        <<run alert('The selected random passage: ' + _selected)>>
+
+    <</if>>
+    
+<</widget>>

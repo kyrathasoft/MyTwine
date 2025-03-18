@@ -1,15 +1,15 @@
 :: Start [nobr]
-<<if visited('AfterIntro')>><<set $introCompleted to true>><</if>>
+
 <!-- The following to be commented-out after testing-->
-<<goto AfterIntro>>
+<!--<<goto AfterIntro>>-->
 <!--The above to be commented-out after testing-->
 
 <<run UIBar.hide();>><center><img src="./assets/images/bg-light.png"></center><br>
 
-<<if not $introCompleted>>Visit the introductory tutorial?
+<<if not hasVisited("AfterIntro")>>Visit the introductory tutorial?
 <ul>
 <li>[[Yes, please|IntroTutorial]]</li>
-<li><<link "No thanks" "DisplayTOC">><<set $introCompleted to true>><</link>></li>
+<li><<link "No thanks" "DisplayTOC">><</link>></li>
 </ul><<else>><<goto DisplayTOC>><</if>>
 
 

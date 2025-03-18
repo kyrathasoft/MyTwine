@@ -5,3 +5,6 @@ The randomly chosen passage is _rndPsg
 Total passages in the entire Twine are <<= setup.getTotalPassagesCount()>>.
 
 <a data-passage=$return><img width="32" src="./assets/images/back-button.png" alt="go back" /></a>
+
+:: TestGoRandomWidget [noreturn]
+<<gorandom>>
