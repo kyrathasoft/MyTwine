@@ -26,19 +26,42 @@ I'm going to assume that you &mdash; Gentle Reader &mdash; will be using Twine o
 
 If for some reason the previous link doesn't work, you can also download a recent version of Twine by clicking <a href="https://bryanmiller.us/twinery/Twine-2.10.0-Windows.exe">here</a> &mdash; or, you can click <a target="_new" href="https://1drv.ms/u/s!AmCkA_L-M0FImK5wVPDNXreVq5VmxA">here</a> to open a new browser tab that will let you download Twine from my Onedrive account.
 
-Double-click on the Twine [[installer|TwineLesson001Passage005]].
+If you do need a Macintosh or Linux version of //Twine//, it can be found <a target="_new" href="https://github.com/klembot/twinejs/releases">here</a>.
+
+Go to your //Downloads// folder and double-click on the Twine [[installer|TwineLesson001Passage005]].
 
 <center><a data-passage="TwineLesson001Passage003" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage005")>><a data-passage="TwineLesson001Passage005" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
 :: TwineLesson001Passage005 [deonna]
-You'll get a dialog that looks something like the following. Just click the //Next// [[button|TwineLesson001Passage006]].
+You'll get a dialog that looks something like the following. Just click the //Next// button.
 
 <img src="./assets/images/tutorial/twine-install-dialog.png">
 
-<center><a data-passage="TwineLesson001Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage006")>><a data-passage="TwineLesson001Passage006" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+You //might// encounter this screen upon double-clicking the //Twine// installer. Sometimes Windows can be a bit paranoid. If you see the following screen, it means Windows isn't sure that //Twine// is safe software. It //is// [[safe|TwineLesson001Passage005b]]:
+
+<center><a data-passage="TwineLesson001Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage005b")>><a data-passage="TwineLesson001Passage005b" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson001Passage005b
+
+<img src="./assets/images/tutorial/windows-protected-your-pc.png">
+
+Should you encounter the above screen, you'll need to click the //More info// link in the upper left of that dialog:
+
+<img align="left" hspace="5" src="./assets/images/tutorial/more-info.png">
+
+And then on the [[next dialog|TwineLesson001Passage005c]]...
+
+<center><a data-passage="TwineLesson001Passage005b" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage005c")>><a data-passage="TwineLesson001Passage005c" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson001Passage005c
+...go ahead and click the //Run Anyway// [[button|TwineLesson001Passage006]].
+
+<img src="./assets/images/tutorial/run-anyway.png">
+
+<center><a data-passage="TwineLesson001Passage005c" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage006")>><a data-passage="TwineLesson001Passage006" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
 :: TwineLesson001Passage006 [deonna]
-The default install directory shown below is fine. I'd either install Twine in Program Files, or else in the root of your C:\ drive. Go ahead and click the //Install// button. It will take a few seconds for Twine to be installed on your [[computer|TwineLesson001Passage007]].
+The default install directory shown below is fine. I'd either install Twine in Program Files, or you could follow my preference and install it in //C:\Twine//. I would recommend C:\Twine instead of burying it several levels deep under your //AppData// directory. Go ahead and click the //Install// button. It will take a few seconds for Twine to be installed on your [[computer|TwineLesson001Passage007]].
 
 <img src="./assets/images/tutorial/default-install-location.png">
 
@@ -62,4 +85,19 @@ If there //is// an available update, you'll see something like the following dia
 
 <img src="./assets/images/tutorial/download-newer-version.png">
 
+After installing any available update, you should again check for updates using the menu, and should see this:
+
+<img src="./assets/images/tutorial/have-newest-version.png">
+
+You should be all [[set!|TwineLesson001Passage010]]
+
 <center><a data-passage="TwineLesson001Passage008" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage010")>><a data-passage="TwineLesson001Passage010" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson001Passage010 [deonna]
+
+Once you have the newest version of //Twine// installed, you're ready to take a tour of this awesome piece of software. We'll do that in the next tutorial &mdash; which I hope to have posted by sometime Friday evening, 3/21/2025.
+
+<img src="./assets/images/tutorial/twine-welcome-screen.png">
+
+<center><a data-passage="TwineLesson001Passage009" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage011")>><a data-passage="TwineLesson001Passage011" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
