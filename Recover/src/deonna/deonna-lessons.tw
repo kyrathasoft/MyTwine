@@ -1,7 +1,6 @@
 :: DeonnaLessonIndex [deonna]
-<h2 align="center">$tw & $sc Lessons for Deonna</h2><<first>><<nobr>>
-    <br><<linkreplace "view important notification">><<notify 3s>>To view these lessons comfortably, use a tablet, laptop, or desktop computer &mdash; not your phone.<</notify>><</linkreplace>>
-    <</nobr>><<timed 4s>> <br>[[Continue|DeonnaLessonIndex]]<</timed>><<finally>>
+<h2 align="center">$tw & $sc Lessons for Deonna</h2>
+    <br>To view these lessons comfortably, use a tablet, laptop, or desktop computer &mdash; not your phone.
     # [[Lesson # 1|TwineLesson001Passage001]]: Installing $tw
     # [[Lesson # 2|TwineLesson002Passage001]]: Tour of the $tw program
-    <</first>>
+    

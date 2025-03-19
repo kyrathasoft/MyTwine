@@ -128,3 +128,15 @@ Okay, so I was worried for no reason. When I navigate into the ///My Documents/$
 
 :: TwineLesson002Passage005
 <img src="./assets/images/tutorial/backups-and-stories.png">
+
+All right. Nothing too complex. The last screen looks like [[this|TwineLesson002Passage006]].
+
+:: TwineLesson002Passage006
+<img src="./assets/images/tutorial/thats-all-folks.png">
+
+And, as you might guess, when we look in the /$tw/Stories folder, it's empty, since we only just now got //$tw// installed and haven't written any stories yet using the [[software|TwineLesson002Passage007]].
+
+:: TwineLesson002Passage007
+<img src="./assets/images/tutorial/zero-stories.png">
+
+That's it. That's the tour. Now you're ready for Lesson 3 &mdash; Building Your First Story.
