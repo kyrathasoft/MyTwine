@@ -1,8 +1,11 @@
 :: DemoIfThenElse
-The purpose of this demo is to show the interactive possibilities for online HTML-based learning. The following brief interaction can be navigated by clicking the hyperlinked [[words|DemoIfThenElse2]].
+The purpose of this demo is to show the //interactive// possibilities for online HTML-based learning. The following brief, simulated interaction can be navigated by clicking the hyperlinked <<linkappend "words.">> Imagine expanding this brief example in a back-and-forth dialogue between group facilitator (i.e., counselor) and multiple group [[members|DemoIfThenElse2]].<</linkappend>> 
 
 :: DemoIfThenElse2
-You're in a group with eight members. Bryan seems particularly agitated today, and has talked over other members, interrupting them.<nobr>
+<img align="left" hspace="10" src="./assets/images/male60.png">You're in a group with eight members. Bryan seems particularly ''agitated'' today, and has talked over other members, interrupting them.<nobr>
+
+<img align="left" hspace="10" src="./assets/images/female60.png">As the counselor, how will you respond to Bryan?
+
 <ul>
  <li> I will [[say|Scene1KnockItOff]], "Bryan, please knock it off; you aren't the only member who matters."</li>
 <li> I will [[say|Scene1LearnMore]], "Bryan, I'd like to learn more. Could we meet one-on-one at the end of group?"</li>
@@ -16,7 +19,7 @@ You're in a group with eight members. Bryan seems particularly agitated today, a
 <<= setup.tocLinkback>>
 
 :: Scene1KnockItOff
-<<= $nonOpt>> There //are// occasions where the counselor must be assertive, but what you said to the member comes off as punitive. Let's take another look at what you said: //"Bryan, please <b>knock it off</b>; you aren't the <b>only</b> member who matters."//
+<<= $nonOpt>> There //are// occasions where the counselor must be assertive, but what this counselor said may come off as punitive. Let's take another look at what was said: //"Bryan, please <b>knock it off</b>; you aren't the <b>only</b> member who matters."//
 
 Teachable Moment: (1) <<linkreplace "knock it off">><b>knock it off</b> is peremptory; //you// wouldn't want to be spoken to in this way; neither will your members.
 	

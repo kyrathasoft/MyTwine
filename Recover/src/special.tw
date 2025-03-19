@@ -17,7 +17,14 @@ Navigations: <<= State.turns>>
 <<link "Fullscreen">><<run Fullscreen.toggle();>><</link>> or <<button "FS">><<run Fullscreen.toggle();>> <</button>><br>
 <<if hasVisited("AfterIntro")>><<link "Homepage">><<goto Homepage>><</link>><br><</if>>
 [[Menu]]<br>
-<<if hasVisited("AfterIntro")>><<link "Table of Contents">><<goto DisplayTOC>><</link>><br><</if>>
+<<nobr>><<if hasVisited("AfterIntro")>>
+	<<link "Table of Contents">><<goto DisplayTOC>><</link>><br>
+<<else>>
+	<<if hasVisited("DeonnaLessonIndex")>>
+		<<link "Table of Contents">><<goto DisplayTOC>><</link>><br>
+	<</if>>	
+<</if>><</nobr>>
+
 
 :: Menu [noreturn nobr]
 

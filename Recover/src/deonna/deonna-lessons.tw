@@ -1,6 +1,7 @@
 :: DeonnaLessonIndex [deonna]
-<h2 align="center">Twine & Sugarcube Lessons for Deonna</h2><<first>><<nobr>>
-    <br><<linkreplace "view important notification">><<notify 6s>>To view these lessons comfortably, use a tablet, laptop, or desktop computer &mdash; not your phone.<</notify>><</linkreplace>>
-    <</nobr>><<timed 8s>> [[Continue|DeonnaLessonIndex]]<</timed>><<finally>>
-    # [[Lesson # 1|TwineLesson001Passage001]]: Installing Twine and creating your first game
+<h2 align="center">$tw & $sc Lessons for Deonna</h2><<first>><<nobr>>
+    <br><<linkreplace "view important notification">><<notify 3s>>To view these lessons comfortably, use a tablet, laptop, or desktop computer &mdash; not your phone.<</notify>><</linkreplace>>
+    <</nobr>><<timed 4s>> <br>[[Continue|DeonnaLessonIndex]]<</timed>><<finally>>
+    # [[Lesson # 1|TwineLesson001Passage001]]: Installing $tw
+    # [[Lesson # 2|TwineLesson002Passage001]]: Tour of the $tw program
     <</first>>

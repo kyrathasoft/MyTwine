@@ -1,5 +1,5 @@
 :: TwineLesson001Passage001 [deonna]
-<h2>Twine & Sugarcube Lesson # 1</h2>
+<h2>$tw & $sc Lesson # 1 &mdash; Introduction</h2>
 <img align="left" width="64" vspace=5 hspace=10 src="./assets/images/tutorial/twine-logo.png">Welcome to the art of programming. What you'll be learning, if you choose to continue down this path, will open whole new worlds of possibilities for you. Knowing this, dare you click the next <<linkappend word?>> 
     Apparently, you <i>do</i> dare... A mild warning is indicated: computer programming can become a tad bit addictive, especially for people with a strong creative [[flair|TwineLesson001Passage002]].<center><a data-passage="DeonnaLessonIndex" class="link-internal link-image"><img vspace="10" width="100" src="./assets/images/tutorial/tutorial-back.png"></a>\
 <<if hasVisited("TwineLesson001Passage002")>><a data-passage="TwineLesson001Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>>
@@ -15,20 +15,20 @@ There are times when I write entire computer programs in my head as I'm falling 
 <nobr><<run UIBar.show();>></nobr>
 <h3 align="center">What //is// Twine exactly?</h3>
 <center><img width="120" src="./assets/images/tutorial/twine-knot.png"></center>
-Twine is a program first released in 2009. It is regarded as a tool with a low barrier to entry, permitting laymen to craft stories and games that have the quality of interactivity. What this means is that there are choices within any work created by Twine &mdash; choices that actually //matter// to the outcome of the game or <<linkappend story.>>
+$tw is a program first released in 2009. It is regarded as a tool with a low barrier to entry, permitting laymen to craft stories and games that have the quality of interactivity. What this means is that there are choices within any work created by $tw &mdash; choices that actually //matter// to the outcome of the game or <<linkappend story.>>
 
-And because these choices matter, they give the reader a sense of //agency//. To get started learning to write stories (or games) in Twine, you first need to download and install the //Twine// program onto your [[computer|TwineLesson001Passage004]].<</linkappend>>
+And because these choices matter, they give the reader a sense of //agency//. To get started learning to write stories (or games) in Twine, you first need to download and install the //$tw// program onto your [[computer|TwineLesson001Passage004]].<</linkappend>>
 
 <center><a data-passage="TwineLesson001Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage004")>><a data-passage="TwineLesson001Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
 :: TwineLesson001Passage004 [deonna]
-I'm going to assume that you &mdash; Gentle Reader &mdash; will be using Twine on Windows. But if you happen to use a Macintosh or Linux machine, there are versions for those operating systems as well. When you click the link at the end of this sentence, Twine will download to your //Downloads// <a href="https://github.com/klembot/twinejs/releases/download/2.10.0/Twine-2.10.0-Windows.exe">folder</a>. 
+I'm going to assume that you &mdash; Gentle Reader &mdash; will be using $tw on Windows. But if you happen to use a Macintosh or Linux machine, there are versions for those operating systems as well. When you click the link at the end of this sentence, $tw will download to your //Downloads// <a href="https://github.com/klembot/twinejs/releases/download/2.10.0/Twine-2.10.0-Windows.exe">folder</a>. 
 
-If for some reason the previous link doesn't work, you can also download a recent version of Twine by clicking <a href="https://bryanmiller.us/twinery/Twine-2.10.0-Windows.exe">here</a> &mdash; or, you can click <a target="_new" href="https://1drv.ms/u/s!AmCkA_L-M0FImK5wVPDNXreVq5VmxA">here</a> to open a new browser tab that will let you download Twine from my Onedrive account.
+If for some reason the previous link doesn't work, you can also download a recent version of $tw by clicking <a href="https://bryanmiller.us/twinery/Twine-2.10.0-Windows.exe">here</a> &mdash; or, you can click <a target="_new" href="https://1drv.ms/u/s!AmCkA_L-M0FImK5wVPDNXreVq5VmxA">here</a> to open a new browser tab that will let you download $tw from my Onedrive account.
 
-If you do need a Macintosh or Linux version of //Twine//, it can be found <a target="_new" href="https://github.com/klembot/twinejs/releases">here</a>.
+If you do need a Macintosh or Linux version of //$tw//, it can be found <a target="_new" href="https://github.com/klembot/twinejs/releases">here</a>.
 
-Go to your //Downloads// folder and double-click on the Twine [[installer|TwineLesson001Passage005]].
+Go to your //Downloads// folder and double-click on the $tw [[installer|TwineLesson001Passage005]].
 
 <center><a data-passage="TwineLesson001Passage003" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage005")>><a data-passage="TwineLesson001Passage005" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
@@ -37,7 +37,7 @@ You'll get a dialog that looks something like the following. Just click the //Ne
 
 <img src="./assets/images/tutorial/twine-install-dialog.png">
 
-You //might// encounter this screen upon double-clicking the //Twine// installer. Sometimes Windows can be a bit paranoid. If you see the following screen, it means Windows isn't sure that //Twine// is safe software. It //is// [[safe|TwineLesson001Passage005b]]:
+You //might// encounter this screen upon double-clicking the //$tw// installer. Sometimes Windows can be a bit paranoid. If you see the following screen, it means Windows isn't sure that //Twine// is safe software. It //is// [[safe|TwineLesson001Passage005b]]:
 
 <center><a data-passage="TwineLesson001Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage005b")>><a data-passage="TwineLesson001Passage005b" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
@@ -61,27 +61,27 @@ And then on the [[next dialog|TwineLesson001Passage005c]]...
 <center><a data-passage="TwineLesson001Passage005c" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage006")>><a data-passage="TwineLesson001Passage006" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
 :: TwineLesson001Passage006 [deonna]
-The default install directory shown below is fine. I'd either install Twine in Program Files, or you could follow my preference and install it in //C:\Twine//. I would recommend C:\Twine instead of burying it several levels deep under your //AppData// directory. Go ahead and click the //Install// button. It will take a few seconds for Twine to be installed on your [[computer|TwineLesson001Passage007]].
+The default install directory shown below is fine. I'd either install $tw in Program Files, or you could follow my preference and install it in //C:\$tw//. I would recommend C:\$tw instead of burying it several levels deep under your //AppData// directory. Go ahead and click the //Install// button. It will take a few seconds for $tw to be installed on your [[computer|TwineLesson001Passage007]].
 
 <img src="./assets/images/tutorial/default-install-location.png">
 
 <center><a data-passage="TwineLesson001Passage005" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage007")>><a data-passage="TwineLesson001Passage007" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
 :: TwineLesson001Passage007 [deonna]
-Once the download completes and Twine has been installed, you'll get this screen. Leave the "Run Twine" checkbox checked, and click the //Finish// [[button|TwineLesson001Passage008]].
+Once the download completes and $tw has been installed, you'll get this screen. Leave the "Run Twine" checkbox checked, and click the //Finish// [[button|TwineLesson001Passage008]].
 
 <img src="./assets/images/tutorial/launch-twine.png">
 
 <center><a data-passage="TwineLesson001Passage006" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage008")>><a data-passage="TwineLesson001Passage008" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
 :: TwineLesson001Passage008 [deonna]
-The desktop version of Twine (there's an online version as well) launches, in all its glory. You should click the //Twine// menu item in the upper-left of the screen, and then click on the //Check for Updates// menu [[item|TwineLesson001Passage009]]:
+The desktop version of Twine (there's an online version as well) launches, in all its glory. You should click the //$tw// menu item in the upper-left of the screen, and then click on the //Check for Updates// menu [[item|TwineLesson001Passage009]]:
 
 <img src="./assets/images/tutorial/check-for-update.png">
 <center><a data-passage="TwineLesson001Passage007" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage009")>><a data-passage="TwineLesson001Passage009" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
 :: TwineLesson001Passage009 [deonna]
-If there //is// an available update, you'll see something like the following dialog, and you //should// download and install any available update. At the time of this writing, version 2.10.0 was the most recent version of //Twine//.
+If there //is// an available update, you'll see something like the following dialog, and you //should// download and install any available update. At the time of this writing, version 2.10.0 was the most recent version of //$tw//.
 
 <img src="./assets/images/tutorial/download-newer-version.png">
 
@@ -95,9 +95,36 @@ You should be all [[set!|TwineLesson001Passage010]]
 
 :: TwineLesson001Passage010 [deonna]
 
-Once you have the newest version of //Twine// installed, you're ready to take a tour of this awesome piece of software. We'll do that in the next tutorial &mdash; which I hope to have posted by sometime Friday evening, 3/21/2025.
+Once you have the newest version of //$tw// installed, you're ready to take a tour of this awesome piece of software. We'll do that in the next tutorial &mdash; which I hope to have posted by sometime Friday evening, 3/21/2025.
 
 <img src="./assets/images/tutorial/twine-welcome-screen.png">
 
 <center><a data-passage="TwineLesson001Passage009" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage011")>><a data-passage="TwineLesson001Passage011" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
+:: TwineLesson002Passage001 [deonna]
+<h2>Twine & Sugarcube Lesson # 2 &mdash; Tour of the $tw program</h2>
+Well, you've installed the //$tw// program, but it's unfamiliar. Let's take a tour of this marvelous piece of free software. If you noticed, when you ran //$tw// for the first time, it invited you to a mini-tour of its functions:
+
+<img src="./assets/images/tutorial/tour-twine.png">
+
+If you click the "Tell Me More" link, the software recommends and links to the //Twine [[Cookbook|TwineLesson002Passage002]]//.
+
+:: TwineLesson002Passage002 [deonna]
+I cannot in good conscience recommend that you use the Cookbook. It is too disjointed and piecemeal in its coverage. You're less apt to become confused and discouraged if you stick with __this__ tutorial series. How's that for a shameless plug?
+
+<img src="./assets/images/tutorial/twine-cookbook-link.png">
+
+So instead of clicking the //$tw Cookbook// link above, instead I'd recommend that you click the //Next// link, which is in the lower left corner on the $tw welcome [[screen|TwineLesson002Passage003]].
+
+:: TwineLesson002Passage003 [deonna]
+<img src="./assets/images/tutorial/twine-documents-folder.png">
+
+//$tw// informs us that it has created a '$tw' folder in your 'My Documents' folder. Now, I'm not saying //$tw// is dishonest, but I'm gonna go [[check|TwineLesson002Passage004]]...
+
+:: TwineLesson002Passage004 [deonna]
+<img src="./assets/images/tutorial/verify-twine-folder.png">
+
+Okay, so I was worried for no reason. When I navigate into the ///My Documents/$tw// folder, sure enough there is the //Stories// folder, and I see another folder named //[[backup|TwineLesson002Passage005]]//.
+
+:: TwineLesson002Passage005
+<img src="./assets/images/tutorial/backups-and-stories.png">
