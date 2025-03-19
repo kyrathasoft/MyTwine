@@ -1,15 +1,19 @@
 :: DevNotes [noreturn]
-__Notes from 3/17/2025__
+__Notes from 3/18/2025__
+# presented this twine to Ari Rosner, Sam Riker, and Amy Spier
+<span class="tab">I'm touched Beca believed in me and scheduled this presentation</span>
+
+__Notes from 3/17/2025__\
 <nobr><<set _lnk to "https://www.reddit.com/r/twinegames/comments/1jd2i3t/comment/mi7z24n">></nobr>
 # Was able to simplify my {{{getTotalPassagesCount()}}} function with [[GreyElf's help|_lnk]]
 # replaced 'paragragh' with 'sentence' in Start10 passage
-# eliminated {{{$introCompleted}}} variable; using {{{HasVisited("AfterIntro")}}} instead
+# eliminated {{{$introCompleted}}} variable; using {{{HasVisited("AfterIntro")}}} instead\
 <span class="tab">{{{return $('tw-passagedata').length;}}}</span>
 # [[test GoRandom widget|TestGoRandomWidget]]<nobr>
 for a GitHub gist of the code needed for the above test,<br>plug the following script into a webpage:<br>
 {{{<script src="https://gist.github.com/kyrathasoft/825e29d93fb333cddabebf5f3603c10a.js"></script>}}}</nobr>
 
-__Notes from 3/16/2025__
+__Notes from 3/16/2025__\
 <nobr><<set _lnk to "https://marketplace.visualstudio.com/items?itemName=StephenGranade.twine-twee-language">></nobr>
 # Now the knight advancement submenu is hidden if //gamification// is off in Settings
 # There is a helpful main menu msg on how to regain access to the knight advancement submenu
