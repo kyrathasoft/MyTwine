@@ -1,21 +1,38 @@
-:: TwineLesson001Passage001
+:: TwineLesson001Passage001 [deonna]
 <h2>Twine & Sugarcube Lesson # 1</h2>
-<img align="left" width="64" vspace=5 hspace=10 src="./assets/images/twine-logo.png">Welcome to the art of programming. What you'll be learning, if you choose to continue down this path, will open whole new worlds of possibilities for you. Knowing this, dare you click the next <<linkappend word?>> A mild warning is indicated: computer programming can become a tad bit addictive, especially for people with a strong creative flair &mdash; qualities many programmers do indeed [[possess|TwineLesson001Passage002]].<</linkappend>>
+<img align="left" width="64" vspace=5 hspace=10 src="./assets/images/twine-logo.png">Welcome to the art of programming. What you'll be learning, if you choose to continue down this path, will open whole new worlds of possibilities for you. Knowing this, dare you click the next <<linkappend word?>> 
+    Apparently, you <i>do</i> dare... A mild warning is indicated: computer programming can become a tad bit addictive, especially for people with a strong creative [[flair|TwineLesson001Passage002]].<center><a data-passage="DeonnaLessonIndex" class="link-internal link-image"><img vspace="10" width="100" src="./assets/images/tutorial/tutorial-back.png"></a>\
+<<if hasVisited("TwineLesson001Passage002")>><a data-passage="TwineLesson001Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>>
 
-:: TwineLesson001Passage002
-<img align="right" width="64" vspace=5 hspace=10 src="./assets/images/twine-logo.png">Yes, there are times when I write entire computer programs in my head as I'm falling asleep at night. Such is the attraction of a tool that so beatifully marries together the wonders of technology and the progeny of the human imagination. As Gandalf famously said, //“It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept [[off to|TwineLesson001Passage003]].”//
+</center><</linkappend>>
 
-:: TwineLesson001Passage003
+
+:: TwineLesson001Passage002 [deonna]
+There are times when I write entire computer programs in my head as I'm falling asleep at night. Such is the attraction of a tool that so beatifully marries together the wonders of technology and the progeny of the human imagination. As Gandalf famously said, //“It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept [[off to|TwineLesson001Passage003]].”//
+<center><a data-passage="TwineLesson001Passage001" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a></center>
+
+:: TwineLesson001Passage003 [deonna]
 <nobr><<run UIBar.show();>></nobr>
 <h3 align="center">What //is// Twine exactly?</h3>
-<center><img width="120" src="./assets/images/twine-knot.png"></center>
+<center><img width="120" src="./assets/images/tutorial/twine-knot.png"></center>
 Twine is a program first released in 2009. It is regarded as a tool with a low barrier to entry, permitting laymen to craft stories and games that have the quality of interactivity. What this means is that there are choices within any work created by Twine &mdash; choices that actually //matter// to the outcome of the game or <<linkappend story.>>
 
 And because these choices matter, they give the reader a sense of //agency//. To get started learning to write stories (or games) in Twine, you first need to download and install the //Twine// program onto your [[computer|TwineLesson001Passage004]].<</linkappend>>
 
-:: TwineLesson001Passage004
+:: TwineLesson001Passage004 [deonna]
 I'm going to assume that you &mdash; Gentle Reader &mdash; will be using Twine on Windows. But if you happen to use a Macintosh or Linux machine, there are versions for those operating systems as well. When you click the link at the end of this sentence, another tab will open in your browser, so you'll be able to go that tab, download Twine, and then return <a target="_new" href="https://github.com/klembot/twinejs/releases/tag/2.9.0">here</a>.
 
 In that other browser tab, you should see the following:
 
-<img align="left" hspace="10" src="./assets/images/twine-versions.png">If you're using a Windows computer, then you'll want to go to the webpage that has opened in another browser tab and download the version of Twine that is shown here highlighted in yellow.
+<img align="left" hspace="10" src="./assets/images/tutorial/twine-versions.png">If you're using a Windows computer, then you'll want to go to the webpage that has opened in another browser tab and download the version of Twine that is shown here highlighted in yellow.
+
+Don't be alarmed if the download is for a version of Twine more recent that Twine 2.9.0. After downloading the Twine installer, you're ready to install it on your computer.
+
+Double-click on the Twine installer.
+
+:: TwineLesson001Passage005 [deonna]
+You'll get a dialog that looks something like the following. Just click the //Next// button.
+
+<img src="./assets/images/tutorial/twine-install-dialog.png">
+
+:: TwineLesson001Passage006 [deonna]

@@ -27,3 +27,6 @@ If you don't want any sidebar at all, replace lines 196-199 with:
 #menu-core {
 	display: none;
 }
+
+formerly used font:
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Abril+Fatface&display=swap');

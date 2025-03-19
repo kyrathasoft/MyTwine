@@ -106,7 +106,7 @@ setup.getPassageNames = function() {
 				'StoryTitle'
 				]; 
 				
-            const excludedTags = ['nonono', 'noreturn', 'test-only', 'widget'];
+            const excludedTags = ['deonna', 'nonono', 'noreturn', 'test-only', 'widget'];
             const passageNames = [];
 			let tot_psg = 0;
             
