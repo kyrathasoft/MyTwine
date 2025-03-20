@@ -39,3 +39,31 @@
     <</if>>
     
 <</widget>>
+
+<<widget "story-format-icons">>
+<div class="tooltip">
+  <img width="50" alt="chapbook" src="./assets/images/tutorial/chapbook.png">
+  <span class="tooltiptext">&nbsp;The Chapbook story format</span>
+</div>
+
+<div class="tooltip">
+  <img width="50" alt="harlowe" src="./assets/images/tutorial/harlowe.png">
+  <span class="tooltiptext">&nbsp;The Harlowe story format</span>
+</div>
+
+<div class="tooltip">
+  <img width="50" alt="paperthin" src="./assets/images/tutorial/paperthin.png">
+  <span class="tooltiptext">&nbsp;The Paperthin story format</span>
+</div>
+
+<div class="tooltip">
+  <img width="50" alt="snowman" src="./assets/images/tutorial/snowman.png">
+  <span class="tooltiptext">&nbsp;The Snowman story format</span>
+</div>
+
+<div class="tooltip">
+  <img width="50" alt="{$tw}" src="./assets/images/tutorial/sugarcube.png">
+  <span class="tooltiptext">&nbsp;The $sc story format</span>
+</div>
+
+<</widget>>

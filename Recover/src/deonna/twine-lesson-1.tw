@@ -8,6 +8,8 @@
 
 
 :: TwineLesson001Passage002 [deonna]
+I recommend that you use the Chrome web browser for this tutorial series. It's the browser I used while writing these lessons.
+
 There are times when I write entire computer programs in my head as I'm falling asleep at night. Such is the attraction of a tool that so beatifully marries together the wonders of technology and the progeny of the human imagination. As Gandalf famously said, //“It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept [[off to|TwineLesson001Passage003]].”//
 <center><a data-passage="TwineLesson001Passage001" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage003")>><a data-passage="TwineLesson001Passage003" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
@@ -162,6 +164,28 @@ That's it. That's the tour. Now you're ready for Lesson 3 &mdash; [[Building You
 /* End Lesson Two; Lesson Three Follows */
 
 :: TwineLesson003Passage001 [deonna]
-Welcome to Lesson 3 &mdash; Building your first story
+<h2>$tw & $sc Lesson # 3 &mdash; Building your first story</h2>
+Welcome to Lesson 3.
 
-If it's not already running, launch the $tw program.
+If it's not already running, launch the $tw program. Before we begin to //write code//, we need to select our desired {{{story format}}}. The relationship of story formats to the Twine program is sort of like the relationship between human communication and languages: people around the world communicate, but what that //sounds// like differs depending upon the language they're speaking.
+
+I'm going to do you the huge favor of starting your $tw journey with the $sc story format, rather the default story format, [[Harlowe|TwineLesson003Passage002]].
+
+:: TwineLesson003Passage002 [deonna]
+If this notion of story formats is confusing, don't worry about it. You can do great things with $tw without understanding its inner workings. Let's set up $tw now to use the $sc story format. As a reminder, these tutorials work better if you view them on one device (say, your tablet) while working in the $tw program in your desktop or laptop computer.
+
+<img src="./assets/images/tutorial/set-story-format.png">
+
+To change the story format, you'll click on "$tw" in the second row of options: Story, Library, Build, View, ''$tw.'' Then, you'll click on ''Story Formats'' as highlighted in yellow [[above|TwineLesson003Passage003]].<br><br>
+
+&nbsp;
+
+:: TwineLesson003Passage003 [deonna]
+Next, looking down the right-hand side of the $tw program, you'll see (probably 5) pre-installed {{{story formats}}}. They have the following icons, and by default in a new $tw install, the selected format is Harlowe (hover over each image to see the format's name):
+<<nobr>><blockquote>
+<<story-format-icons>>
+</blockquote><</nobr>>
+Well, we //don't// want to use Harlowe. Not because it's a bad format. It's actually quite elegant and I've used it in the past to good effect. But we're going to use $sc because &mdash; down the road, when you're a more experienced $tw coder &mdash; it'll allow us more flexibility in how we code stories and games.
+
+
+
