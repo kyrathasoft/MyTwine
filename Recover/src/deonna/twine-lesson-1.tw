@@ -1,7 +1,7 @@
 :: TwineLesson001Passage001 [deonna]
 <h2>$tw & $sc Lesson # 1 &mdash; Introduction</h2>
 <img align="left" width="64" vspace=5 hspace=10 src="./assets/images/tutorial/twine-logo.png">Welcome to the art of programming. What you'll be learning, if you choose to continue down this path, will open whole new worlds of possibilities for you. Knowing this, dare you click the next <<linkappend word?>> 
-    Apparently, you <i>do</i> dare... A mild warning is indicated: computer programming can become a tad bit addictive, especially for people with a strong creative [[flair|TwineLesson001Passage002]].<center><a data-passage="DeonnaLessonIndex" class="link-internal link-image"><img vspace="10" width="100" src="./assets/images/tutorial/tutorial-back.png"></a>\
+    Apparently, you <i>do</i> dare... It would be very helpful if you could view this tutorial on one device while following its instructions and installing $tw on another [[computer|TwineLesson001Passage002]].<center><a data-passage="DeonnaLessonIndex" class="link-internal link-image"><img vspace="10" width="100" src="./assets/images/tutorial/tutorial-back.png"></a>\
 <<if hasVisited("TwineLesson001Passage002")>><a data-passage="TwineLesson001Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>>
 
 </center><</linkappend>>
