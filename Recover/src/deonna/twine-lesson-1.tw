@@ -95,11 +95,14 @@ You should be all [[set!|TwineLesson001Passage010]]
 
 :: TwineLesson001Passage010 [deonna]
 
-Once you have the newest version of //$tw// installed, you're ready to take a tour of this awesome piece of software. We'll do that in the next tutorial &mdash; which I hope to have posted by sometime Friday evening, 3/21/2025.
+Once you have the newest version of //$tw// installed, you're ready to take a tour of this awesome piece of software. We'll do that in the next tutorial &mdash; [[Lesson 2|TwineLesson002Passage001]]
 
 <img src="./assets/images/tutorial/twine-welcome-screen.png">
 
-<center><a data-passage="TwineLesson001Passage009" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage011")>><a data-passage="TwineLesson001Passage011" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+<center><a data-passage="TwineLesson001Passage009" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson002Passage001")>><a data-passage="TwineLesson002Passage001" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+/************************************ */
+/* End Lesson One; Lesson Two Follows */
 
 :: TwineLesson002Passage001 [deonna]
 <h2>Twine & Sugarcube Lesson # 2 &mdash; Tour of the $tw program</h2>
@@ -109,6 +112,8 @@ Well, you've installed the //$tw// program, but it's unfamiliar. Let's take a to
 
 If you click the "Tell Me More" link, the software recommends and links to the //Twine [[Cookbook|TwineLesson002Passage002]]//.
 
+<center><a data-passage="TwineLesson001Passage010" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson002Passage002")>><a data-passage="TwineLesson002Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
 :: TwineLesson002Passage002 [deonna]
 I cannot in good conscience recommend that you use the Cookbook. It is too disjointed and piecemeal in its coverage. You're less apt to become confused and discouraged if you stick with __this__ tutorial series. How's that for a shameless plug?
 
@@ -116,27 +121,47 @@ I cannot in good conscience recommend that you use the Cookbook. It is too disjo
 
 So instead of clicking the //$tw Cookbook// link above, instead I'd recommend that you click the //Next// link, which is in the lower left corner on the $tw welcome [[screen|TwineLesson002Passage003]].
 
+<center><a data-passage="TwineLesson002Passage001" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson002Passage003")>><a data-passage="TwineLesson002Passage003" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
 :: TwineLesson002Passage003 [deonna]
 <img src="./assets/images/tutorial/twine-documents-folder.png">
 
 //$tw// informs us that it has created a '$tw' folder in your 'My Documents' folder. Now, I'm not saying //$tw// is dishonest, but I'm gonna go [[check|TwineLesson002Passage004]]...
+
+<center><a data-passage="TwineLesson002Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson002Passage004")>><a data-passage="TwineLesson002Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
 :: TwineLesson002Passage004 [deonna]
 <img src="./assets/images/tutorial/verify-twine-folder.png">
 
 Okay, so I was worried for no reason. When I navigate into the ///My Documents/$tw// folder, sure enough there is the //Stories// folder, and I see another folder named //[[backup|TwineLesson002Passage005]]//.
 
-:: TwineLesson002Passage005
+<center><a data-passage="TwineLesson002Passage003" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson002Passage005")>><a data-passage="TwineLesson002Passage005" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson002Passage005 [deonna]
 <img src="./assets/images/tutorial/backups-and-stories.png">
 
 All right. Nothing too complex. The last screen looks like [[this|TwineLesson002Passage006]].
 
-:: TwineLesson002Passage006
+<center><a data-passage="TwineLesson002Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson002Passage006")>><a data-passage="TwineLesson002Passage006" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson002Passage006 [deonna]
 <img src="./assets/images/tutorial/thats-all-folks.png">
 
 And, as you might guess, when we look in the /$tw/Stories folder, it's empty, since we only just now got //$tw// installed and haven't written any stories yet using the [[software|TwineLesson002Passage007]].
 
-:: TwineLesson002Passage007
+<center><a data-passage="TwineLesson002Passage005" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson002Passage007")>><a data-passage="TwineLesson002Passage007" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson002Passage007 [deonna]
 <img src="./assets/images/tutorial/zero-stories.png">
 
-That's it. That's the tour. Now you're ready for Lesson 3 &mdash; Building Your First Story.
+That's it. That's the tour. Now you're ready for Lesson 3 &mdash; [[Building Your First Story|TwineLesson003Passage001]].
+
+<center><a data-passage="TwineLesson002Passage006" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage001")>><a data-passage="TwineLesson003Passage001" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+/********************************88**** */
+/* End Lesson Two; Lesson Three Follows */
+
+:: TwineLesson003Passage001 [deonna]
+Welcome to Lesson 3 &mdash; Building your first story
+
+If it's not already running, launch the $tw program.

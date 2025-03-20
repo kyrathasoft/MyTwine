@@ -10,7 +10,7 @@
 <<include DisplayLinkageTopic>>
 <<include DisplayLinkageDefinitionSubtopic>>
 <<include DisplayCohesionSubtopic>>
-
+[[Deonna's Twine lessons|DeonnaLessonIndex]]<img align="middle" hspace="5" width="24" src="./assets/images/tutorial/twine-logo.png">
 
 
 	
@@ -31,10 +31,12 @@
 <<if visited('LinkageDefinition')>><ul><li><a data-passage="LinkageDefinition" data-setter="$linksClicked +=1" class="link-internal">Definition</a></li></ul><</if>>
 
 :: DisplayTOC_SupervisorsOnly
-<li><a data-passage="SupervisorsOnly" data-setter="$linksClicked +=1" class="link-internal">Supervisors Only!</a></li>
+<li><a data-passage="SupervisorsOnly" data-setter="" class="link-internal">Supervisors Only!</a></li>
 
 :: DisplayTOC_IntroTutorial
-<<if hasVisited("AfterIntro")>><li><a data-passage="IntroTutorial" data-setter="$linksClicked +=1" class="link-internal">Intro Tutorial</a></li><</if>>
+<<if hasVisited("AfterIntro")>><li><a data-passage="IntroTutorial" data-setter="" class="link-internal">Intro Tutorial</a></li><</if>>
+
+
 
 <!-- 
 <nobr><ul>
