@@ -90,6 +90,14 @@ setup.tocLinkback = "<center>[[TOC|DisplayTOC]]</center>";
 setup.weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 setup.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+setup.Hi = function(name) {
+	if (name == undefined){
+		return "Hi!";
+	}else{
+		return "Hi, " + name + "!";
+	}
+};
+
 setup.getPassageNames = function() {
 			
             const excludedNames = [
