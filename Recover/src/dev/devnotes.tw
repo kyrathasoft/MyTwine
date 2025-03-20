@@ -1,4 +1,7 @@
 :: DevNotes [noreturn]
+__Notes from 3/20/2025__
+# Created custom widget {{{<<story-format-icons>>}}} for use in tutorial #3
+
 __Notes from 3/19/2025__
 # Finished first two tutorial lessons for Deonna Pinson
 # replaced spelling out "Twine" with story variable {{{$tw}}}

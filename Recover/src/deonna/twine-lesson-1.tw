@@ -171,6 +171,8 @@ If it's not already running, launch the $tw program. Before we begin to //write 
 
 I'm going to do you the huge favor of starting your $tw journey with the $sc story format, rather the default story format, [[Harlowe|TwineLesson003Passage002]].
 
+<center><a data-passage="TwineLesson002Passage007" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage002")>><a data-passage="TwineLesson003Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
 :: TwineLesson003Passage002 [deonna]
 If this notion of story formats is confusing, don't worry about it. You can do great things with $tw without understanding its inner workings. Let's set up $tw now to use the $sc story format. As a reminder, these tutorials work better if you view them on one device (say, your tablet) while working in the $tw program in your desktop or laptop computer.
 
@@ -178,14 +180,32 @@ If this notion of story formats is confusing, don't worry about it. You can do g
 
 To change the story format, you'll click on "$tw" in the second row of options: Story, Library, Build, View, ''$tw.'' Then, you'll click on ''Story Formats'' as highlighted in yellow [[above|TwineLesson003Passage003]].<br><br>
 
-&nbsp;
+<center><a data-passage="TwineLesson003Passage001" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage003")>><a data-passage="TwineLesson003Passage003" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
 :: TwineLesson003Passage003 [deonna]
 Next, looking down the right-hand side of the $tw program, you'll see (probably 5) pre-installed {{{story formats}}}. They have the following icons, and by default in a new $tw install, the selected format is Harlowe (hover over each image to see the format's name):
 <<nobr>><blockquote>
 <<story-format-icons>>
 </blockquote><</nobr>>
-Well, we //don't// want to use Harlowe. Not because it's a bad format. It's actually quite elegant and I've used it in the past to good effect. But we're going to use $sc because &mdash; down the road, when you're a more experienced $tw coder &mdash; it'll allow us more flexibility in how we code stories and games.
+Well, we //don't// want to use Harlowe. Not because it's a bad format. It's actually quite elegant and I've used it in the past to good effect. But we're going to use $sc because &mdash; down the road, when you're a more experienced $tw coder &mdash; it'll allow us more flexibility in how we code stories and [[games|TwineLesson003Passage004]].
 
+<center><a data-passage="TwineLesson003Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage004")>><a data-passage="TwineLesson003Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson003Passage004
+<img src="./assets/images/tutorial/harlowe-as-default.png">
+Most likely, Harlowe is shown in $tw as your default {{{story format}}}. See that I've highlighted this in yellow in the screenshot above. What you need to do is scroll down in $tw until we see the $sc option, as shown on the next page's [[screenshot|TwineLesson003Passage005]].
+
+<center><a data-passage="TwineLesson003Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage005")>><a data-passage="TwineLesson003Passage005" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson003Passage005
+<img src="./assets/images/tutorial/sugarcube-option.png">
+
+Notice in the screenshot above (see yellow highlight) that we have the option to use $sc as our default {{{story format}}}. Let's do that now by clicking in the $sc box where it says (in the lower left-hand corner) //Use As Default Story [[Format|TwineLesson003Passage006]]//.
+
+<center><a data-passage="TwineLesson003Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage006")>><a data-passage="TwineLesson003Passage006" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson003Passage006
+<img src="./assets/images/tutorial/sugarcube-is-default.png">
+Ta-Da! Sugarcube is now our default. Good work!
 
 
