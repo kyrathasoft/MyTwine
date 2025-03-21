@@ -178,7 +178,7 @@ If this notion of story formats is confusing, don't worry about it. You can do g
 
 <img src="./assets/images/tutorial/set-story-format.png">
 
-To change the story format, you'll click on "$tw" in the second row of options: Story, Library, Build, View, ''$tw.'' Then, you'll click on ''Story Formats'' as highlighted in yellow [[above|TwineLesson003Passage003]].<br><br>
+To change the {{{story format}}}, you'll click on "$tw" in the second row of options: Story, Library, Build, View, ''$tw.'' Then, you'll click on ''Story Formats'' as highlighted in yellow [[above|TwineLesson003Passage003]].<br><br>
 
 <center><a data-passage="TwineLesson003Passage001" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage003")>><a data-passage="TwineLesson003Passage003" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
@@ -208,4 +208,6 @@ Notice in the screenshot above (see yellow highlight) that we have the option to
 <img src="./assets/images/tutorial/sugarcube-is-default.png">
 Ta-Da! Sugarcube is now our default. Good work!
 
+<center><a data-passage="TwineLesson003Passage005" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage007")>><a data-passage="TwineLesson003Passage007" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
+:: TwineLesson003Passage007
