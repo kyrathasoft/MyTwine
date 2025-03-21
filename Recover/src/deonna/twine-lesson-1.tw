@@ -191,23 +191,50 @@ Well, we //don't// want to use Harlowe. Not because it's a bad format. It's actu
 
 <center><a data-passage="TwineLesson003Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage004")>><a data-passage="TwineLesson003Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage004
+:: TwineLesson003Passage004 [deonna]
 <img src="./assets/images/tutorial/harlowe-as-default.png">
 Most likely, Harlowe is shown in $tw as your default {{{story format}}}. See that I've highlighted this in yellow in the screenshot above. What you need to do is scroll down in $tw until we see the $sc option, as shown on the next page's [[screenshot|TwineLesson003Passage005]].
 
 <center><a data-passage="TwineLesson003Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage005")>><a data-passage="TwineLesson003Passage005" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage005
+:: TwineLesson003Passage005 [deonna]
 <img src="./assets/images/tutorial/sugarcube-option.png">
 
 Notice in the screenshot above (see yellow highlight) that we have the option to use $sc as our default {{{story format}}}. Let's do that now by clicking in the $sc box where it says (in the lower left-hand corner) //Use As Default Story [[Format|TwineLesson003Passage006]]//.
 
 <center><a data-passage="TwineLesson003Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage006")>><a data-passage="TwineLesson003Passage006" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage006
+:: TwineLesson003Passage006 [deonna]
 <img src="./assets/images/tutorial/sugarcube-is-default.png">
-Ta-Da! Sugarcube is now our default. Good work!
+Ta-Da! Sugarcube is now our default. Good work! You can close the {{{story formats}}} [[sub-window|TwineLesson003Passage007]].
 
 <center><a data-passage="TwineLesson003Passage005" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage007")>><a data-passage="TwineLesson003Passage007" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage007
+:: TwineLesson003Passage007 [deonna]
+
+It's time to create a story. Do so by first clicking {{{story}}} (highlighted in yellow below), then clicking {{{New}}} &mdash; also highlighted in yellow in this screenshot.
+
+<img src="./assets/images/tutorial/new-story.png">
+
+Now, we need to name our [[story|TwineLesson003Passage008]]...
+
+<center><a data-passage="TwineLesson003Passage006" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage008")>><a data-passage="TwineLesson003Passage008" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson003Passage008 [deonna]
+
+<img src="./assets/images/tutorial/story1.png">
+Just name it {{{Story1}}}. I know, not very original, but it'll suffice for some practice. Having supplied $tw a name, we now click the {{{Create}}} button and our story file is [[created|TwineLesson003Passage009]].
+
+<center><a data-passage="TwineLesson003Passage007" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage009")>><a data-passage="TwineLesson003Passage009" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson003Passage009 [deonna]
+
+$tw is what's known as a GUI &mdash; a program with a graphic user-interface. Notice the background that looks sort of like graph paper. See the dotted-line square labeled {{{Untitled Passage}}}? $tw uses //passages//. A passage can contain text and //Twinescript//. See the little rocketship icon on the green circle? That's a visual indicator that the passage to which it's attached is the {{{Start}}} passage. That's the place $tw looks when we //run// or //play// the game or story that we're creating with [[$tw|TwineLesson003Passage010]].
+
+<img src="./assets/images/tutorial/untitled-passage.png">
+<center><a data-passage="TwineLesson003Passage008" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage010")>><a data-passage="TwineLesson003Passage010" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+
+:: TwineLesson003Passage010 [deonna]
+<img src="./assets/images/tutorial/untitled-passage.png">
+One thing to keep in mind is that &mdash; whether your writing a story or a game &mdash; $tw output is ''HTML''. Essentially, the stories and games that you make with $tw are webpages. Just like the tutorial you're reading at this very //moment// is a webpage. The two awesome things about webpages are that (1) they can host images, downloads, and you can make them look however you want, and (2) it's pretty easy to host them. Hosting a webpage means that it's on a special computer called a //server//. Guess what servers do? They //serve// webpages to other devices. Whenever you check your GMail or read a blog, you're taking advantage of //webpage// technology.
+
