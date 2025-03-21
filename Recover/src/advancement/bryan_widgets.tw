@@ -40,7 +40,7 @@
     
 <</widget>>
 
-<<widget "story-format-icons">>
+<<widget "storyicons">>
 <div class="tooltip">
   <img width="50" alt="chapbook" src="./assets/images/tutorial/chapbook.png">
   <span class="tooltiptext">&nbsp;The Chapbook story format</span>

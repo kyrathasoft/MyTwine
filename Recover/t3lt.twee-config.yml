@@ -15,3 +15,5 @@ sugarcube-2:
       name: repeat
     gorandom:
       name: gorandom
+    storyicons:
+      name: storyicons

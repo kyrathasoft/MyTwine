@@ -185,7 +185,7 @@ To change the {{{story format}}}, you'll click on "$tw" in the second row of opt
 :: TwineLesson003Passage003 [deonna]
 Next, looking down the right-hand side of the $tw program, you'll see (probably 5) pre-installed {{{story formats}}}. They have the following icons, and by default in a new $tw install, the selected format is Harlowe (hover over each image to see the format's name):
 <<nobr>><blockquote>
-<<story-format-icons>>
+<<storyicons>>
 </blockquote><</nobr>>
 Well, we //don't// want to use Harlowe. Not because it's a bad format. It's actually quite elegant and I've used it in the past to good effect. But we're going to use $sc because &mdash; down the road, when you're a more experienced $tw coder &mdash; it'll allow us more flexibility in how we code stories and [[games|TwineLesson003Passage004]].
 
