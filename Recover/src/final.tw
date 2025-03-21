@@ -171,6 +171,7 @@ setup.getTotalPassagesCount = function() {
 <<set $nonOpt to "That was a non-optimal response.">>
 <<set $portalDescriptor to "Adventure Portal">>
 <<set $sc to "Sugarcube">>
+<<set $sg to "{{{story-game}}}">>
 <<set $tw to "Twine">>
 
 
