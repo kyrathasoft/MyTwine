@@ -293,5 +293,14 @@ We're telling $tw, "Hey, let's give the word "east" a hyperlink that, when click
 
 :: TwineLesson003Passage018
 <img src="./assets/images/tutorial/second-psg-created.png">
-Check it out: $tw has &mdash; based upon our edit to the {{{Campfire}}} passage &mdash; created a new passage named {{{Cliff}}}, and we can see an arrow leading from {{{Campfire}}} to {{{Cliff}}}, signaling us //Psst!, your// $sg //has a link connecting the {{{Campfire}}} passage to the {{{Cliff}}} passage.//
+Check it out: $tw has &mdash; based upon our edit to the {{{Campfire}}} passage &mdash; created a new passage named {{{Cliff}}}, and we can see an arrow leading from {{{Campfire}}} to {{{Cliff}}}, signaling us //Psst!, your// $sg //has a link connecting the {{{Campfire}}} passage to the {{{Cliff}}} passage.// On the next page, we're going to see how this translates into our //playable// [[story|TwineLesson003Passage019]].
 
+:: TwineLesson003Passage019
+
+When we click the Play button, it may take a couple of seconds before the game launches in the default browser (or, it could be it's just my machine that's lagging as I write this). When the game launches, you'll see that $tw has interpreted our special bit of text, {{{[[east|Cliff]]}}} and turned the word "east" into a hyperlink. If you click that link, though, at the moment it'll just give you a blank screen. The reason for this is that $tw has navigated from the {{{Campfire}}} passage to the {{{Cliff}}} passage and discovered that the {{{Cliff}}} passage doesn't have any text to display.
+
+<img src="./assets/images/tutorial/ooh-my-first-link.png">
+
+Let's remedy that problem by editing the {{{Cliff}}} passage [[in $tw|TwineLesson003Passage020]].
+
+:: TwineLesson03Passage020
