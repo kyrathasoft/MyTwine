@@ -67,3 +67,47 @@
 </div>
 
 <</widget>>
+
+<<widget "pseudo-widget">>
+<<if $args[0] eq undefined>>
+<<else>>
+    <<if $args[1] eq undefined>>
+      <<else>>
+        The args were $args[0] and $args[1].
+    <</if>>
+<</if>>
+<</widget>>
+
+<<widget "tutorial-links">>
+<<set $list to Story.lookup("tags", "deonna")>>
+<<if $args[0] eq undefined>>
+<<else>>
+    <<if $args[1] eq undefined>>
+      <<else>>
+        <<set _flags to ''>>
+        The length of flag variable is <<= _flags.length>>
+        <<for $i to 0; $i lt $list.length; ++$i>>
+	        <!--<<= $list[$i].title>>
+          comparing $args[0] and $args[1] to $list[$i].title<br>-->
+          <<if $args[0] eq $list[$i].title>>
+            <<set _flags to _flags + "*">>
+            <br>''Found a match for prevPsg!''<br>
+            The length of flag variable is <<= _flags.length>><br>
+            <<continue>>
+          <</if>>
+          
+          <<if $args[1] eq $list[$i].title>>
+            <<set _flags to _flags + "*">><br>
+            ''Found a match for nextPsg!''<br>
+            The length of flag variable is <<= _flags.length>>
+            <<continue>>
+          <</if>>
+      
+      <</for>>
+      After full search the length of flag variable is <<= _flags.length>><br>
+      Total passages examined: <<= $i+1>><br>
+      <<if _flags eq "**">>Eureka!!<</if>>
+      <<unset $list, $i, _flags>>
+    <</if>>
+<</if>>
+<</widget>>

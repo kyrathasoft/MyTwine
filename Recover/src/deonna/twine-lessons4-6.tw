@@ -1,0 +1,45 @@
+:: TwineLesson004Passage001 [deonna]
+<h2>$tw & $sc Lesson # 4 &mdash; Expanding our Campfire Tale</h2>
+Welcome to Lesson 4. You will learn several things in this lesson:
+* How to rename a story
+* About the Sidebar and the Main View
+
+Let's [[proceed|TwineLesson004Passage002]].
+
+:: TwineLesson004Passage002 [deonna]
+
+The first thing let's do in this lesson is change the name of our story. To do that, we'll click the Story menu item, and then the Re-name submenu item [[below it|TwineLesson004Passage003]].
+
+<img src="./assets/images/tut-lessons-4-6/story-rename.png">
+
+:: TwineLesson004Passage003 [deonna]
+Rename the story to //A Campfire Tale//.
+
+<img src="./assets/images/tut-lessons-4-6/renamed.png">
+
+After entering the new name for the story, click the OK [[button|TwineLesson004Passage004]]. 
+
+:: TwineLesson004Passage004 [deonna]
+
+Then, play the story by clicking ''Build'' then ''Play''. Here is what you should see, when $tw opens a new tab in your default web browser and presents the story:
+
+<img src="./assets/images/tut-lessons-4-6/playing1.png">
+
+Let's break down the parts that we're [[seeing|TwineLesson004Passage005]].
+
+:: TwineLesson004Passage005 [deonna]
+
+Understand that the entire $sg runs in your web browser. But for the sake of clarity, let's break down that interface into two parts &mdash; the Sidebar, and the Main View.
+
+<img src="./assets/images/tut-lessons-4-6/parts.png">
+
+The Main View is where the $sc story format displays the text of our story. But what about this [[Sidebar|TwineLesson004Passage006]]?
+
+:: TwineLesson004Passage006 [deonna]
+
+<img align="left" vspace=8 hspace=8 src="./assets/images/tut-lessons-4-6/sidebar.png"> The Sidebar is shown by default for any $tw $sg created with the $sc story format. It can be hidden by the author, but ordinarily it's displayed.
+
+<<tutorial-links "TwineLesson004Passage004" "TwineLesson004Passage006">>
+
+
+

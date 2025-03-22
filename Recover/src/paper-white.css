@@ -300,3 +300,10 @@ html[data-debug-view] .debug.hidden .debug {
   .tooltip-content { width: 100%; }
 
 .tooltip { width: 100%; }
+
+body.forest {
+	background-image: url("assets/images/bgimgs/forest.jpg");
+	background-attachment: fixed; 
+	background-repeat: no-repeat;
+	background-size: cover; /* maybe contain, based on the image and goals */
+}

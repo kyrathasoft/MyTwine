@@ -43,7 +43,7 @@ You //might// encounter this screen upon double-clicking the //$tw// installer. 
 
 <center><a data-passage="TwineLesson001Passage004" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage005b")>><a data-passage="TwineLesson001Passage005b" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson001Passage005b
+:: TwineLesson001Passage005b [deonna]
 
 <img src="./assets/images/tutorial/windows-protected-your-pc.png">
 
@@ -55,7 +55,7 @@ And then on the [[next dialog|TwineLesson001Passage005c]]...
 
 <center><a data-passage="TwineLesson001Passage005b" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson001Passage005c")>><a data-passage="TwineLesson001Passage005c" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson001Passage005c
+:: TwineLesson001Passage005c [deonna]
 ...go ahead and click the //Run Anyway// [[button|TwineLesson001Passage006]].
 
 <img src="./assets/images/tutorial/run-anyway.png">
@@ -160,8 +160,9 @@ That's it. That's the tour. Now you're ready for Lesson 3 &mdash; [[Building You
 
 <center><a data-passage="TwineLesson002Passage006" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage001")>><a data-passage="TwineLesson003Passage001" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-/********************************88**** */
+/****************************************/
 /* End Lesson Two; Lesson Three Follows */
+/****************************************/
 
 :: TwineLesson003Passage001 [deonna]
 <h2>$tw & $sc Lesson # 3 &mdash; Building your first story</h2>
@@ -259,19 +260,19 @@ Have you closed the editor for the {{{Campfire}}} passage? Good deal! Now, in or
 
 <center><a data-passage="TwineLesson003Passage012" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage014")>><a data-passage="TwineLesson003Passage014" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage014
+:: TwineLesson003Passage014 [deonna]
 <img src="./assets/images/tutorial/play-button.png">
 Believe it or not, you just wrote your first story in Twine. //Technically//. Of course, if you publish it now, I don't imagine you'll get any stellar reviews. But let's see how this is going to look to someone playing your $sg. To do that, we're going to click the Play button, which I have highlighted in yellow [[above|TwineLesson003Passage015]].
 
 <center><a data-passage="TwineLesson003Passage013" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage015")>><a data-passage="TwineLesson003Passage015" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage015
+:: TwineLesson003Passage015 [deonna]
 <img src="./assets/images/tutorial/playing-story1.png">
 In your default browser, the game opens and displays the text you entered into the {{{Campfire}}} passage in the $tw story which we've named {{{Story1}}}. You'll notice that by default, the $sc {{{story-format}}} uses white text on a black background. That can be changed fairly easily, so if you'd prefer a different color-scheme for these tutorials, <a href="mailto:kyrathasoft@gmail.com?subj=I would like a different tutorial color-scheme">let me know</a>. You can close that browser tab now, and we'll return to the $tw [[program|TwineLesson003Passage016]].
 
 <center><a data-passage="TwineLesson003Passage014" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage016")>><a data-passage="TwineLesson003Passage016" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage016
+:: TwineLesson003Passage016 [deonna]
 What could make this $sg slightly more interesting? Well, what if we created some other locations around the campfire that you could visit? If it's not already open, re-open the {{{Campfire}}} passage editor (by double-clicking on that passage on the Twine grid), and add the following words: //To the east, the ridge on which you're camped rises to an abrupt cliff overlooking a river.//
 
 <img src="./assets/images/tutorial/east-lies-river.png">
@@ -280,7 +281,7 @@ Well, the addition of that sentence makes me want to go east and have a look at 
 
 <center><a data-passage="TwineLesson003Passage015" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage017")>><a data-passage="TwineLesson003Passage017" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage017
+:: TwineLesson003Passage017 [deonna]
 What we're going to do is edit this new sentence in the {{{Campfire}}} passage so that it looks like this (you may notice I've condensed the passage editor in the following screenshot; in reality, there are a couple rows of menus between the passage title and the text edit area):
 
 <img src="./assets/images/tutorial/link-to-psg-cliff.png">
@@ -291,14 +292,13 @@ We're telling $tw, "Hey, let's give the word "east" a hyperlink that, when click
 
 <center><a data-passage="TwineLesson003Passage016" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage018")>><a data-passage="TwineLesson003Passage018" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage018
+:: TwineLesson003Passage018 [deonna]
 <img src="./assets/images/tutorial/second-psg-created.png">
 Check it out: $tw has &mdash; based upon our edit to the {{{Campfire}}} passage &mdash; created a new passage named {{{Cliff}}}, and we can see an arrow leading from {{{Campfire}}} to {{{Cliff}}}, signaling us //Psst!, your// $sg //has a link connecting the {{{Campfire}}} passage to the {{{Cliff}}} passage.// On the next page, we're going to see how this translates into our //playable// [[story|TwineLesson003Passage019]].
 
 <center><a data-passage="TwineLesson003Passage017" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage019")>><a data-passage="TwineLesson003Passage019" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage019
-
+:: TwineLesson003Passage019 [deonna]
 When we click the Play button, it may take a couple of seconds before the game launches in the default browser (or, it could be it's just my machine that's lagging as I write this). When the game launches, you'll see that $tw has interpreted our special bit of text, {{{[[east|Cliff]]}}} and turned the word "east" into a hyperlink. If you click that link, though, at the moment it'll just give you a blank screen. The reason for this is that $tw has navigated from the {{{Campfire}}} passage to the {{{Cliff}}} passage and discovered that the {{{Cliff}}} passage doesn't have any text to display.
 
 <img src="./assets/images/tutorial/ooh-my-first-link.png">
@@ -307,7 +307,7 @@ Let's remedy that problem by editing the {{{Cliff}}} passage in [[Twine|TwineLes
 
 <center><a data-passage="TwineLesson003Passage018" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage020")>><a data-passage="TwineLesson003Passage020" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage020
+:: TwineLesson003Passage020 [deonna]
 
 <img hspace="8" vspace="5" src="./assets/images/tutorial/edit-cliff-psg.png">We're going to edit the {{{Cliff}}} passage by double-clicking on that passage in $tw. When we do that, $tw opens a passage editor just like the one we used to enter text into the {{{Campfire}}} passage. Enter the following text into the {{{Cliff}}} passage, in $tw: //As you crest the ridge, trees give way to ragged stone, carved by the ages. Far below, a river courses southward, the rush of its passage a soothing white noise as it reaches your ears.//
 
@@ -317,7 +317,7 @@ Once you've added that text, close the editor for the {{{Cliff}}} [[passage|Twin
 
 <center><a data-passage="TwineLesson003Passage019" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage021")>><a data-passage="TwineLesson003Passage021" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage021
+:: TwineLesson003Passage021 [deonna]
 
 Now play your story by clicking the Play button in $tw (Build > Play). Now, when you click the hyperlinked word "east", you're taken to the {{{Cliff}}} passage and are given a useful description. To get to the Play button, you must firt click Build. You'll first see the text from your {{{Campfire}}} passage. Then, upon clicking the hyperlinked word "east", you're taken to the {{{Cliff}}} passage, which now displays like this as you play your $sg:
 
@@ -327,7 +327,7 @@ Okay, nice! Now, if you'll recall, the text in passage {{{Campfire}}} stated tha
 
 <center><a data-passage="TwineLesson003Passage020" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage022")>><a data-passage="TwineLesson003Passage022" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage022
+:: TwineLesson003Passage022 [deonna]
 Therefore, let's edit our {{{Cliff}}} passage by adding the following sentence: //About a rock's throw away to the west, you see the flickering light from your campfire.// Let's made the word "west" link back to the {{{Campfire}}} passage. Remember that to make a link, we use the word that will become a hyperlink (in this case, "west"), and the name of the passage to be linked to (in this case, {{{Campfire}}}). They're separated by the {{{pipe}}} character (a vertical line you can type by holding down Shift and clicking the button on your keyboard just beneath the Backspace button).
 
 The {{{Cliff}}} passage should now look like the following, in the $tw editor:
@@ -336,7 +336,7 @@ The {{{Cliff}}} passage should now look like the following, in the $tw editor:
 
 <center><a data-passage="TwineLesson003Passage021" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage023")>><a data-passage="TwineLesson003Passage023" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage023
+:: TwineLesson003Passage023 [deonna]
 If you haven't yet done so, close the browser tab where you most recently played through your $sg. It's always fine to close these tabs whenever you want. All we have to do to get them back is Play our $sg.
 
 Now play your $sg by clicking Play (found as a submenu of Build). You'll discover that you can move back and forth between the campfire and the cliff. And in $tw, we can visually see this ability to go back and forth between those two passages, because $tw now shows arrows linking the two passages in both [[directions|TwineLesson003Passage024]]:
@@ -345,6 +345,6 @@ Now play your $sg by clicking Play (found as a submenu of Build). You'll discove
 
 <center><a data-passage="TwineLesson003Passage022" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage024")>><a data-passage="TwineLesson003Passage024" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 
-:: TwineLesson003Passage024
+:: TwineLesson003Passage024 [deonna]
 Congratulations! You've learned how to add and edit passages, and how to create links between passages. In Lesson 4, we will add to this $sg we've begun in Lesson 3. When Lesson 4 is ready, I will link to it from the [[Tutorial Index|DeonnaLessonIndex]].
 

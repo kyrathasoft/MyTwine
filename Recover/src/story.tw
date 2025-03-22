@@ -1,7 +1,7 @@
 :: Start [nobr]
 
 <!-- The following to be commented-out after testing-->
-<!--<<goto TwineLesson003Passage016>>
+<<goto TwineLesson004Passage005>>
 <!--The above to be commented-out after testing-->
 
 <<run UIBar.hide();>><center><img src="./assets/images/bg-light.png"><br><br>
