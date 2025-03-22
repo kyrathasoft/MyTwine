@@ -1,6 +1,15 @@
 :: DeonnaLessonIndex [deonna index]
 <h2 align="center">$tw & $sc Lessons for the Gentle Reader</h2>
     <br>To view these lessons comfortably, use a tablet, laptop, or desktop computer &mdash; not your phone.
+    
+    <<nobr>><center><img width="48" src="./assets/images/tutorial/twine-scissors.png">''A couple other Twine tutorials:''
+        <img width="48" src="./assets/images/tutorial/twine-scissors.png"><br>
+    <span class="tab"><a target="_blank" href="https://opensource.com/article/18/2/twine-gaming">opensource.com</a></span><br>
+    <span class="tab">T<a target="_blank" href="https://curriculum.codevirginia.org/library/browse/twine-resources/twine-trail-guide?utm_content=326374745&utm_medium=social&utm_source=facebook&hss_channel=fbp-820442421318139">Twine Trail Guide</a></span></center>
+    <</nobr>>
+
+    <center>to expand your mind with [[additional reading|AdditionalReading]]...</center>
+
     # [[Lesson # 1|TwineLesson001Passage001]]: ''Installing $tw'' (11 passages)
     # [[Lesson # 2|TwineLesson002Passage001]]: ''Tour of the $tw program'' (7 passages)
     # [[Lesson # 3|TwineLesson003Passage001]]: ''Building your first story'' (24 passages)

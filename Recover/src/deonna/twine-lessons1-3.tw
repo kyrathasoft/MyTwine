@@ -308,7 +308,7 @@ When we click the Play button, it may take a couple of seconds before the game l
 
 Let's remedy that problem by editing the {{{Cliff}}} passage in [[Twine|TwineLesson003Passage020]].
 
-<center><a data-passage="TwineLesson003Passage018" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage020")>><a data-passage="TwineLesson003Passage020" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+<<tutorial-links "TwineLesson003Passage018" "TwineLesson003Passage020">>
 
 :: TwineLesson003Passage020 [deonna]
 
@@ -318,7 +318,7 @@ Let's remedy that problem by editing the {{{Cliff}}} passage in [[Twine|TwineLes
 
 Once you've added that text, close the editor for the {{{Cliff}}} [[passage|TwineLesson003Passage021]].
 
-<center><a data-passage="TwineLesson003Passage019" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage021")>><a data-passage="TwineLesson003Passage021" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+<<tutorial-links "TwineLesson003Passage019" "TwineLesson003Passage021">>
 
 :: TwineLesson003Passage021 [deonna]
 
@@ -328,7 +328,7 @@ Now play your story by clicking the Play button in $tw (Build > Play). Now, when
 
 Okay, nice! Now, if you'll recall, the text in passage {{{Campfire}}} stated that to the ''east'' lay the cliff. Well, doesn't that logically entail that there'd be some path west from the cliff back to our [[campfire|TwineLesson003Passage022]].
 
-<center><a data-passage="TwineLesson003Passage020" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage022")>><a data-passage="TwineLesson003Passage022" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+<<tutorial-links "TwineLesson003Passage020" "TwineLesson003Passage022">>
 
 :: TwineLesson003Passage022 [deonna]
 Therefore, let's edit our {{{Cliff}}} passage by adding the following sentence: //About a rock's throw away to the west, you see the flickering light from your campfire.// Let's made the word "west" link back to the {{{Campfire}}} passage. Remember that to make a link, we use the word that will become a hyperlink (in this case, "west"), and the name of the passage to be linked to (in this case, {{{Campfire}}}). They're separated by the {{{pipe}}} character (a vertical line you can type by holding down Shift and clicking the button on your keyboard just beneath the Backspace button).
@@ -337,7 +337,7 @@ The {{{Cliff}}} passage should now look like the following, in the $tw editor:
 
 <img src="./assets/images/tutorial/cliff-leads-west.png">
 
-<center><a data-passage="TwineLesson003Passage021" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage023")>><a data-passage="TwineLesson003Passage023" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+<<tutorial-links "TwineLesson003Passage021" "TwineLesson003Passage023">>
 
 :: TwineLesson003Passage023 [deonna]
 If you haven't yet done so, close the browser tab where you most recently played through your $sg. It's always fine to close these tabs whenever you want. All we have to do to get them back is Play our $sg.
@@ -346,8 +346,9 @@ Now play your $sg by clicking Play (found as a submenu of Build). You'll discove
 
 <img src="./assets/images/tutorial/bidirectional-linkage.png">
 
-<center><a data-passage="TwineLesson003Passage022" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson003Passage024")>><a data-passage="TwineLesson003Passage024" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+<<tutorial-links "TwineLesson003Passage022" "TwineLesson003Passage024">>
 
 :: TwineLesson003Passage024 [deonna]
-Congratulations! You've learned how to add and edit passages, and how to create links between passages. In Lesson 4, we will add to this $sg we've begun in Lesson 3. When Lesson 4 is ready, I will link to it from the [[Tutorial Index|DeonnaLessonIndex]].
+Congratulations! You've learned how to add and edit passages, and how to create links between passages. In Lesson 4, we will add to this $sg we've begun in Lesson 3. Feel free to take break. When you're ready to press on, go to [[Lesson 4|TwineLesson004Passage001]].
+<<tutorial-links "TwineLesson003Passage023" "TwineLesson004Passage001">>
 
