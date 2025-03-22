@@ -49,7 +49,12 @@ Navigations: <<= State.turns>>
 :: StoryTitle [special]
 Interactive Trainer
 
-:: PassageHeader [header]
+:: PassageHeader [header nobr]
+<<if tags().includes('deonna')>>
+	<<if tags().includes('index')>>
+		<div style="float: right;"><a @href="encodeURI(decodeURI(document.location.href.match(/(^[^#]*)/)[0])+'#'+passage())" alt="A link directly to this passage." title="A link directly to this passage.">#</a></div>
+	<</if>>
+<</if>>
 <<if tags().includes('levelup')>>
 <center>''<<= setup.advancementMsg>>''<br>
 <!--commented out next line because i don't like the image (image removved)
