@@ -84,30 +84,40 @@
 <<else>>
     <<if $args[1] eq undefined>>
       <<else>>
-        <<set _flags to ''>>
-        The length of flag variable is <<= _flags.length>>
+        <<set _flags to '', _searched to 0>>
+        <!--The length of flag variable is <<= _flags.length>>-->
         <<for $i to 0; $i lt $list.length; ++$i>>
+          <<set _searched to $i + 1>>
 	        <!--<<= $list[$i].title>>
           comparing $args[0] and $args[1] to $list[$i].title<br>-->
           <<if $args[0] eq $list[$i].title>>
             <<set _flags to _flags + "*">>
-            <br>''Found a match for prevPsg!''<br>
-            The length of flag variable is <<= _flags.length>><br>
+            <!--<br>''Found a match for prevPsg!''<br>
+            The length of flag variable is <<= _flags.length>><br>-->
             <<continue>>
           <</if>>
           
           <<if $args[1] eq $list[$i].title>>
             <<set _flags to _flags + "*">><br>
-            ''Found a match for nextPsg!''<br>
-            The length of flag variable is <<= _flags.length>>
+            <!--''Found a match for nextPsg!''<br>
+            The length of flag variable is <<= _flags.length>>-->
             <<continue>>
           <</if>>
+
+          <<if _flags.length eq 2>><<break>><</if>>
       
       <</for>>
-      After full search the length of flag variable is <<= _flags.length>><br>
-      Total passages examined: <<= $i+1>><br>
-      <<if _flags eq "**">>Eureka!!<</if>>
-      <<unset $list, $i, _flags>>
+
+      <!--After full search the length of flag variable is <<= _flags.length>><br>
+      Total passages in tutorial: <<= $list.length>><br>
+      <<if _flags eq "**">>Eureka!! Found prevPsg and nextPsg after looking at _searched passages.<</if>>-->
+
+      <<if _flags eq "**">>
+        <center><a data-passage=$args[0] class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited($args[1])>><a data-passage=$args[1] class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
+      <</if>>
+
+      <<unset $list, $i, _flags, _searched>>
+
     <</if>>
 <</if>>
 <</widget>>

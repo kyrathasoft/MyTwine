@@ -1,4 +1,9 @@
 :: DevNotes [noreturn]
+__Notes from 3/22/2025__
+# Created widget {{{<<tutorial-links>>}}}
+<span class="tab">*</span> It looks through all tutorial passages
+<span class="tab">*</span> Tutorial psgs are tagged {{{[deonna]}}}
+
 __Notes from 3/20/2025__
 # Created custom widget {{{<<story-format-icons>>}}} for use in tutorial #3<br>
 <span class="tab">See line 188 in Twee3 file {{{twine-lesson-1.tw}}}
