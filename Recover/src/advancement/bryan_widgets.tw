@@ -121,3 +121,7 @@
     <</if>>
 <</if>>
 <</widget>>
+
+<<widget "tutorial-passages">>
+  Out of <<= setup.getTotalPassagesCount()>> total passages in this twine, <<= setup.getTutorialPassagesCount()>> passages are tagged [deonna], indicating that they are dedicated to my $tw tutorial series.
+<</widget>>

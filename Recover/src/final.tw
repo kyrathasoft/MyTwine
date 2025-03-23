@@ -185,6 +185,10 @@ setup.getTotalPassagesCount = function() {
 	return $('tw-passagedata').length;
 };
 
+setup.getTutorialPassagesCount = function(){
+	return (Story.lookup("tags", "deonna")).length;
+};
+
 
 :: StoryInit
 
