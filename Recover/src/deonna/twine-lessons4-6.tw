@@ -3,8 +3,11 @@
 Welcome to Lesson 4. You will learn several things in this lesson:
 * How to rename a story
 * About the Sidebar and the Main View
+* The Back & Forward history control buttons
 
 Let's [[proceed|TwineLesson004Passage002]].
+
+<<tutorial-links "TwineLesson003Passage024" "TwineLesson004Passage002">>
 
 :: TwineLesson004Passage002 [deonna]
 
@@ -12,12 +15,16 @@ The first thing let's do in this lesson is change the name of our story. To do t
 
 <img src="./assets/images/tut-lessons-4-6/story-rename.png">
 
+<<tutorial-links "TwineLesson004Passage001" "TwineLesson004Passage003">>
+
 :: TwineLesson004Passage003 [deonna]
 Rename the story to //A Campfire Tale//.
 
 <img src="./assets/images/tut-lessons-4-6/renamed.png">
 
 After entering the new name for the story, click the OK [[button|TwineLesson004Passage004]]. 
+
+<<tutorial-links "TwineLesson004Passage002" "TwineLesson004Passage004">>
 
 :: TwineLesson004Passage004 [deonna]
 
@@ -27,21 +34,45 @@ Then, play the story by clicking ''Build'' then ''Play''. Here is what you shoul
 
 Let's break down the parts that we're [[seeing|TwineLesson004Passage005]].
 
+<<tutorial-links "TwineLesson004Passage003" "TwineLesson004Passage005">>
+
 :: TwineLesson004Passage005 [deonna]
 
 Understand that the entire $sg runs in your web browser. But for the sake of clarity, let's break down that interface into two parts &mdash; the Sidebar, and the Main View.
 
 <img src="./assets/images/tut-lessons-4-6/parts.png">
 
-The Main View is where the $sc story format displays the text of our story. But what about this [[Sidebar|TwineLesson004Passage006]]?
-
-:: TwineLesson004Passage006 [deonna]
-
-<img align="left" vspace=8 hspace=8 src="./assets/images/tut-lessons-4-6/sidebar.png"> The Sidebar is shown by default for any $tw $sg created with the $sc story format. It can be hidden by the author, but ordinarily it's displayed.
+The Main View is where the $sc story format displays the text of our story. I should point out that ''Main View'' is a term of my own creation. The ''Sidebar'', however, is known as such across most groups of $tw enthusiasts. So, what about this [[Sidebar|TwineLesson004Passage006]]?
 
 <<tutorial-links "TwineLesson004Passage004" "TwineLesson004Passage006">>
 
-:: TwineLessons004Passage007 [deonna]
+:: TwineLesson004Passage006 [deonna]
+
+<img src="./assets/images/tut-lessons-4-6/parts.png"> 
+The Sidebar is shown by default for any $tw $sg created with the $sc story format. It can be hidden by the author, but ordinarily it's displayed. I want to point out something to you. As the running game is displayed in your browser, click the hyperlinked word "east" in the first passage. This will take you from the passage named {{{Campfire}}} to the passage named {{{Cliff}}}. You'll remember those from Lesson 03. After making this passage [[transition|TwineLesson004Passage007]]...
+
+<<tutorial-links "TwineLesson004Passage005" "TwineLesson004Passage007">>
+
+:: TwineLesson004Passage007 [deonna]
+<img src="./assets/images/tutorial/play-to-cliff.png">
+... you'll see the above displayed in the Main View. It should look familiar. You saw it in Lesson 3. Now, in your running $sg, look at the Sidebar. You'll notice it shows a left-pointing and right-pointing arrow at the top of the Sidebar. These are highlighted on the next [[page|TwineLesson004Passage008]].
+
+:: TwineLesson004Passage008 [deonna]
+<img src="./assets/images/tut-lessons-4-6/back-and-forward-hx-controls.png">
+
+You'll notice in the screenshot above that I've circled the {{{Back}}} and {{{Forward}}} history controls in yellow, just to draw your attention to them. In the actual running $sg, they aren't circled, and you'll notice that the left arrow (which we call the {{{Back}}} history control button) is enabled (bright white), while the right arrow (which we call the {{{Forward}}} history control) is disabled (faded). What [[gives|TwineLesson004Passage009]]?
+
+:: TwineLesson004Passage009 [deonna]
+Well, you're in the {{{Cliff}}} passage. You can't go any farther; you can only reverse course and return to the campfire. Therefore, the {{{Forward}}} history button is disabled. But notice that the {{{Back}}} button //is// enabled:
+
+<img align="left" hspace=10 vspace=8 src="./assets/images/tut-lessons-4-6/back-enabled-forward-disabled.png"> If you click on the {{{Back}}} button, the story will rewind a step. In the Main View, you'll see the text description change from that of the {{{Cliff}}} passage to that of the {{{Campfire}}} passage. You'll notice the {{{Forward}}} history button has now become enabled (a bright white arrow), and if you click it, you'll be taken back to the {{{Cliff}}} [[passage|TwineLesson004Passage010]].
+
+:: TwineLesson004Passage010 [deonna]
+Notice that when you've navigated to the starting passage, the one with the campfire, the {{{Back}}} button becomes disabled &mdash; because it's not possible to navigate further back in the story's history. If you're in the starting passage, the Back button becomes disabled, just like if you're at the beginning of a video, the Back button won't work.
+
+Remember the following, and maybe set it to a cute little ditty in your head: //my $sg's history contains a record of each passage I've visited in the current playthrough.//
+
+These Back and Forward history control buttons may be a bit confusing, unless a VCR or video-player analogy makes it clear. If it is confusing, don't worry about it. At some point in these lessons, the concept will click.
 
 
 
