@@ -4,6 +4,7 @@ Welcome to Lesson 4. You will learn several things in this lesson:
 * How to rename a story
 * About the Sidebar and the Main View
 * The Back & Forward history control buttons
+* Using the Back/Undo & the Forward/Re-Do buttons in the Sidebar
 
 Let's [[proceed|TwineLesson004Passage002]].
 
@@ -74,5 +75,11 @@ Remember the following, and maybe set it to a cute little ditty in your head: //
 
 These Back and Forward history control buttons may be a bit confusing, unless a VCR or video-player analogy makes it clear. If it is confusing, don't worry about it. At some point in these lessons, the concept will click.
 
+These buttons are also known as Undo and Redo. Undo reverses the last action you took; Redo redoes actions you undid. Twine tracks all actions you take editing a story, so you can undo multiple actions in a [[row|TwineLesson004Passage011]].
 
+:: TwineLesson004Passage011 [deonna]
+
+If the undo or redo button is disabled, that's because there's nothing to undo or redo yet. Here is an animation showing how &mdash; in our current two-passage story &mdash; we can use these buttons to go back and forth between the passages.
+
+<img src="./assets/images/animated/undoRedo.gif">
 
