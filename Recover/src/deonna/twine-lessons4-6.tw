@@ -89,13 +89,27 @@ So, what do we call the area of $tw shown above? The graph-paper-like background
 
 :: TwineLesson004Passage013 [deonna]
 <img src="./assets/images/tut-lessons-4-6/story-map-labels.png">
-So, the Story Map contains Cards representing passages. We can drag these passages around the Story Map using our mouse, in order to arrange them into clusters that aid our mind in keep our $sg organized as our project gets [[larger|TwineLesson004Passage014]].
+So, the Story Map contains Cards representing passages. We can drag these passages around the Story Map using our mouse, in order to arrange them into clusters that aid our mind in keep our $sg organized as our project gets larger. There is some additional detail about navigating the Story Map that can be read <a target="_new" href="https://twinery.org/reference/en/editing-stories/navigating.html">here</a>. Let's [[continue|TwineLesson004Passage014]].
 
 :: TwineLesson004Passage014 [deonna]
 Well, you've got the first four lessons of this $tw tutorial series under your belt now. I challenge you to [[take a quiz|TwineLesson004Quiz001]]. However, you're free to skip it and jump straight to [[Lesson 5|TwineLesson005Passage001]].
 
 :: TwineLesson004Quiz001 [deonna]
 <img align="left" width="35" hspace=10 vspace=10 src="./assets/images/quiz.png">Welcome to the first quiz of this tutorial series. Here, we'll test your recall to see what you've absorbed of the material reviewed so far. I'll keep track of any wrong answers, and will use them to create specific reviews to fill in any gaps in your comprehension. Remember, there's no pass/fail. You're only reading this tutorial because you want to; and these quizzes will always be optional.
+
+<img width="20" src="./assets/images/bullet-point.png"> I've decided to [[skip the quiz|TwineLesson005Passage001]]
+<img width="20" src="./assets/images/bullet-point.png"> I'm ready to [[take a quiz|TwineLesson004Quiz002]]
+
+:: TwineLesson004Quiz002
+<div class="borderimg">
+What's your favorite pie?<<silently>><<set _pie to "cherry">><</silently>>
+* <<radiobutton "_pie" "blueberry" autocheck>> Blueberry?
+* <<radiobutton "_pie" "cherry" autocheck>> Cherry?
+* <<radiobutton "_pie" "coconut cream" autocheck>> Coconut cream?
+</div>
+I've selected my answer. <<link "Continue.">><</link>>
+
+:: TwineLesson004Quiz003
 
 :: TwineLesson005Passage001 [deonna]
 <h2>$tw & $sc Lesson # 5 &mdash; Further expanding our Campfire Tale</h2>

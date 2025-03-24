@@ -15,7 +15,7 @@
 ;Macro.add("first",{skipArgs:!0,tags:["then","finally"],handler:function(){var a,t=$(document.createElement("span")),n=this.payload[this.payload.length-1],s=visited()-1;a=s<this.payload.length?this.payload[s].contents:"finally"===n.name?n.contents:"",t.wiki(a).addClass("macro-"+this.name).appendTo(this.output)}});
 // end first-macro.min.js
 
-/* Anchor Link to Passage - Start */
+/* Anchor Link to Passage - Start 
 if ("onhashchange" in window) {  // event supported
 	window.onhashchange = function () {
 		hashChanged();
@@ -207,6 +207,12 @@ setup.getTutorialPassagesCount = function(){
 	"prowess": 1,
 	"spentPoints": 0,
 }>>
+
+<<set $quiz1 to {
+	"prowess": 1,
+	"spentPoints": 0,
+}>>
+
 <<set $nonOpt to "That was a non-optimal response.">>
 <<set $portalDescriptor to "Adventure Portal">>
 <<set $sc to "Sugarcube">>

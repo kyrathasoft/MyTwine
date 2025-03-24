@@ -45,13 +45,9 @@ You'll get a dialog that looks something like the following. Just click the //Ne
 :: TwineLesson001Passage005b [deonna]
 You //might// encounter this screen upon double-clicking the //$tw// installer. Sometimes Windows can be a bit paranoid. If you see the following screen, it means Windows isn't sure that //Twine// is safe software. It //is// perfectly safe.
 
-<img src="./assets/images/tutorial/windows-protected-your-pc.png">
+<img src="./assets/images/tutorial/more-info.png">
 
-Should you encounter the above screen, you'll need to click the //More info// link in the upper left of that dialog:
-
-<img align="left" hspace="5" src="./assets/images/tutorial/more-info.png">
-
-And then on the [[next dialog|TwineLesson001Passage005c]]...
+Should you encounter the above screen, you'll need to click the //More info// link in the upper left of that dialog. And then on the [[next dialog|TwineLesson001Passage005c]]...
 
 <<tutorial-links "TwineLesson001Passage005" "TwineLesson001Passage005c">>
 
@@ -115,15 +111,18 @@ Well, you've installed the //$tw// program, but it's unfamiliar. Let's take a to
 
 If you click the "Tell Me More" link, the software recommends and links to the //Twine [[Cookbook|TwineLesson002Passage002]]//.
 
-<center><a data-passage="TwineLesson001Passage010" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-back.png"></a><<if hasVisited("TwineLesson002Passage002")>><a data-passage="TwineLesson002Passage002" class="link-internal link-image"><img width="100" vspace="10" src="./assets/images/tutorial/tutorial-forward.png"></a><</if>></center>
 <<tutorial-links "TwineLesson001Passage010" "TwineLesson002Passage002">>
 
 :: TwineLesson002Passage002 [deonna]
-I cannot in good conscience recommend that you use the Cookbook. It is too disjointed and piecemeal in its coverage. You're less apt to become confused and discouraged if you stick with __this__ tutorial series. How's that for a shameless plug?
+<img hspace=10 src="./assets/images/tutorial/twine-cookbook-cover.png">I cannot advise you on use of the $tw Cookbook, not yet having spent any appreciable time with it. I do know, however, that some incredibly good programmers are the joint-authors &mdash; including Kris Klimas, the author or $tw, and Thomas Michael Edwards, the author of the awesome $sc story format. If you do want to spend some money, get a copy of the <a target="_new" href="https://www.amazon.com/Twine-Cookbook-Daniel-Cox/dp/B0DL8SZ35F">print</a> [[version|TwineLesson002Passage002b]].
+
+
+:: TwineLesson002Passage002b
+For your first few steps into the world of $tw, you'll be fine if you stick with ''this'' tutorial series. How's that for a shameless plug?
 
 <img src="./assets/images/tutorial/twine-cookbook-link.png">
 
-So instead of clicking the //$tw Cookbook// link above, instead I'd recommend that you click the //Next// link, which is in the lower left corner on the $tw welcome [[screen|TwineLesson002Passage003]].
+So instead of clicking the //$tw Cookbook// link in the $tw application, as shown above, instead I'd recommend that you click the //Next// link, which is in the lower left corner on the $tw welcome [[screen|TwineLesson002Passage003]].
 
 <<tutorial-links "TwineLesson002Passage001" "TwineLesson002Passage003">>
 
@@ -144,7 +143,9 @@ Okay, so I was worried for no reason. When I navigate into the ///My Documents/$
 :: TwineLesson002Passage005 [deonna]
 <img src="./assets/images/tutorial/backups-and-stories.png">
 
-All right. Nothing too complex. The last screen looks like [[this|TwineLesson002Passage006]].
+All right. Nothing too complex. Your $tw folder's subfolders won't look exactly like mine do in this screenshot. If you have Microsoft Onedrive installed on your computer, the $tw folder is located in //its// Documents folder. Otherwise, it's located in the C:\Users\[your user name]\Documents folder. 
+
+If your $tw folder doesn't contain a Scratch folder, then at some point we'll want to fix that, but for the moment it's not a problem. The last screen looks like [[this|TwineLesson002Passage006]].
 
 <<tutorial-links "TwineLesson002Passage004" "TwineLesson002Passage006">>
 
@@ -172,6 +173,8 @@ Welcome to Lesson 3.
 
 If it's not already running, launch the $tw program. Before we begin to //write code//, we need to select our desired {{{story format}}}. The relationship of story formats to the Twine program is sort of like the relationship between human communication and languages: people around the world communicate, but what that //sounds// like differs depending upon the language they're speaking.
 
+<img src="./assets/images/tutorial/story-format-explanation.png">
+
 I'm going to do you the huge favor of starting your $tw journey with the $sc story format, rather the default story format, [[Harlowe|TwineLesson003Passage002]].
 
 <<tutorial-links "TwineLesson002Passage007" "TwineLesson003Passage002">>
@@ -181,7 +184,7 @@ If this notion of story formats is confusing, don't worry about it. You can do g
 
 <img src="./assets/images/tutorial/set-story-format.png">
 
-To change the {{{story format}}}, you'll click on "$tw" in the second row of options: Story, Library, Build, View, ''$tw.'' Then, you'll click on ''Story Formats'' as highlighted in yellow [[above|TwineLesson003Passage003]].<br><br>
+To change the {{{story format}}}, you'll click on "$tw" in the second row of options (Story, Library, Build, View, ''$tw.'') Then, you'll click on ''Story Formats'' as highlighted in yellow [[above|TwineLesson003Passage003]].<br><br>
 
 <<tutorial-links "TwineLesson003Passage001" "TwineLesson003Passage003">>
 
