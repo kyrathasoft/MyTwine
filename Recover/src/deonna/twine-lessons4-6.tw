@@ -71,11 +71,13 @@ Well, you're in the {{{Cliff}}} passage. You can't go any farther; you can only 
 :: TwineLesson004Passage010 [deonna]
 Notice that when you've navigated to the starting passage, the one with the campfire, the {{{Back}}} button becomes disabled &mdash; because it's not possible to navigate further back in the story's history. If you're in the starting passage, the Back button becomes disabled, just like if you're at the beginning of a video, the Back button won't work.
 
-Remember the following, and maybe set it to a cute little ditty in your head: //my $sg's history contains a record of each passage I've visited in the current playthrough.//
+Remember the following, and maybe set it to a cute little ditty in your head: //my $sg's history contains a record of each passage I've visited in the current [[playthrough|TwineLesson004Passage010b]].//
+
+:: TwineLesson004Passage010b [deonna]
 
 These Back and Forward history control buttons may be a bit confusing, unless a VCR or video-player analogy makes it clear. If it is confusing, don't worry about it. At some point in these lessons, the concept will click.
 
-These buttons are also known as Undo and Redo. Undo reverses the last action you took; Redo redoes actions you undid. Twine tracks all actions you take editing a story, so you can undo multiple actions in a [[row|TwineLesson004Passage011]].
+These buttons are also known as ''Undo'' and ''Redo''. Undo reverses the last action you took; Redo redoes actions you undid. Twine tracks all actions you take while playing through a story, so you can undo multiple actions in a [[row|TwineLesson004Passage011]].
 
 :: TwineLesson004Passage011 [deonna]
 
@@ -92,7 +94,7 @@ So, what do we call the area of $tw shown above? The graph-paper-like background
 So, the Story Map contains Cards representing passages. We can drag these passages around the Story Map using our mouse, in order to arrange them into clusters that aid our mind in keep our $sg organized as our project gets larger. There is some additional detail about navigating the Story Map that can be read <a target="_new" href="https://twinery.org/reference/en/editing-stories/navigating.html">here</a>. Let's [[continue|TwineLesson004Passage014]].
 
 :: TwineLesson004Passage014 [deonna]
-Well, you've got the first four lessons of this $tw tutorial series under your belt now. I challenge you to [[take a quiz|TwineLesson004Quiz001]]. However, you're free to skip it and jump straight to [[Lesson 5|TwineLesson005Passage001]].
+Well, you've got the first four lessons of this $tw tutorial series under your belt now. I'd said that we'd add to our story, but we just didn't quite get to adding that third Passage yet. We're still laying a foundation to build upon. I now challenge you to [[take a quiz|TwineLesson004Quiz001]]. However, you're free to skip it and jump straight to [[Lesson 5|TwineLesson005Passage001]].
 
 :: TwineLesson004Quiz001 [deonna]
 <img align="left" width="35" hspace=10 vspace=10 src="./assets/images/quiz.png">Welcome to the first quiz of this tutorial series. Here, we'll test your recall to see what you've absorbed of the material reviewed so far. I'll keep track of any wrong answers, and will use them to create specific reviews to fill in any gaps in your comprehension. Remember, there's no pass/fail. You're only reading this tutorial because you want to; and these quizzes will always be optional.

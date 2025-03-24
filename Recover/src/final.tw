@@ -209,8 +209,8 @@ setup.getTutorialPassagesCount = function(){
 }>>
 
 <<set $quiz1 to {
-	"prowess": 1,
-	"spentPoints": 0,
+	"Q1": "cherry",
+	"P1": "",
 }>>
 
 <<set $nonOpt to "That was a non-optimal response.">>

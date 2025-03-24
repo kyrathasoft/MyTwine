@@ -274,12 +274,12 @@ Believe it or not, you just wrote your first story in Twine. //Technically//. Of
 
 :: TwineLesson003Passage015 [deonna]
 <img src="./assets/images/tutorial/playing-story1.png">
-In your default browser, the game opens and displays the text you entered into the {{{Campfire}}} passage in the $tw story which we've named {{{Story1}}}. You'll notice that by default, the $sc {{{story-format}}} uses white text on a black background. That can be changed fairly easily, so if you'd prefer a different color-scheme for these tutorials, <a href="mailto:kyrathasoft@gmail.com?subj=I would like a different tutorial color-scheme">let me know</a>. You can close that browser tab now, and we'll return to the $tw [[program|TwineLesson003Passage016]].
+In your default browser, the game opens and displays the text you entered into the {{{Campfire}}} passage in the $tw story which we've named {{{Story1}}}. You'll notice that by default, the $sc {{{story-format}}} uses white text on a black background. That can be changed fairly easily, and in a future lesson I'll show you how. Also, if you'd prefer a different color-scheme for these tutorials, <a href="mailto:kyrathasoft@gmail.com?subj=I would like a different tutorial color-scheme">let me know</a>. You can close that browser tab now, and we'll return to the $tw [[program|TwineLesson003Passage016]].
 
 <<tutorial-links "TwineLesson003Passage014" "TwineLesson003Passage016">>
 
 :: TwineLesson003Passage016 [deonna]
-What could make this $sg slightly more interesting? Well, what if we created some other locations around the campfire that you could visit? If it's not already open, re-open the {{{Campfire}}} passage editor (by double-clicking on that passage on the Twine grid), and add the following words: //To the east, the ridge on which you're camped rises to an abrupt cliff overlooking a river.//
+What could make this $sg slightly more interesting? Well, what if we created some other locations around the campfire that you could visit? If it's not already open, re-open the {{{Campfire}}} passage editor (by double-clicking on that passage on the Twine grid &mdash; also known as the ''Story Map''), and add the following words: //To the east, the ridge on which you're camped rises to an abrupt cliff overlooking a river.//
 
 <img src="./assets/images/tutorial/east-lies-river.png">
 
@@ -315,7 +315,7 @@ Let's remedy that problem by editing the {{{Cliff}}} passage in [[Twine|TwineLes
 
 :: TwineLesson003Passage020 [deonna]
 
-<img hspace="8" vspace="5" src="./assets/images/tutorial/edit-cliff-psg.png">We're going to edit the {{{Cliff}}} passage by double-clicking on that passage in $tw. When we do that, $tw opens a passage editor just like the one we used to enter text into the {{{Campfire}}} passage. Enter the following text into the {{{Cliff}}} passage, in $tw: //As you crest the ridge, trees give way to ragged stone, carved by the ages. Far below, a river courses southward, the rush of its passage a soothing white noise as it reaches your ears.//
+<img align="left" hspace="8" vspace="5" src="./assets/images/tutorial/edit-cliff-psg.png">We're going to edit the {{{Cliff}}} passage by double-clicking on that passage in $tw. When we do that, $tw opens a passage editor just like the one we used to enter text into the {{{Campfire}}} passage. Enter the following text into the {{{Cliff}}} passage, in $tw: //As you crest the ridge, trees give way to ragged stone, carved by the ages. Far below, a river courses southward, the rush of its passage a soothing white noise as it reaches your ears.//
 
 <img src="./assets/images/tutorial/add-river-description.png">
 
@@ -336,7 +336,7 @@ Okay, nice! Now, if you'll recall, the text in passage {{{Campfire}}} stated tha
 :: TwineLesson003Passage022 [deonna]
 Therefore, let's edit our {{{Cliff}}} passage by adding the following sentence: //About a rock's throw away to the west, you see the flickering light from your campfire.// Let's made the word "west" link back to the {{{Campfire}}} passage. Remember that to make a link, we use the word that will become a hyperlink (in this case, "west"), and the name of the passage to be linked to (in this case, {{{Campfire}}}). They're separated by the {{{pipe}}} character (a vertical line you can type by holding down Shift and clicking the button on your keyboard just beneath the Backspace button).
 
-The {{{Cliff}}} passage should now look like the following, in the $tw editor:
+The {{{Cliff}}} passage should now look like the following, in the $tw [[editor|TwineLesson003Passage023]]:
 
 <img src="./assets/images/tutorial/cliff-leads-west.png">
 
