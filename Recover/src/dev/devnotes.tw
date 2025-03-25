@@ -1,4 +1,9 @@
 :: DevNotes [noreturn]
+__Notes rom 3/24/2025__Notes
+# added function redify on the setup object
+# added function greenify on the setup object
+# added macros {{{<<correct>>}}} and {{{<<wrong>>}}} to support quizzing
+
 __Notes from 3/22/2025__
 # Created widget {{{<<tutorial-links>>}}}
 <span class="tab">*</span> It looks through all tutorial passages
