@@ -125,3 +125,43 @@
 <<widget "tutorial-passages">>
   Out of <<= setup.getTotalPassagesCount()>> total passages in this twine, <<= setup.getTutorialPassagesCount()>> passages are tagged [deonna], indicating that they are dedicated to my $tw tutorial series.
 <</widget>>
+
+<<widget "grade-quiz">>
+  <<if $args[0] eq undefined>>
+
+      You didn't pass an argument to the {{{<<grade-quiz>>}}} macro!
+
+  <<else>>
+
+      <<set _total to 0, _correct to 0, _good to "You answered correctly.", _bad to "Sorry, that's wrong.">>
+
+      <<switch $args[0]>>
+
+        <<case "$quiz1">>
+          <<if $quiz1.Q1 eq $quiz1.P1>><<set _correct++>><</if>><<set _total++>>
+          <<if $quiz1.Q2 eq $quiz1.P2>><<set _correct++>><</if>><<set _total++>>
+          <<if $quiz1.Q3 eq $quiz1.P3>><<set _correct++>><</if>><<set _total++>>
+        
+        <<default>>
+          {{{$args[0]}}} isn't undefined, but I'll be damned if I know what to do with '<<= $args[0]>>'.
+      
+      <</switch>>
+
+      You got _correct quiz <<if _correct eq 1>>item<<else>>items<</if>> <<= setup.greenify('correct')>> on Quiz #1, which reviews Lessons 01 through 04. <<if _correct eq _total>>Congrats on getting a score of 100%.<</if>><br><br>
+
+      For Q1, you answered '$quiz1.P1'. <<if $quiz1.Q1 eq $quiz1.P1>>''<<correct>>''<<else>>''<<wrong>>''<</if>><br>
+      For Q2, you answered '$quiz1.P2'. <<if $quiz1.Q2 eq $quiz1.P2>>''<<correct>>''<<else>>''<<wrong>>''<</if>><br>
+      For Q3, you answered '$quiz1.P3'. <<if $quiz1.Q3 eq $quiz1.P3>>''<<correct>>''<<else>>''<<wrong>>''<</if>><br>
+
+      <<unset _total, _correct>>
+
+  <</if>>
+<</widget>>
+
+<<widget "correct">>
+  <<= setup.greenify('You answered correctly!')>>
+<</widget>>
+
+<<widget "wrong">>
+  <<= setup.redify('You answered incorrectly.')>>
+<</widget>>

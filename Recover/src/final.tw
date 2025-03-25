@@ -189,6 +189,16 @@ setup.getTutorialPassagesCount = function(){
 	return (Story.lookup("tags", "deonna")).length;
 };
 
+setup.redify = function(arg1){
+	let x = "<span class='red'>" + arg1 + "</span>";
+	return x;
+};
+
+setup.greenify = function(arg1){
+	let x = "<span class='dark-green'>" + arg1 + "</span>";
+	return x;
+};
+
 
 :: StoryInit
 
@@ -208,9 +218,22 @@ setup.getTutorialPassagesCount = function(){
 	"spentPoints": 0,
 }>>
 
+/* Q# is # of the current question in the current quiz
+   P# is the player's response to quiz question # (empty string until player has answered)
+   M# does this quiz question matter? (true if "yes"/false otherwise) */
 <<set $quiz1 to {
+	"Item1": "What's your favorite pie?",
 	"Q1": "cherry",
 	"P1": "",
+	"M1": false,
+	"Item2": "What's the name of the software tool you're learning about in this tutorial series?",
+	"Q2": "twine",
+	"P2": "",
+	"M2": true,
+	"Item3": "The structures in which we place chunks of text are represented by Cards on the Story Map? So far in our story &mdash; //A Campfire Tale// &mdash; we've created a hyperlink connecting two of these structures. What are they called?",
+	"Q3": "passages",
+	"P3": "",
+	"M3": true,
 }>>
 
 <<set $nonOpt to "That was a non-optimal response.">>
