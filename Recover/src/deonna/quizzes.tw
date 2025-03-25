@@ -1,8 +1,30 @@
 :: Quizzes [script]
 
 setup.quiz1 = {
-
+    "Q1": "What's your favorite pie?",
+    "Q1-opt1": "apple",
+    "Q1-opt2": "blueberry",
+    "Q1-opt3": "cherry",
+    "Q1-opt4": "pecan",
+    "Q1-correct": "Q1-opt3",
+    "Q1-choice": "",
+    "Q2": "What's the name of the software tool you're learning about in this tutorial series?",
+    "Q2-opt1": "Twinery",
+    "Q2-opt2": "StoryNexus",
+    "Q2-opt3": "TaleSpin",
+    "Q2-opt4": "Twine",
+    "Q2-correct": "Q2-opt4",
+    "Q2-choice": "",
+    "Q3": "The structures in which we place chunks of text are represented by Cards on the Story Map? So far in our story &mdash; //A Campfire Tale// &mdash; we've created a hyperlink connecting two of these structures. What are they called?",
+    "Q3-opt1": "cards",
+    "Q3-opt2": "passages",
+    "Q3-opt3": "narration boxes",
+    "Q3-opt4": "story beats",
+    "Q3-correct", "Q3-opt2",
+    "Q3-choice", "",
 };
+
+<<set $_q to "">
 
 :: QuizWidgets [widget]
 <<widget "grade-quiz">>
@@ -53,13 +75,15 @@ setup.quiz1 = {
 
 :: TwineLesson004Quiz002 [deonna quiz]
 <div class="borderimg">
-<<= $quiz1.Item1>><<silently>><<set _t to "blueberry">><</silently>>
-* <<radiobutton "_t" "blueberry" autocheck>> Blueberry
-* <<radiobutton "_t" "cherry" autocheck>> Cherry
-* <<radiobutton "_t" "coconut cream" autocheck>> Coconut cream
-* <<radiobutton "_t" "pecan" autocheck>> Pecan
+<!--update here AFTER updating quiz macros to reflect the above setup data in quizzes.tw
+<<= setup.quiz1.Q1>><<silently>><<set $_q to setup.quiz1.Q1-opt1>><</silently>>
+* <<radiobutton "$_q" setup.quiz1.Q1-opt1 autocheck>> Blueberry
+* <<radiobutton "$_q" setup.quiz1.Q1-opt2 autocheck>> Cherry
+* <<radiobutton "$_q" setup.quiz1.Q1-opt3 autocheck>> Coconut cream
+* <<radiobutton "$_q" setup.quiz1.Q1-opt4 autocheck>> Pecan
 </div>
 I've selected my answer. <<link "Continue.">><<set $quiz1.P1 to _t>><<goto "TwineLesson004Quiz003">><</link>>
+-->
 
 :: TwineLesson004Quiz003 [deonna quiz nobr]
 <!--
@@ -69,25 +93,31 @@ I've selected my answer. <<link "Continue.">><<set $quiz1.P1 to _t>><<goto "Twin
     Really? I prefer pecan pie. <<if $quiz1.P1 eq "coconut cream">>Gotta say, though: I love coconut cream too.<</if>>
 <</if>> <<if $quiz1.M1 eq false>>I don't suppose it matters what pie you prefer... I was just curious.<</if>>
 -->
+
+<!--update here AFTER updating quiz macros to reflect the above setup data in quizzes.tw
 <div class="borderimg">
-<<= $quiz1.Item2>><<silently>><<set _t to "storymaker">><</silently>><br><br>
-* <<radiobutton "_t" "storymaker" autocheck>> StoryMaker<br>
-* <<radiobutton "_t" "twine" autocheck>> Twine<br>
-* <<radiobutton "_t" "sugarcube" autocheck>> Sugarcube<br>
-* <<radiobutton "_t" "passageprose" autocheck>> PassageProse<br>
+<<= setup.quiz1.Q2>><<silently>><<set $_q to setup.quiz1.Q2-opt1>><</silently>><br><br>
+* <<radiobutton "$_q" setup.quiz1.Q2-opt1 autocheck>> StoryMaker<br>
+* <<radiobutton "$_q" setup.quiz1.Q2-opt2 autocheck>> Twine<br>
+* <<radiobutton "$_q" setup.quiz1.Q2-opt3 autocheck>> Sugarcube<br>
+* <<radiobutton "$_q" setup.quiz1.Q2-opt4 autocheck>> PassageProse<br>
 </div>
 <br>
 I've selected my answer. <<link "Continue.">><<set $quiz1.P2 to _t>><<goto "TwineLesson004Quiz004">><</link>>
+-->
 
 :: TwineLesson004Quiz004 [deonna quiz]
+<!--update here AFTER updating quiz macros to reflect the above setup data in quizzes.tw
 <div class="borderimg">
-<<= $quiz1.Item3>><<silently>><<set _t to "proseboxes">><</silently>>
-* <<radiobutton "_t" "passages" autocheck>> Passages
-* <<radiobutton "_t" "chapters" autocheck>> Chapters
-* <<radiobutton "_t" "storybeats" autocheck>> Story Beats
-* <<radiobutton "_t" "proseboxes" autocheck>> Prose Boxes
+<<= setup.quiz1.Q3>><<silently>><<set $_q to setup.quiz1.Q3-opt1>><</silently>>
+* <<radiobutton "_t" setup.quiz1.Q3-opt1 autocheck>> Passages
+* <<radiobutton "_t" setup.quiz1.Q3-opt2 autocheck>> Chapters
+* <<radiobutton "_t" setup.quiz1.Q3-opt3 autocheck>> Story Beats
+* <<radiobutton "_t" setup.quiz1.Q3-opt4 autocheck>> Prose Boxes
 </div>
 I've selected my answer. <<link "Continue.">><<set $quiz1.P3 to _t>><<goto "TwineLesson004Quiz005">><</link>>
+-->
 
 :: TwineLesson004Quiz005 [deonna quiz]
-<<grade-quiz "$quiz1">>
+I'll grade your quiz after widget {{{<<grade-quiz>>}}} has been updated.
+<!--<<grade-quiz setup.quiz1>>-->
