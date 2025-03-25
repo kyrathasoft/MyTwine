@@ -44,3 +44,50 @@ setup.quiz1 = {
 <<widget "wrong">>
   <<= setup.redify('You answered incorrectly.')>>
 <</widget>>
+
+:: TwineLesson004Quiz001 [deonna quiz]
+<img align="left" width="35" hspace=10 vspace=10 src="./assets/images/quiz.png">Welcome to the first quiz of this tutorial series. Here, we'll test your recall to see what you've absorbed of the material reviewed so far. I'll keep track of any wrong answers, and will use them to create specific reviews to fill in any gaps in your comprehension. Remember, there's no pass/fail. You're only reading this tutorial because you want to; and these quizzes will always be optional.
+
+<img width="20" src="./assets/images/bullet-point.png"> I've decided to [[skip the quiz|TwineLesson005Passage001]]
+<img width="20" src="./assets/images/bullet-point.png"> I'm ready to [[take a quiz|TwineLesson004Quiz002]]
+
+:: TwineLesson004Quiz002 [deonna quiz]
+<div class="borderimg">
+<<= $quiz1.Item1>><<silently>><<set _t to "blueberry">><</silently>>
+* <<radiobutton "_t" "blueberry" autocheck>> Blueberry
+* <<radiobutton "_t" "cherry" autocheck>> Cherry
+* <<radiobutton "_t" "coconut cream" autocheck>> Coconut cream
+* <<radiobutton "_t" "pecan" autocheck>> Pecan
+</div>
+I've selected my answer. <<link "Continue.">><<set $quiz1.P1 to _t>><<goto "TwineLesson004Quiz003">><</link>>
+
+:: TwineLesson004Quiz003 [deonna quiz nobr]
+<!--
+<<if $quiz1.P1 eq "pecan">>
+    I like pecan pie too!
+<<else>>
+    Really? I prefer pecan pie. <<if $quiz1.P1 eq "coconut cream">>Gotta say, though: I love coconut cream too.<</if>>
+<</if>> <<if $quiz1.M1 eq false>>I don't suppose it matters what pie you prefer... I was just curious.<</if>>
+-->
+<div class="borderimg">
+<<= $quiz1.Item2>><<silently>><<set _t to "storymaker">><</silently>><br><br>
+* <<radiobutton "_t" "storymaker" autocheck>> StoryMaker<br>
+* <<radiobutton "_t" "twine" autocheck>> Twine<br>
+* <<radiobutton "_t" "sugarcube" autocheck>> Sugarcube<br>
+* <<radiobutton "_t" "passageprose" autocheck>> PassageProse<br>
+</div>
+<br>
+I've selected my answer. <<link "Continue.">><<set $quiz1.P2 to _t>><<goto "TwineLesson004Quiz004">><</link>>
+
+:: TwineLesson004Quiz004 [deonna quiz]
+<div class="borderimg">
+<<= $quiz1.Item3>><<silently>><<set _t to "proseboxes">><</silently>>
+* <<radiobutton "_t" "passages" autocheck>> Passages
+* <<radiobutton "_t" "chapters" autocheck>> Chapters
+* <<radiobutton "_t" "storybeats" autocheck>> Story Beats
+* <<radiobutton "_t" "proseboxes" autocheck>> Prose Boxes
+</div>
+I've selected my answer. <<link "Continue.">><<set $quiz1.P3 to _t>><<goto "TwineLesson004Quiz005">><</link>>
+
+:: TwineLesson004Quiz005 [deonna quiz]
+<<grade-quiz "$quiz1">>
