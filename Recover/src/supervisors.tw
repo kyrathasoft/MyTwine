@@ -11,7 +11,7 @@ If you //aren't// a CS, I have already alerted Big Brother to your presence here
 				/* Removes the button */
             <</replace>>
             <<replace '#textbox-reply'>>\
-                <<set $correctPasswordGiven to true>><<goto SupervisorsTOC>>
+                <<set $correctPasswordGiven to true>><<unset $answer>><<goto SupervisorsTOC>>
 			<</replace>>
             <<run $('#textbox-answer').attr('readonly', 'true');>>
         <<else>>
