@@ -261,6 +261,9 @@ html[data-debug-view] .debug.hidden .debug {
   .dark-green {
 	color: #023020;
   }
+  .sea-green {
+	color: #2E8B57;
+  }
   .blue {
 	color: #25F5FC;
   }
