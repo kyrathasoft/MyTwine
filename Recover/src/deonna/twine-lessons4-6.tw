@@ -96,7 +96,7 @@ So, the Story Map contains Cards representing passages. We can drag these passag
 :: TwineLesson004Passage014 [deonna]
 Well, you've got the first four lessons of this $tw tutorial series under your belt now. I'd said that we'd add to our story, but we just didn't quite get to adding that third Passage yet. We're still laying a foundation to build upon. I now challenge you to [[take a quiz|TwineLesson004Quiz001]]. However, you're free to skip it and jump straight to [[Lesson 5|TwineLesson005Passage001]].
 
-
+/* Quiz passages and widgets are in src/deonna/quizzes.tw */
 
 
 :: TwineLesson005Passage001 [deonna]

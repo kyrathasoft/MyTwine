@@ -200,16 +200,14 @@ setup.greenify = function(arg1){
 };
 
 
-
-
-
-
 :: StoryInit
 
 <<set setup.achievements to recall('achievements', { })>>
 
 <<set $correctDevPassword to false>>
 <<set $correctPasswordGiven to false>>
+
+
 
 <<set $knight to {
 	"bravery": 1,
@@ -221,7 +219,6 @@ setup.greenify = function(arg1){
 	"prowess": 1,
 	"spentPoints": 0,
 }>>
-
 
 
 <<set $nonOpt to "That was a non-optimal response.">>

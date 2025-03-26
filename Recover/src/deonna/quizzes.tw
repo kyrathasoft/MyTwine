@@ -1,30 +1,8 @@
 :: Quizzes [script]
 
-setup.quiz1 = {
-    "Q1": "What's your favorite pie?",
-    "Q1-opt1": "apple",
-    "Q1-opt2": "blueberry",
-    "Q1-opt3": "cherry",
-    "Q1-opt4": "pecan",
-    "Q1-correct": "Q1-opt3",
-    "Q1-choice": "",
-    "Q2": "What's the name of the software tool you're learning about in this tutorial series?",
-    "Q2-opt1": "Twinery",
-    "Q2-opt2": "StoryNexus",
-    "Q2-opt3": "TaleSpin",
-    "Q2-opt4": "Twine",
-    "Q2-correct": "Q2-opt4",
-    "Q2-choice": "",
-    "Q3": "The structures in which we place chunks of text are represented by Cards on the Story Map? So far in our story &mdash; //A Campfire Tale// &mdash; we've created a hyperlink connecting two of these structures. What are they called?",
-    "Q3-opt1": "cards",
-    "Q3-opt2": "passages",
-    "Q3-opt3": "narration boxes",
-    "Q3-opt4": "story beats",
-    "Q3-correct", "Q3-opt2",
-    "Q3-choice", "",
-};
 
-<<set $_q to "">
+
+
 
 :: QuizWidgets [widget]
 <<widget "grade-quiz">>
@@ -39,31 +17,30 @@ setup.quiz1 = {
       <<switch $args[0]>>
 
         <<case "$quiz1">>
-          <<if $quiz1.Q1 eq $quiz1.P1>><<set _correct++>><</if>><<set _total++>>
-          <<if $quiz1.Q2 eq $quiz1.P2>><<set _correct++>><</if>><<set _total++>>
-          <<if $quiz1.Q3 eq $quiz1.P3>><<set _correct++>><</if>><<set _total++>>
+         
         
         <<default>>
           {{{$args[0]}}} isn't undefined, but I'll be damned if I know what to do with '<<= $args[0]>>'.
       
       <</switch>>
-
+/*
       You got _correct quiz <<if _correct eq 1>>item<<else>>items<</if>> <<= setup.greenify('correct')>> on Quiz #1, which reviews Lessons 01 through 04. <<if _correct eq _total>>Congrats on getting a score of 100%.<</if>><br><br>
 
       For Q1, you answered '$quiz1.P1'. <<if $quiz1.Q1 eq $quiz1.P1>>''<<correct>>''<<else>>''<<wrong>>''<</if>><br>
       For Q2, you answered '$quiz1.P2'. <<if $quiz1.Q2 eq $quiz1.P2>>''<<correct>>''<<else>>''<<wrong>>''<</if>><br>
       For Q3, you answered '$quiz1.P3'. <<if $quiz1.Q3 eq $quiz1.P3>>''<<correct>>''<<else>>''<<wrong>>''<</if>><br>
+*/
 
       <<unset _total, _correct>>
 
   <</if>>
 <</widget>>
 
-<<widget "correct">>
+<<widget "correct">>\
   <<= setup.greenify('You answered correctly!')>>
 <</widget>>
 
-<<widget "wrong">>
+<<widget "wrong">>\
   <<= setup.redify('You answered incorrectly.')>>
 <</widget>>
 
@@ -73,17 +50,36 @@ setup.quiz1 = {
 <img width="20" src="./assets/images/bullet-point.png"> I've decided to [[skip the quiz|TwineLesson005Passage001]]
 <img width="20" src="./assets/images/bullet-point.png"> I'm ready to [[take a quiz|TwineLesson004Quiz002]]
 
-:: TwineLesson004Quiz002 [deonna quiz]
+
+
+:: TwineLesson004Quiz002 [deonna quiz nobr]
+<<set $qz1right to "cherry", $_q to "apple">>
 <div class="borderimg">
-<!--update here AFTER updating quiz macros to reflect the above setup data in quizzes.tw
-<<= setup.quiz1.Q1>><<silently>><<set $_q to setup.quiz1.Q1-opt1>><</silently>>
-* <<radiobutton "$_q" setup.quiz1.Q1-opt1 autocheck>> Blueberry
-* <<radiobutton "$_q" setup.quiz1.Q1-opt2 autocheck>> Cherry
-* <<radiobutton "$_q" setup.quiz1.Q1-opt3 autocheck>> Coconut cream
-* <<radiobutton "$_q" setup.quiz1.Q1-opt4 autocheck>> Pecan
+"What is your favorite type of pie?<br>
+* <<radiobutton "$_q" "apple" autocheck>> Apple<br>
+* <<radiobutton "$_q" "blueberry" autocheck>> Blueberry<br>
+* <<radiobutton "$_q" "cherry" autocheck>> Cherry<br>
+* <<radiobutton "$_q" "pecan" autocheck>> Pecan<br>
 </div>
-I've selected my answer. <<link "Continue.">><<set $quiz1.P1 to _t>><<goto "TwineLesson004Quiz003">><</link>>
--->
+I've selected my answer. <<link "Continue.">><<goto "TwineLesson004Quiz003">><</link>>
+
+
+/*
+    "Q2": "What's the name of the software tool you're learning about in this tutorial series?",
+    "Q2-opt1": "Twinery",
+    "Q2-opt2": "StoryNexus",
+    "Q2-opt3": "TaleSpin",
+    "Q2-opt4": "Twine",
+    "Q2-correct": "Q2-opt4",
+    "Q3": "The structures in which we place chunks of text are represented by Cards on the Story Map? So far in our story &mdash; //A Campfire Tale// &mdash; we've created a hyperlink connecting two of these structures. What are they called?",
+    "Q3-opt1": "cards",
+    "Q3-opt2": "passages",
+    "Q3-opt3": "narration boxes",
+    "Q3-opt4": "story beats",
+    "Q3-correct", "Q3-opt2",
+}*/
+
+
 
 :: TwineLesson004Quiz003 [deonna quiz nobr]
 <!--
@@ -93,8 +89,9 @@ I've selected my answer. <<link "Continue.">><<set $quiz1.P1 to _t>><<goto "Twin
     Really? I prefer pecan pie. <<if $quiz1.P1 eq "coconut cream">>Gotta say, though: I love coconut cream too.<</if>>
 <</if>> <<if $quiz1.M1 eq false>>I don't suppose it matters what pie you prefer... I was just curious.<</if>>
 -->
-
-<!--update here AFTER updating quiz macros to reflect the above setup data in quizzes.tw
+For type of pie, you chose $_q. <<if $_q eq $qz1right>><<correct>><<else>><<wrong>><</if>>
+<!--
+update here AFTER updating quiz macros to reflect the above setup data in quizzes.tw
 <div class="borderimg">
 <<= setup.quiz1.Q2>><<silently>><<set $_q to setup.quiz1.Q2-opt1>><</silently>><br><br>
 * <<radiobutton "$_q" setup.quiz1.Q2-opt1 autocheck>> StoryMaker<br>
