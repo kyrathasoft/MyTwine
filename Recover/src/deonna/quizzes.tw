@@ -35,7 +35,35 @@ I am initializing quiz data...
     q5opt2: "Paragraph",
     q5opt3: "Book",
     q5opt4: "Node",
-    q5ans: ""
+    q5ans: "",
+    q6: "Althouh most web browsers can play $tw games, which one did this tutorial's offer recommend?",
+    c6: "Chrome",
+    q6opt1: "Chrome",
+    q6opt2: "Edge",
+    q6opt3: "Safari",
+    q6opt4: "Firefox",
+    q6ans: "",
+    q7: "In what year was the $tw program first released (you may use Google Search)?",
+    c7: "2009",
+    q7opt1: "2008",
+    q7opt2: "2009",
+    q7opt3: "2010",
+    q7opt4: "2015",
+    q7ans: "",
+    q8: "Lesson 1 in this tutorial series dealt with what subject?",
+    c8: "Installing Twine",
+    q8opt1: "Installing Twine",
+    q8opt2: "Scanning Twine with your anti-virus program",
+    q8opt3: "Uninstalling Microsoft Word, since Twine abhors it",
+    q8opt4: "Achieving an inner state of Zen",
+    q8ans: "",
+    q9: "The name of the thing that sits between your story and Twine itself.",
+    c9: "Story Format",
+    q9opt1: "Compiler",
+    q9opt2: "Interpreter",
+    q9opt3: "Narrative Generator",
+    q9opt4: "Story Format",
+    q9ans: "",
 }>>
 
 :: QuizWidgets [widget nobr]
@@ -123,9 +151,73 @@ I've selected my answer. <<link "Continue.">><<goto "TwineLesson004Quiz008">><</
 
 :: TwineLesson004Quiz008 [deonna quiz nobr]
 <<set $myQuiz.q5ans to $_q>>
-I'll grade your quiz [[now|TwineLesson004Quiz009]]...
+<<= $myQuiz.q6>><<set $_q to $myQuiz.q6opt1>>
+<div class="borderimg">
+<<radiobutton "$_q" $myQuiz.q6opt1 autocheck>> $myQuiz.q6opt1<br>
+<<radiobutton "$_q" $myQuiz.q6opt2 autocheck>> $myQuiz.q6opt2<br>
+<<radiobutton "$_q" $myQuiz.q6opt3 autocheck>> $myQuiz.q6opt3<br>
+<<radiobutton "$_q" $myQuiz.q6opt4 autocheck>> $myQuiz.q6opt4<br>
+</div>
+<br>
+I've selected my answer. <<link "Continue.">><<goto "TwineLesson004Quiz009">><</link>>
 
-:: TwineLesson004Quiz009 [deonna quiz nobr grading]
+
+
+:: TwineLesson004Quiz009 [deonna quiz nobr]
+<<set $myQuiz.q6ans to $_q>>
+<<= $myQuiz.q7>><<set $_q to $myQuiz.q7opt1>>
+<div class="borderimg">
+<<radiobutton "$_q" $myQuiz.q7opt1 autocheck>> $myQuiz.q7opt1<br>
+<<radiobutton "$_q" $myQuiz.q7opt2 autocheck>> $myQuiz.q7opt2<br>
+<<radiobutton "$_q" $myQuiz.q7opt3 autocheck>> $myQuiz.q7opt3<br>
+<<radiobutton "$_q" $myQuiz.q7opt4 autocheck>> $myQuiz.q7opt4<br>
+</div>
+<br>
+I've selected my answer. <<link "Continue.">><<goto "TwineLesson004Quiz010">><</link>>
+
+:: TwineLesson004Quiz010 [deonna quiz nobr]
+<<set $myQuiz.q7ans to $_q>>
+<<= $myQuiz.q8>><<set $_q to $myQuiz.q8opt1>>
+<div class="borderimg">
+<<radiobutton "$_q" $myQuiz.q8opt1 autocheck>> $myQuiz.q8opt1<br>
+<<radiobutton "$_q" $myQuiz.q8opt2 autocheck>> $myQuiz.q8opt2<br>
+<<radiobutton "$_q" $myQuiz.q8opt3 autocheck>> $myQuiz.q8opt3<br>
+<<radiobutton "$_q" $myQuiz.q8opt4 autocheck>> $myQuiz.q8opt4<br>
+</div>
+<br>
+I've selected my answer. <<link "Continue.">><<goto "TwineLesson004Quiz011">><</link>>
+
+:: TwineLesson004Quiz011 [deonna quiz nobr]
+<<set $myQuiz.q8ans to $_q>>
+<<= $myQuiz.q9>><<set $_q to $myQuiz.q9opt1>>
+<div class="borderimg">
+<<radiobutton "$_q" $myQuiz.q9opt1 autocheck>> $myQuiz.q9opt1<br>
+<<radiobutton "$_q" $myQuiz.q9opt2 autocheck>> $myQuiz.q9opt2<br>
+<<radiobutton "$_q" $myQuiz.q9opt3 autocheck>> $myQuiz.q9opt3<br>
+<<radiobutton "$_q" $myQuiz.q9opt4 autocheck>> $myQuiz.q9opt4<br>
+</div>
+<br>
+I've selected my answer. <<link "Continue.">><<goto "TwineLesson004Quiz012">><</link>>
+
+
+:: TwineLesson004Quiz012 [deonna quiz nobr]
+<<set $myQuiz.q9ans to $_q>>
+<<= $myQuiz.q10>><<set $_q to $myQuiz.q10opt1>>
+<div class="borderimg">
+<<radiobutton "$_q" $myQuiz.q10opt1 autocheck>> $myQuiz.q10opt1<br>
+<<radiobutton "$_q" $myQuiz.q10opt2 autocheck>> $myQuiz.q10opt2<br>
+<<radiobutton "$_q" $myQuiz.q10opt3 autocheck>> $myQuiz.q10opt3<br>
+<<radiobutton "$_q" $myQuiz.q10opt4 autocheck>> $myQuiz.q10opt4<br>
+</div>
+<br>
+I've selected my answer. <<link "Continue.">><<goto "TwineLesson004Quiz013">><</link>>
+
+
+:: TwineLesson004Quiz013 [quiz deonna nobr]
+
+I'll grade your quiz [[now|TwineLesson004Quiz014]]...
+
+:: TwineLesson004Quiz014 [quiz deonna nobr grading]
 Performance Summary (Quiz #1): <br><br><<set _u to "You answered:">>
 <ol>
 <li> <<= $myQuiz.q1>> <<= _u>> <<= $myQuiz.q1ans.toUpperCase()>> (<<if $myQuiz.c1 eq $myQuiz.q1ans>>''<<correct>>''<<else>>''<<wrong>>''<</if>>)</li>
@@ -133,10 +225,18 @@ Performance Summary (Quiz #1): <br><br><<set _u to "You answered:">>
 <li> <<= $myQuiz.q3>> <<= _u>> <<= $myQuiz.q3ans.toUpperCase()>> (<<if $myQuiz.c3 eq $myQuiz.q3ans>>''<<correct>>''<<else>>''<<wrong>>''<</if>>)</li>
 <li> <<= $myQuiz.q4>> <<= _u>> <<= $myQuiz.q4ans.toUpperCase()>> (<<if $myQuiz.c4 eq $myQuiz.q4ans>>''<<correct>>''<<else>>''<<wrong>>''<</if>>)</li>
 <li><<= $myQuiz.q5>> <<= _u>> <<= $myQuiz.q5ans.toUpperCase()>> (<<if $myQuiz.c5 eq $myQuiz.q5ans>>''<<correct>>''<<else>>''<<wrong>>''<</if>>)</li>
+<li><<= $myQuiz.q6>> <<= _u>> <<= $myQuiz.q6ans.toUpperCase()>> (<<if $myQuiz.c6 eq $myQuiz.q6ans>>''<<correct>>''<<else>>''<<wrong>>''<</if>>)</li>
+<li><<= $myQuiz.q7>> <<= _u>> <<= $myQuiz.q7ans.toUpperCase()>> (<<if $myQuiz.c7 eq $myQuiz.q7ans>>''<<correct>>''<<else>>''<<wrong>>''<</if>>)</li>
+<li><<= $myQuiz.q8>> <<= _u>> <<= $myQuiz.q8ans.toUpperCase()>> (<<if $myQuiz.c8 eq $myQuiz.q8ans>>''<<correct>>''<<else>>''<<wrong>>''<</if>>)</li>
+<li><<= $myQuiz.q9>> <<= _u>> <<= $myQuiz.q9ans.toUpperCase()>> (<<if $myQuiz.c9 eq $myQuiz.q9ans>>''<<correct>>''<<else>>''<<wrong>>''<</if>>)</li>
 </ol>
+[[Post-Quiz Assurance|TwineLesson004PostQuiz]]
+
+:: TwineLesson004PostQuiz
 
 <<unset _u, $myQuiz, $_q>><br><br>
 No animals were harmed in the making of this quiz. Total $tw passages devoted to quizzing: <<= setup.getTutorialPassagesCount()>>
+
 
 
 

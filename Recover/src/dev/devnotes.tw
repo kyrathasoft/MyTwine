@@ -1,5 +1,11 @@
 :: DevNotes [noreturn]
-__Notes rom 3/24/2025__Notes
+__Notes from 3/26/2025__
+# fixed quiz-taking code
+# currently there are 5 questions in Quiz #1
+# Quiz #1 covers Lessons 1, 2, 3, and 4
+# Need to add at least 5 more questions to quiz
+
+__Notes from 3/24/2025__
 # added function redify on the setup object
 # added function greenify on the setup object
 # added macros {{{<<correct>>}}} and {{{<<wrong>>}}} to support quizzing
