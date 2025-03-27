@@ -221,7 +221,7 @@ I've selected my answer. <<link "Continue.">><<goto "TwineLesson004Quiz013">><</
 
 
 :: TwineLesson004Quiz013 [quiz deonna nobr]
-
+<<set $knight.quizQuestionsAnswered++>>
 I'll grade your quiz [[now|TwineLesson004Quiz014]]...
 
 :: TwineLesson004Quiz014 [quiz deonna nobr grading]
