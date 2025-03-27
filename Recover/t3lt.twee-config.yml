@@ -19,5 +19,7 @@ sugarcube-2:
       name: gorandom
     storyicons:
       name: storyicons
+    tutorial-passages:
+      name: tutorial-passages
     wrong:
       name: wrong
