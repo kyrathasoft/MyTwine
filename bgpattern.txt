@@ -1,0 +1,17 @@
+/* Backgrounds - Start */
+/*
+	Make the body >= 100% the height of the page, so that backgrounds which fill the whole screen look as expected
+*/
+html, body {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100vh;
+}
+/*
+	A repeating background image (e.g. wallpaper)
+	This style applies to any passage with a tag of "repeating-background"
+*/
+body.repeating-background {
+	/* background: url("D:/Games/Twine_Sample_Code/images/Pattern_SwirlPattern.png"); */
+	background: url("images/Pattern_SwirlPattern.png");
+}
