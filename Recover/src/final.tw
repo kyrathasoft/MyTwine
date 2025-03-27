@@ -218,6 +218,8 @@ setup.greenify = function(arg1){
 	"pastAdvancements": 0,
 	"prowess": 1,
 	"spentPoints": 0,
+	"quizQuestionsAnswered": 0,
+	"quizQuestionsCorrect": 0, 
 }>>
 
 
