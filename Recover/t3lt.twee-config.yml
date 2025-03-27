@@ -4,6 +4,8 @@ sugarcube-2:
       name: playtime
     cont:
       name: cont-macro-ignore
+    correct:
+      name: correct
     fadein:
       container: true
       name: fadein
@@ -17,3 +19,5 @@ sugarcube-2:
       name: gorandom
     storyicons:
       name: storyicons
+    wrong:
+      name: wrong
