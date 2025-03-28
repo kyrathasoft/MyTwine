@@ -9,6 +9,8 @@ sugarcube-2:
     fadein:
       container: true
       name: fadein
+    first:
+      name: first
     date:
       name: date
     InitQuiz1:
