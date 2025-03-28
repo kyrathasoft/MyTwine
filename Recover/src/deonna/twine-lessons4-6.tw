@@ -126,5 +126,9 @@ Let's rename it our newly added third passage, and add some text to it. Use the 
 We created linkage between our start passage {{{Campfire}}} and this newest passage, {{{SkeletonHollow}}}. On the next page, we'll see that our StoryMap has updated to [[reflect this|TwineLesson005Passage006]].
 
 :: TwineLesson005Passage006 [deonna]
-<img src="./assets/images/third-to-first-psg-link.png">
+<img src="./assets/images/tut-lessons-4-6/third-to-first-psg-link.png">
+You'll see I've yellow-highlighted the arrow that connects our new passage back to passage {{{Campfire}}}. Now I'll show you a neat trick. We can temporarily change the Start passage from {{{Campfire}}} to {{{SkeletonHollow}}}. To do this, click the {{{Passage}}} menu item, then select the newest passage &mdash; {{{SkeletonHollow}}}. If you have correctly selected the {{{SkeletonHollow}}} passage, it will have a darker shade than the other two passages. Next we're going to //temporarily// change the [[starting passage|TwineLesson005Passage007]].
+
+:: TwineLesson005Passage007 [deonna]
+ 
 
