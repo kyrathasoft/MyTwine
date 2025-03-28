@@ -102,3 +102,19 @@ Well, you've got the first four lessons of this $tw tutorial series under your b
 :: TwineLesson005Passage001 [deonna]
 <h2>$tw & $sc Lesson # 5 &mdash; Further expanding our Campfire Tale</h2>
 Welcome to Lesson 5. And congrats! You've made a solid start to learning $tw. In this lesson, I will show you a couple of alternative forms of creating links within your $tw passages. We'll add a couple more passages, and I'll teach you about the use of {{{variables}}} and {{{conditionals}}}.
+
+Note: ''<<tutorial-passages>>''
+
+[[Let's go|TwineLesson005Passage002]]...
+
+:: TwineLesson005Passage002 [deonna]
+In this lesson, we'll expand our story a bit, adding not only a few more passages but also beginning to frame a story. Because, as enjoyable as a campfire alone can be, we want //A Campfire Tale// to involve some sort of intriguing angle. Let's add another Passage to our $sg. We'll name it {{{SkeletonHollow}}}. If it isn't already, launch $tw and let's [[get started|TwineLesson005Passage003]].
+
+:: TwineLesson005Passage003 [deonna]
+<img align="left" hspace=10 vspace=8 src="./assets/images/tut-lessons-4-6/third-passage.png">To add a third passage to our $sg, we'll click the New button in the $tw menu, so that a new, unnamed passage is added to our Story Map (remember, the Story Map is the area in $tw that looks sort of like graphing paper).<br><br>When we first add the new passage, it'll appear near the center of the Story Map, but in the screenshot above, you see that I've dragged it with my mouse and placed it underneath our Start passage. One of the things a lot of people new to $tw find helpful is this ability to visually arrange the nodes of their story. As our campfire tale develops, you'll begin to see how useful the Story Map can be in aiding your brain in keeping the project organized. If you want to see how confusing an unorganized Story Map can look as a project grows in size, click <a target="_new" href="https://bryanmiller.us/2025/03/complex-unorganized-storymap-in-twine">here</a> to open a page in a new browser tab.
+
+When you're ready to continue, click [[here|TwineLesson005Passage004]].
+
+:: TwineLesson005Passage004 [deonna]
+Okay, now that we have added a third passage, let's rename it and add some text to it.
+
