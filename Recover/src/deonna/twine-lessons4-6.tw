@@ -130,5 +130,16 @@ We created linkage between our start passage {{{Campfire}}} and this newest pass
 You'll see I've yellow-highlighted the arrow that connects our new passage back to passage {{{Campfire}}}. Now I'll show you a neat trick. We can temporarily change the Start passage from {{{Campfire}}} to {{{SkeletonHollow}}}. To do this, click the {{{Passage}}} menu item, then select the newest passage &mdash; {{{SkeletonHollow}}}. If you have correctly selected the {{{SkeletonHollow}}} passage, it will have a darker shade than the other two passages. Next we're going to //temporarily// change the [[starting passage|TwineLesson005Passage007]].
 
 :: TwineLesson005Passage007 [deonna]
- 
+<img src="./assets/images/tut-lessons-4-6/change-start-psg.png">
+Normally, the green rocketship is attached to our {{{Campfire}}} passage, signifying that //that// passage is where our $sg launches &mdash; or //Takes off!// We've temporarily reassigned the rocketship to the {{{SkeletonHollow}}} passage. See the screenshot above. Now click the {{{Build}}} menu, then click the {{{Play}}} button. Here is [[the result|TwineLesson005Passage008]].
+
+:: TwineLesson005Passage008 [deonna]
+<img src="./assets/images/tut-lessons-4-6/play-from-third-psg.png">
+You aren't the only one learning new things, here. I love learning as I create these types of tutorials. Look as the passage as you're playing our $sg in your browser. See that the last word in the text is a hyperlink? Click on it. Sure enough, when you do, it takes you to the {{{Campfire}}} passage. Imagine later on, after our $sg has grown to over a dozen passages. This ability to temporarily change the Start passage will come in handy for testing, [[right|TwineLesson005Passage009]]?
+
+:: TwineLesson005Passage009 [deonna]
+Close out of the browser window or tab in which you're playing the $sg, and return to the $tw program. Let's put the rocketship back to the {{{Campfire}}} passage by clicking the {{{Passage}}} menu item, then left-clicking the {{{Campfire}}} passage, and finally by clicking the {{{Start Story Here}}} button. Since we've added a way to get from {{{SkeletonHollow}}} to {{{Campfire}}}, it seems reasonable we'd want to edit passage {{{Campfire}}} to add to its description and create a link from it to {{{SkeletonHollow}}}. Let's do [[that now|TwineLesson005Passage010]].
+
+:: TwineLesson005Passage010 [deonna]
+<<tutorial-passages>>
 

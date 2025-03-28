@@ -1,7 +1,7 @@
 :: Start [nobr]
 
 <!-- The following to be commented-out after testing-->
-<<goto "TwineLesson005Passage003">>
+<<goto "TwineLesson005Passage010">>
 <!--<<goto TwineLesson004Passage005>>-->
 <!--The above to be commented-out after testing-->
 
@@ -158,12 +158,6 @@ body.levelup{
 	opacity: 0;
 }
 
-.borderimg {
-  border: 4px double #b8908b;
-  padding: 15px;
-  border-radius: 10px;
-  border-image: 30 round;
-}
 
 #ui-bar-body {
 	height: calc(100% - 2.5em);
