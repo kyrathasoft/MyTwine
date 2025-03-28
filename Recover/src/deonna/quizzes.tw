@@ -81,7 +81,6 @@
     q10opt4: "Glacier",
     q10ans: "",
 }>>
-
 <</widget>>
 
 
@@ -286,7 +285,7 @@ I'll grade your quiz [[now|TwineLesson004Quiz014]]...
 :: TwineLesson004PostQuiz [deonna quiz nobr]
 <<unset _u, $myQuiz, $_q>><<set _score to setup.calculatePercentage($knight.quizQuestionsCorrect, $knight.quizQuestionsAnswered)>><br><br>
 No animals were harmed in the making of this quiz. Total $tw passages devoted to quizzing: <<= setup.getTutorialPassagesCount()>>. You have answered a total of <<= $knight.quizQuestionsAnswered>> quiz questions, <<= $knight.quizQuestionsCorrect>> of them correctly. You scored <<= _score>>% on this quiz. <br><br><center>
-<<if _score lt 100>>Do you want to re-take the quiz? <<link "Yes">><<InitQuiz1>><<goto TwineLesson004Quiz001>><</link>> / [[No|TwineLesson005Passage001]]<<else>>[[Continue to Lesson 05|TwineLesson005Passage001]]</center><</if>>
+<<if _score lt 100>>Do you want to re-take the quiz? <<link "Yes">><<InitQuiz1>><<goto TwineLesson004Quiz001>><</link>> / [[No|TwineLesson005Passage001]]<<else>>[[Continue to Lesson 05|TwineLesson005Passage001]]<</if>></center>
 
 
 

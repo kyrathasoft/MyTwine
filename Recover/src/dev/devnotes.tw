@@ -1,6 +1,9 @@
 :: DevNotes [noreturn]
 __Notes from 3/27/2025__
-# 
+# fixed a misordered closing tag in psg TwineLesson004PostQuiz
+# tested / verified that quiz #1 grading works
+# blogged & embedded a Github gist of Twee3 code for quizzing
+# backed up some online copies of Gwentastic's Twee splitter
 
 __Notes from 3/26/2025__
 # fixed quiz-taking code

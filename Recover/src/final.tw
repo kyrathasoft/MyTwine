@@ -211,8 +211,6 @@ setup.calculatePercentage = function(arg1, arg2) {
 <<set $correctDevPassword to false>>
 <<set $correctPasswordGiven to false>>
 
-
-
 <<set $knight to {
 	"bravery": 1,
 	"brawn": 1,
