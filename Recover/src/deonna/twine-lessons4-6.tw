@@ -116,8 +116,15 @@ In this lesson, we'll expand our story a bit, adding not only a few more passage
 When you're ready to continue, click [[here|TwineLesson005Passage004]].
 
 :: TwineLesson005Passage004 [deonna]
-<img align="left" vspace=8 hspace=10 src="./assets/images/tut-lessons-4-6/dot-graph-3-passages.png">We can visualize our current $sg as shown in the image on the left. This is called a dot-graph representation. Notice that our Start passage is shown as a double-circle. And you can see that the {{{Campfire}}} and {{{Cliff}}} passages are hyperlinked to one another. Remember in a previous lesson we saw that the player can move back and forth between these two passages.
+<img align="left" vspace=8 hspace=10 src="./assets/images/tut-lessons-4-6/dot-graph-3-passages.png">We can visualize our current $sg as shown in the image on the left. This is called a dot-graph representation. Notice that our Start passage is shown as a double-circle. And you can see that the {{{Campfire}}} and {{{Cliff}}} passages are hyperlinked to one another. Remember in a previous lesson we saw that the player can move back and forth between these two passages. The third passage, currently un-named, isn't connected to either of the other two passages, because we've not created any [[links yet|TwineLesson005Passage005]].
 
 :: TwineLesson005Passage005 [deonna]
-Okay, now that we have added a third passage, let's rename it and add some text to it.
+Let's rename it our newly added third passage, and add some text to it. Use the Rename button in the menu and rename 'Untitled Passage' to 'SkeletonHollow' &mdash; sans the single-quotes. And then enter this text into the passage: //You are standing in a sunken area nestled into a copse of firs and evergreens, a minute's hike from your [[campfire->Campfire]].// Save your work by closing the passage editor.
+
+<img src="./assets/images/tut-lessons-4-6/skeletonHollow.png">
+
+We created linkage between our start passage {{{Campfire}}} and this newest passage, {{{SkeletonHollow}}}. On the next page, we'll see that our StoryMap has updated to [[reflect this|TwineLesson005Passage006]].
+
+:: TwineLesson005Passage006 [deonna]
+<img src="./assets/images/third-to-first-psg-link.png">
 
