@@ -11,6 +11,8 @@ sugarcube-2:
       name: fadein
     date:
       name: date
+    InitQuiz1:
+      name: InitQuiz1
     knight-stats:
       name: knight-stats
     repeat:

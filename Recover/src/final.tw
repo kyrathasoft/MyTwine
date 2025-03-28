@@ -199,7 +199,10 @@ setup.greenify = function(arg1){
 	return x;
 };
 
-
+setup.calculatePercentage = function(arg1, arg2) {
+  const percentage = (arg1 / arg2) * 100;
+  return Math.round(percentage);
+};
 
 :: StoryInit
 

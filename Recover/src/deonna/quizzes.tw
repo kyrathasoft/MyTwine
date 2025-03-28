@@ -1,5 +1,14 @@
-:: Quiz1_Init [init deonna quiz]
-I am initializing quiz data...
+:: QuizWidgets [widget nobr]
+
+<<widget "correct">>\
+  <<= setup.greenify('You answered correctly!')>>
+<</widget>>
+
+<<widget "wrong">>\
+  <<= setup.redify('You answered incorrectly.')>>
+<</widget>>
+
+<<widget "InitQuiz1">>
 <<set $myQuiz to {
     q1: "What is your favorite sort of pie?",
     c1: "cherry",
@@ -73,18 +82,11 @@ I am initializing quiz data...
     q10ans: "",
 }>>
 
-:: QuizWidgets [widget nobr]
-
-<<widget "correct">>\
-  <<= setup.greenify('You answered correctly!')>>
-<</widget>>
-
-<<widget "wrong">>\
-  <<= setup.redify('You answered incorrectly.')>>
 <</widget>>
 
 
 :: TwineLesson004Quiz001 [deonna quiz nobr]
+<<InitQuiz1>><<set $knight.quizQuestionsAnswered to 0>><<set $knight.quizQuestionsCorrect to 0>>
 <img align="left" width="35" hspace=10 vspace=10 src="./assets/images/quiz.png">Welcome to the first quiz of this tutorial series. Here, we'll test your recall to see what you've absorbed of the material reviewed so far. I'll keep track of any wrong answers, and will use them to create specific reviews to fill in any gaps in your comprehension. Remember, there's no pass/fail. You're only reading this tutorial because you want to; and these quizzes will always be optional. <br><br>
 
 
@@ -279,11 +281,13 @@ I'll grade your quiz [[now|TwineLesson004Quiz014]]...
 <td style="padding: 10px"><<if $myQuiz.c10 eq $myQuiz.q10ans>>''<<correct>>''<<set $knight.quizQuestionsCorrect++>><<else>>''<<wrong>>''<</if>></td>
 </tr>
 </table><br><center>
-[[Post-Quiz Assurance|TwineLesson004PostQuiz]]</center><br><br>
+[[Post-Quiz Feedback|TwineLesson004PostQuiz]]</center><br><br>
 
-:: TwineLesson004PostQuiz
-<<unset _u, $myQuiz, $_q>><br><br>
-No animals were harmed in the making of this quiz. Total $tw passages devoted to quizzing: <<= setup.getTutorialPassagesCount()>>. You have answered a total of <<= $knight.quizQuestionsAnswered>> quiz questions, <<= $knight.quizQuestionsCorrect>> of them correctly.
+:: TwineLesson004PostQuiz [deonna quiz nobr]
+<<unset _u, $myQuiz, $_q>><<set _score to setup.calculatePercentage($knight.quizQuestionsCorrect, $knight.quizQuestionsAnswered)>><br><br>
+No animals were harmed in the making of this quiz. Total $tw passages devoted to quizzing: <<= setup.getTutorialPassagesCount()>>. You have answered a total of <<= $knight.quizQuestionsAnswered>> quiz questions, <<= $knight.quizQuestionsCorrect>> of them correctly. You scored <<= _score>>% on this quiz. <br><br><center>
+<<if _score lt 100>>Do you want to re-take the quiz? <<link "Yes">><<InitQuiz1>><<goto TwineLesson004Quiz001>><</link>> / [[No|TwineLesson005Passage001]]<<else>>[[Continue to Lesson 05|TwineLesson005Passage001]]</center><</if>>
+
 
 
 
