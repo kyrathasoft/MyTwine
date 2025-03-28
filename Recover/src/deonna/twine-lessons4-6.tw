@@ -116,5 +116,8 @@ In this lesson, we'll expand our story a bit, adding not only a few more passage
 When you're ready to continue, click [[here|TwineLesson005Passage004]].
 
 :: TwineLesson005Passage004 [deonna]
+<img align="left" vspace=8 hspace=10 src="./assets/images/tut-lessons-4-6/dot-graph-3-passages.png">We can visualize our current $sg as shown in the image on the left. This is called a dot-graph representation. Notice that our Start passage is shown as a double-circle. And you can see that the {{{Campfire}}} and {{{Cliff}}} passages are hyperlinked to one another. Remember in a previous lesson we saw that the player can move back and forth between these two passages.
+
+:: TwineLesson005Passage005 [deonna]
 Okay, now that we have added a third passage, let's rename it and add some text to it.
 

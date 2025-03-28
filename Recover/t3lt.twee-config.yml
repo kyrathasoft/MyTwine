@@ -25,6 +25,8 @@ sugarcube-2:
       name: stop
     storyicons:
       name: storyicons
+    tutorial-links:
+      name: tutorial-links
     tutorial-passages:
       name: tutorial-passages
     wrong:
