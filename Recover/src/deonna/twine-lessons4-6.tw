@@ -160,4 +160,23 @@ If you entered everything correctly without any typos, you'll now see arrows ind
 The hyperlinked word //southwest// in the last sentence of {{{Campfire}}} now lets you navigate to {{{SkeletonHollow}}}, and the hyperlinked word //campfire// in {{{SkeletonHollow}}} lets you navigate back to passage {{{Campfire}}}. Let's take a look at a symbolic, dot-graph representation of our [[story|TwineLesson005Passage013]].
 
 :: TwineLesson005Passage013 [deonna]
-<img align="left" hspace=10 vspace=8 src="./assets/images/tut-lessons-4-6/three-psg-dot-graph.png">When a work created with $tw gets longer, this dot-graph representation can be super helpful in giving us an overview of our story's structure. Notice that {{{Campfire}}} connects bidirectionally to each of the other two passages.
+<img align="left" hspace=10 vspace=8 src="./assets/images/tut-lessons-4-6/three-psg-dot-graph.png">When a work created with $tw gets longer, this dot-graph representation can be super helpful in giving us an overview of our story's structure. Notice that {{{Campfire}}} connects bidirectionally to each of the other two passages. If you're interested, you can <a target="_new" href="https://bryanmiller.us/2025/03/work-twine-28th-march-2025-osage">see</a> various dot-graph representations of my current $tw project for my employer. Okay, back to the [[tutorial|TwineLesson005Passage014]].
+
+:: TwineLesson005Passage014 [deonna]
+I want to point out something which you may have already noticed. In the current lesson, we've used an alternate form of inter-passage linking than what you'd seen in Lessons 1 through 4. In the past, I've used the following format: ''{{{[[word|PassageName]]}}}'', where 'word' is the word we want to turn into a hyperlink and 'PassageName' is the name of the passage to which we want the hyperlinked word to link. But in Lesson 5, I've used this alternative form in a couple instances: ''{{{[[word->PassageName]]}}}''. So we've replaced the pipe character (it's a vertical line) with the following, which we'll call {{{arrow-syntax}}}:
+<center><font size="+3">''->''</font>
+
+Let's [[summarize|TwineLesson005Passage015]]...</center>
+
+:: TwineLesson005Passage015 [deonna]
+We'll call option 1 below ''Pipe Notation'' and option 2 below ''Arrow Notation'':
+
+option 1: <font size="+2">''{{{[[word(s)|PassageToLinkTo]]}}}''</font>
+
+option 2: <font size="+2">''{{{[[word(s)->PassageToLinkTo]]}}}''</font>
+
+<<linkreplace "Tutorial Statistics">><<tutorial-passages>><</linkreplace>>
+
+Let's [[continue|TwineLesson005Passage016]]...
+
+:: TwineLesson005Passage016 [deonna]
