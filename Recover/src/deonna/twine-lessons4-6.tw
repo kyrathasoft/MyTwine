@@ -207,4 +207,23 @@ There have been a few times, now, in this tutorial series where you've ecountere
 So, now you can look at the line of $ts shown in the above screenshot and say, "Hmm, I see some $ts enclosed by left- and right-shift operators." I bet that's the first time in your life that you've said (or thought) those [[words|TwineLesson005Passage021]].
 
 :: TwineLesson005Passage021 [deonna]
+<img src="./assets/images/tut-lessons-4-6//story-init-set-coffee-variable.png">
+
+So, looking at that line of $ts that you put in the $si passage, can you guess what part of that is a {{{variable}}}? Give it your best <<linkappend "shot.">> If you said ''{{{$cupsOfCoffee}}}'', you're right! What about that word {{{set}}}. Wonder what it [[does|TwineLesson005Passage022]]?<</linkappend>>
+
+
+:: TwineLesson005Passage022 [deonna]
+<img src="./assets/images/tut-lessons-4-6//story-init-set-coffee-variable.png">
+
+Yes, ''{{{set}}}'' //sets// our ''{{{$cupsOfCoffee}}}'' variable to an initial value. From the screenshot above, what value do you think we've given variable ''{{{$cupsOfCoffee}}}''? It's okay if you're not <<linkappend "sure.">> If you guess ''0'' (zero), you're right! You can now close the editor for passage $si and we'll then [[continue|TwineLesson005Passage023]].<</linkappend>>
+
+:: TwineLesson005Passage023 [deonna]
+We should only create variables in a $tw $sg if we're going to use them somehow, whether that be directly in the story, or to help us track something as an author. So, since we've created the ''{{{$cupsOfCoffee}}}'' variable, let's make use of it in our story. To do that, I want to introduce you to a programming construct known as the $if conditional.
+
+We use $if conditionals all the time in real life: (1) If the weather cooperates, I'm going to the beach today. (2) If I get a bonus check, I'll pay off my credit card. (3) If I can wrap my mind around coding in $tw and $sc, I'm going to write a $sg and publish it on $itch.
+
+Let's write our first $if conditional in our //A Campfire Tale// [[story|TwineLesson005Passage024]].
+
+:: TwineLesson005Passage024 [deonna]
 <<tutorial-passages>>
+

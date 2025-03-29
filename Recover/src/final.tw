@@ -224,14 +224,16 @@ setup.calculatePercentage = function(arg1, arg2) {
 	"quizQuestionsCorrect": 0, 
 }>>
 
-
+<<set $if to `''{{{if}}}''`>>
+<<set $itch to `<a target="_new" href="https://itch.io/games">itch.io</a>`>>
+<<set $ite to `''{{{If...Then...Else}}}''`>>
 <<set $nonOpt to "That was a non-optimal response.">>
 <<set $portalDescriptor to "Adventure Portal">>
-<<set $sc to "Sugarcube">>
-<<set $si to `{{{StoryInit}}}`>>
-<<set $sg to `{{{story-game}}}`>>
-<<set $ts to `{{{TwineScript}}}`>>
-<<set $tw to "Twine">>
+<<set $sc to `''Sugarcube''`>>
+<<set $si to `''{{{StoryInit}}}''`>>
+<<set $sg to `''{{{story-game}}}''`>>
+<<set $ts to `''{{{TwineScript}}}''`>>
+<<set $tw to `''Twine''`>>
 
 
 <<set
