@@ -175,8 +175,12 @@ option 1: <font size="+2">''{{{[[word(s)|PassageToLinkTo]]}}}''</font>
 
 option 2: <font size="+2">''{{{[[word(s)->PassageToLinkTo]]}}}''</font>
 
-<<linkreplace "Tutorial Statistics">><<tutorial-passages>><</linkreplace>>
+<small><<linkreplace "Tutorial Statistics (feel free to skip this link)">><<tutorial-passages>><</linkreplace>></small>
 
 Let's [[continue|TwineLesson005Passage016]]...
 
 :: TwineLesson005Passage016 [deonna]
+<img align="left" width=90 src="./assets/images/tut-lessons-4-6/skeleton.png">Well, you've been more than patient, and you may be thinking //This is cool, but surely there's more you can do with $tw than just create places for the Gentle Reader to visit!// And you would be correct in thinking that. We've simply been laying some foundation for more advanced work in $tw as we develop this $sg. Perhaps you lifted an eyebrow when I had you create the third passage and name it {{{SkeletonHollow}}}. &ldquo;//Skeletons be in this here tutorial? Color me intrigued!//&rdquo; you thought to yourself. Yes, well, that was the [[intention|TwineLesson005Passage017]].
+
+:: TwineLesson005Passage017 [deonna]
+You're thinking //Fire, skeletons, and a hundred foot cliff &mdash; what could possibly go wrong?// Let's continue the tutorial to find out. 
