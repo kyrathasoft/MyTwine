@@ -183,4 +183,28 @@ Let's [[continue|TwineLesson005Passage016]]...
 <img align="left" width=90 src="./assets/images/tut-lessons-4-6/skeleton.png">Well, you've been more than patient, and you may be thinking //This is cool, but surely there's more you can do with $tw than just create places for the Gentle Reader to visit!// And you would be correct in thinking that. We've simply been laying some foundation for more advanced work in $tw as we develop this $sg. Perhaps you lifted an eyebrow when I had you create the third passage and name it {{{SkeletonHollow}}}. &ldquo;//Skeletons be in this here tutorial? Color me intrigued!//&rdquo; you thought to yourself. Yes, well, that was the [[intention|TwineLesson005Passage017]].
 
 :: TwineLesson005Passage017 [deonna]
-You're thinking //Fire, skeletons, and a hundred foot cliff &mdash; what could possibly go wrong?// Let's continue the tutorial to find out. 
+You're thinking //Fire, skeletons, and a hundred foot cliff &mdash; what could possibly go wrong?// Let's continue the tutorial to find out. I need to introduce you to {{{conditionals}}} in $tw. Buckle up, Buttercup: you're flirting with real programming in the pages ahead. I'll preface my treatment of $tw {{{conditionals}}} with some real-life [[examples|TwineLesson005Passage018]].
+
+:: TwineLesson005Passage018 [deonna]
+Here's a real-life {{{conditional}}}: if I've had two strong cups of coffee, I can pay attention in my 10:00 am meeting; otherwise, my eyes may glaze over. Let me show you what this might look like in $tw. To do that, we're going to create a {{{variable}}} &mdash; now don't panic (yet), but when you use a variable you're doing real computer programming. A {{{variable}}} can hold ... wait for it ... variable data, different information at different times during your $tw $sg. On the next page, I'll show you how create a variable in our $sg //A Campfire Tale//, and then we'll actually use that variable in our [[story|TwineLesson005Passage019]].
+
+:: TwineLesson005Passage019 [deonna]
+Let's create a special passage in $tw named {{{StoryInit}}}. To do that, use menu path {{{Passage >> New}}}. $tw will create a new passage in the center of the StoryMap, giving it the name {{{Untitled Passage}}}. Rename that passage to the following, using the exact capitalization shown: {{{StoryInit}}}. Then, drag that passage up next to the {{{Cliff}}} passage. Here's what your StoryMap should look like after doing this:
+
+<img src="./assets/images/tut-lessons-4-6/story-init-psg.png">
+
+>As it's name suggests, the $si passage is a special passage we can use to set up any initial story conditions for our $sg. Let's edit the $si passage now and add the following mysterious line of programming: {{{<<set $cupsOfCoffee to 0>>}}}. Let's [[continue|TwineLesson005Passage020]].
+
+:: TwineLesson005Passage020 [deonna]
+Here is what the $si passage should look like after you've added this line of $ts:
+
+<img src="./assets/images/tut-lessons-4-6//story-init-set-coffee-variable.png">
+
+There have been a few times, now, in this tutorial series where you've ecountered the symbols shown below. They are known as the {{{left-shift operator}}} and the {{{right-shift operator}}}:
+
+<center><font size="+3">{{{<<}}}</font>    ... and ...    <font size="+3">{{{>>}}}</font></center>
+
+So, now you can look at the line of $ts shown in the above screenshot and say, "Hmm, I see some $ts enclosed by left- and right-shift operators." I bet that's the first time in your life that you've said (or thought) those [[words|TwineLesson005Passage021]].
+
+:: TwineLesson005Passage021 [deonna]
+<<tutorial-passages>>

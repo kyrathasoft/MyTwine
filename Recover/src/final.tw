@@ -228,7 +228,9 @@ setup.calculatePercentage = function(arg1, arg2) {
 <<set $nonOpt to "That was a non-optimal response.">>
 <<set $portalDescriptor to "Adventure Portal">>
 <<set $sc to "Sugarcube">>
-<<set $sg to "{{{story-game}}}">>
+<<set $si to `{{{StoryInit}}}`>>
+<<set $sg to `{{{story-game}}}`>>
+<<set $ts to `{{{TwineScript}}}`>>
 <<set $tw to "Twine">>
 
 
